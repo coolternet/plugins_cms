@@ -1,0 +1,18 @@
+{"states":[
+    { "code" : "AR", "name" : "Arhus"},
+    { "code" : "BH", "name" : "Bornholm"},
+    { "code" : "CO", "name" : "Copenhagen"},
+    { "code" : "FO", "name" : "Faroe Islands"},
+    { "code" : "FR", "name" : "Frederiksborg"},
+    { "code" : "FY", "name" : "Fyn"},
+    { "code" : "KO", "name" : "Kobenhavn"},
+    { "code" : "NO", "name" : "Nordjylland"},
+    { "code" : "RI", "name" : "Ribe"},
+    { "code" : "RK", "name" : "Ringkobing"},
+    { "code" : "RO", "name" : "Roskilde"},
+    { "code" : "SO", "name" : "Sonderjylland"},
+    { "code" : "ST", "name" : "Storstrom"},
+    { "code" : "VK", "name" : "Vejle"},
+    { "code" : "VJ", "name" : "Vestjælland"},
+    { "code" : "VB", "name" : "Viborg"}
+]}

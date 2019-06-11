@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "AN", "name" : "Andijon"},
+    { "code" : "BU", "name" : "Buxoro"},
+    { "code" : "FA", "name" : "Farg'ona"},
+    { "code" : "JI", "name" : "Jizzax"},
+    { "code" : "NG", "name" : "Namangan"},
+    { "code" : "NW", "name" : "Navoiy"},
+    { "code" : "QA", "name" : "Qashqadaryo"},
+    { "code" : "QR", "name" : "Qoraqalpog'iston Republikasi"},
+    { "code" : "SA", "name" : "Samarqand"},
+    { "code" : "SI", "name" : "Sirdaryo"},
+    { "code" : "SU", "name" : "Surxondaryo"},
+    { "code" : "TK", "name" : "Toshkent City"},
+    { "code" : "TO", "name" : "Toshkent Region"},
+    { "code" : "XO", "name" : "Xorazm"}
+]}

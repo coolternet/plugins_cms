@@ -1,0 +1,9 @@
+{"states":[
+    { "code" : "AL", "name" : "Alajuela"},
+    { "code" : "CA", "name" : "Cartago"},
+    { "code" : "GU", "name" : "Guanacaste"},
+    { "code" : "HE", "name" : "Heredia"},
+    { "code" : "LI", "name" : "Limon"},
+    { "code" : "PU", "name" : "Puntarenas"},
+    { "code" : "SJ", "name" : "San Jose"}
+]}

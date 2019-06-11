@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "", "name" : "Štajerska"},
+    { "code" : "A", "name" : "Gorenjska"},
+    { "code" : "", "name" : "Prekmurje"},
+    { "code" : "", "name" : "Koroška"},
+    { "code" : "B", "name" : "Notranjska"},
+    { "code" : "", "name" : "Primorska"},
+    { "code" : "C", "name" : "Dolenjska"},
+    { "code" : "C", "name" : "Bela Krajina"}
+]}

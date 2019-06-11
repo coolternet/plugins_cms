@@ -1,0 +1,21 @@
+{"states":[
+    { "code" : "AB", "name" : "Abyan"},
+    { "code" : "AD", "name" : "Adan"},
+    { "code" : "AM", "name" : "Amran"},
+    { "code" : "BA", "name" : "Al Bayda"},
+    { "code" : "DA", "name" : "Ad Dali"},
+    { "code" : "DH", "name" : "Dhamar"},
+    { "code" : "HD", "name" : "Hadramawt"},
+    { "code" : "HJ", "name" : "Hajjah"},
+    { "code" : "HU", "name" : "Al Hudaydah"},
+    { "code" : "IB", "name" : "Ibb"},
+    { "code" : "JA", "name" : "Al Jawf"},
+    { "code" : "LA", "name" : "Lahij"},
+    { "code" : "MA", "name" : "Ma'rib"},
+    { "code" : "MR", "name" : "Al Mahrah"},
+    { "code" : "MW", "name" : "Al Mahwit"},
+    { "code" : "SD", "name" : "Sa'dah"},
+    { "code" : "SN", "name" : "San'a"},
+    { "code" : "SH", "name" : "Shabwah"},
+    { "code" : "TA", "name" : "Ta'izz"}
+]}

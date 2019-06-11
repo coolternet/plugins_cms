@@ -1,0 +1,18 @@
+{"states":[
+    { "code" : "DO", "name" : "Dolnośląskie"},
+    { "code" : "KP", "name" : "Kujawsko-Pomorskie"},
+    { "code" : "LL", "name" : "Lubelskie"},
+    { "code" : "LU", "name" : "Lubuskie"},
+    { "code" : "LO", "name" : "Łódzkie"},
+    { "code" : "ML", "name" : "Małopolskie"},
+    { "code" : "MZ", "name" : "Mazowieckie"},
+    { "code" : "OP", "name" : "Opolskie"},
+    { "code" : "PP", "name" : "Podkarpackie"},
+    { "code" : "PL", "name" : "Podlaskie"},
+    { "code" : "PM", "name" : "Pomorskie"},
+    { "code" : "SL", "name" : "Śląskie"},
+    { "code" : "SW", "name" : "Świętokrzyskie"},
+    { "code" : "WM", "name" : "Warmińsko-Mazurskie"},
+    { "code" : "WP", "name" : "Wielkopolskie"},
+    { "code" : "ZA", "name" : "Zachodniopomorskie"}
+]}

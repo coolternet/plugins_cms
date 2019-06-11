@@ -1,0 +1,20 @@
+{"states":[
+    { "code" : "AW", "name" : "Awdal"},
+    { "code" : "BK", "name" : "Bakool"},
+    { "code" : "BN", "name" : "Banaadir"},
+    { "code" : "BR", "name" : "Bari"},
+    { "code" : "BY", "name" : "Bay"},
+    { "code" : "GA", "name" : "Galguduud"},
+    { "code" : "GE", "name" : "Gedo"},
+    { "code" : "HI", "name" : "Hiiraan"},
+    { "code" : "JD", "name" : "Jubbada Dhexe"},
+    { "code" : "JH", "name" : "Jubbada Hoose"},
+    { "code" : "MU", "name" : "Mudug"},
+    { "code" : "NU", "name" : "Nugaal"},
+    { "code" : "SA", "name" : "Sanaag"},
+    { "code" : "SD", "name" : "Shabeellaha Dhexe"},
+    { "code" : "SH", "name" : "Shabeellaha Hoose"},
+    { "code" : "SL", "name" : "Sool"},
+    { "code" : "TO", "name" : "Togdheer"},
+    { "code" : "WG", "name" : "Woqooyi Galbeed"}
+]}

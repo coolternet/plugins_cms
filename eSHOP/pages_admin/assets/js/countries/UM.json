@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "BI", "name" : "Baker Island"},
+    { "code" : "HI", "name" : "Howland Island"},
+    { "code" : "JI", "name" : "Jarvis Island"},
+    { "code" : "JA", "name" : "Johnston Atoll"},
+    { "code" : "KR", "name" : "Kingman Reef"},
+    { "code" : "MA", "name" : "Midway Atoll"},
+    { "code" : "NI", "name" : "Navassa Island"},
+    { "code" : "PA", "name" : "Palmyra Atoll"},
+    { "code" : "WI", "name" : "Wake Island"}
+]}

@@ -1,0 +1,7 @@
+{"states":[
+    { "code" : "C", "name" : "Iles Crozet"},
+    { "code" : "K", "name" : "Iles Kerguelen"},
+    { "code" : "A", "name" : "Ile Amsterdam"},
+    { "code" : "P", "name" : "Ile Saint-Paul"},
+    { "code" : "D", "name" : "Adelie Land"}
+]}

@@ -1,0 +1,22 @@
+{"states":[
+    { "code" : "AK", "name" : "Akershus"},
+    { "code" : "AA", "name" : "Aust-Agder"},
+    { "code" : "BU", "name" : "Buskerud"},
+    { "code" : "FM", "name" : "Finnmark"},
+    { "code" : "HM", "name" : "Hedmark"},
+    { "code" : "HL", "name" : "Hordaland"},
+    { "code" : "MR", "name" : "Møre og Romsdal"},
+    { "code" : "NL", "name" : "Nordland"},
+    { "code" : "NT", "name" : "Nord-Trøndelag"},
+    { "code" : "OP", "name" : "Oppland"},
+    { "code" : "OL", "name" : "Oslo"},
+    { "code" : "RL", "name" : "Rogaland"},
+    { "code" : "SJ", "name" : "Sogn og Fjordane"},
+    { "code" : "ST", "name" : "Sør-Trøndelag"},
+    { "code" : "SV", "name" : "Svalbard"},
+    { "code" : "TM", "name" : "Telemark"},
+    { "code" : "TR", "name" : "Troms"},
+    { "code" : "VA", "name" : "Vest-Agder"},
+    { "code" : "VF", "name" : "Vestfold"},
+    { "code" : "OF", "name" : "Østfold"}
+]}

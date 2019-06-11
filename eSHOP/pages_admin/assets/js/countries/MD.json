@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "GA", "name" : "Gagauzia"},
+    { "code" : "CU", "name" : "Chisinau"},
+    { "code" : "BA", "name" : "Balti"},
+    { "code" : "CA", "name" : "Cahul"},
+    { "code" : "ED", "name" : "Edinet"},
+    { "code" : "LA", "name" : "Lapusna"},
+    { "code" : "OR", "name" : "Orhei"},
+    { "code" : "SO", "name" : "Soroca"},
+    { "code" : "TI", "name" : "Tighina"},
+    { "code" : "UN", "name" : "Ungheni"},
+    { "code" : "SN", "name" : "Stânga Nistrului"}
+]}

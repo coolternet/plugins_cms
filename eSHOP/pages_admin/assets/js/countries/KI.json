@@ -1,0 +1,23 @@
+{"states":[
+    { "code" : "AG", "name" : "Abaiang"},
+    { "code" : "AM", "name" : "Abemama"},
+    { "code" : "AK", "name" : "Aranuka"},
+    { "code" : "AO", "name" : "Arorae"},
+    { "code" : "BA", "name" : "Banaba"},
+    { "code" : "BE", "name" : "Beru"},
+    { "code" : "bT", "name" : "Butaritari"},
+    { "code" : "KA", "name" : "Kanton"},
+    { "code" : "KR", "name" : "Kiritimati"},
+    { "code" : "KU", "name" : "Kuria"},
+    { "code" : "MI", "name" : "Maiana"},
+    { "code" : "MN", "name" : "Makin"},
+    { "code" : "ME", "name" : "Marakei"},
+    { "code" : "NI", "name" : "Nikunau"},
+    { "code" : "NO", "name" : "Nonouti"},
+    { "code" : "ON", "name" : "Onotoa"},
+    { "code" : "TT", "name" : "Tabiteuea"},
+    { "code" : "TR", "name" : "Tabuaeran"},
+    { "code" : "TM", "name" : "Tamana"},
+    { "code" : "TW", "name" : "Tarawa"},
+    { "code" : "TE", "name" : "Teraina"}
+]}

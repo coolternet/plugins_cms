@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "CD", "name" : "Cabo Delgado"},
+    { "code" : "GZ", "name" : "Gaza"},
+    { "code" : "IN", "name" : "Inhambane"},
+    { "code" : "MN", "name" : "Manica"},
+    { "code" : "MC", "name" : "Maputo (city)"},
+    { "code" : "MP", "name" : "Maputo"},
+    { "code" : "NA", "name" : "Nampula"},
+    { "code" : "NI", "name" : "Niassa"},
+    { "code" : "SO", "name" : "Sofala"},
+    { "code" : "TE", "name" : "Tete"},
+    { "code" : "ZA", "name" : "Zambezia"}
+]}

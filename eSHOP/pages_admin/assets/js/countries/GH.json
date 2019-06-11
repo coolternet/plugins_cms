@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "AS", "name" : "Ashanti Region"},
+    { "code" : "BA", "name" : "Brong-Ahafo Region"},
+    { "code" : "CE", "name" : "Central Region"},
+    { "code" : "EA", "name" : "Eastern Region"},
+    { "code" : "GA", "name" : "Greater Accra Region"},
+    { "code" : "NO", "name" : "Northern Region"},
+    { "code" : "UE", "name" : "Upper East Region"},
+    { "code" : "UW", "name" : "Upper West Region"},
+    { "code" : "VO", "name" : "Volta Region"},
+    { "code" : "WE", "name" : "Western Region"}
+]}

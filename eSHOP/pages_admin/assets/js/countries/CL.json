@@ -1,0 +1,15 @@
+{"states":[
+    { "code" : "AI", "name" : "Aisen del General Carlos Ibanez"},
+    { "code" : "AN", "name" : "Antofagasta"},
+    { "code" : "AR", "name" : "Araucania"},
+    { "code" : "AT", "name" : "Atacama"},
+    { "code" : "BI", "name" : "Bio-Bio"},
+    { "code" : "CO", "name" : "Coquimbo"},
+    { "code" : "LI", "name" : "Libertador General Bernardo O'Hi"},
+    { "code" : "LL", "name" : "Los Lagos"},
+    { "code" : "MA", "name" : "Magallanes y de la Antartica Chi"},
+    { "code" : "ML", "name" : "Maule"},
+    { "code" : "RM", "name" : "Region Metropolitana"},
+    { "code" : "TA", "name" : "Tarapaca"},
+    { "code" : "VS", "name" : "Valparaiso"}
+]}

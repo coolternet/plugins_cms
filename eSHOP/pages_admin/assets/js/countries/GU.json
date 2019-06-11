@@ -1,0 +1,21 @@
+{"states":[
+    { "code" : "AGA", "name" : "Agana Heights"},
+    { "code" : "AGA", "name" : "Agat"},
+    { "code" : "ASA", "name" : "Asan Maina"},
+    { "code" : "BAR", "name" : "Barrigada"},
+    { "code" : "CHA", "name" : "Chalan Pago Ordot"},
+    { "code" : "DED", "name" : "Dededo"},
+    { "code" : "HAG", "name" : "HagÅtña"},
+    { "code" : "INA", "name" : "Inarajan"},
+    { "code" : "MAN", "name" : "Mangilao"},
+    { "code" : "MER", "name" : "Merizo"},
+    { "code" : "MON", "name" : "Mongmong Toto Maite"},
+    { "code" : "PIT", "name" : "Piti"},
+    { "code" : "SAN", "name" : "Santa Rita"},
+    { "code" : "SIN", "name" : "Sinajana"},
+    { "code" : "TAL", "name" : "Talofofo"},
+    { "code" : "TAM", "name" : "Tamuning"},
+    { "code" : "UMA", "name" : "Umatac"},
+    { "code" : "YIG", "name" : "Yigo"},
+    { "code" : "YON", "name" : "Yona"}
+]}

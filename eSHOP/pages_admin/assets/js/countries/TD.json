@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "BA", "name" : "Batha"},
+    { "code" : "BI", "name" : "Biltine"},
+    { "code" : "BE", "name" : "Borkou-Ennedi-Tibesti"},
+    { "code" : "CB", "name" : "Chari-Baguirmi"},
+    { "code" : "GU", "name" : "Guera"},
+    { "code" : "KA", "name" : "Kanem"},
+    { "code" : "LA", "name" : "Lac"},
+    { "code" : "LC", "name" : "Logone Occidental"},
+    { "code" : "LR", "name" : "Logone Oriental"},
+    { "code" : "MK", "name" : "Mayo-Kebbi"},
+    { "code" : "MC", "name" : "Moyen-Chari"},
+    { "code" : "OU", "name" : "Ouaddai"},
+    { "code" : "SA", "name" : "Salamat"},
+    { "code" : "TA", "name" : "Tandjile"}
+]}

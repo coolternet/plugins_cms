@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "BUR", "name" : "Burgenland"},
+    { "code" : "KAR", "name" : "Krnten"},
+    { "code" : "NOS", "name" : "Niederöesterreich"},
+    { "code" : "OOS", "name" : "Oberöesterreich"},
+    { "code" : "SAL", "name" : "Salzburg"},
+    { "code" : "STE", "name" : "Steiermark"},
+    { "code" : "TIR", "name" : "Tirol"},
+    { "code" : "VOR", "name" : "Vorarlberg"},
+    { "code" : "WIE", "name" : "Wien"}
+]}

@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "DG", "name" : "Diego Garcia"},
+    { "code" : "DI", "name" : "Danger Island"},
+    { "code" : "EA", "name" : "Eagle Islands"},
+    { "code" : "EG", "name" : "Egmont Islands"},
+    { "code" : "NI", "name" : "Nelsons Island"},
+    { "code" : "PB", "name" : "Peros Banhos"},
+    { "code" : "SI", "name" : "Salomon Islands"},
+    { "code" : "TB", "name" : "Three Brothers"}
+]}

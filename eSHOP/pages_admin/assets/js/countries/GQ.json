@@ -1,0 +1,9 @@
+{"states":[
+    { "code" : "AN", "name" : "Provincia Annobon"},
+    { "code" : "BN", "name" : "Provincia Bioko Norte"},
+    { "code" : "BS", "name" : "Provincia Bioko Sur"},
+    { "code" : "CS", "name" : "Provincia Centro Sur"},
+    { "code" : "KN", "name" : "Provincia Kie-Ntem"},
+    { "code" : "LI", "name" : "Provincia Litoral"},
+    { "code" : "WN", "name" : "Provincia Wele-Nzas"}
+]}

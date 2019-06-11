@@ -1,0 +1,23 @@
+{"states":[
+    { "code" : "BB", "name" : "Bjelovar-Bilogora"},
+    { "code" : "CZ", "name" : "City of Zagreb"},
+    { "code" : "DN", "name" : "Dubrovnik-Neretva"},
+    { "code" : "IS", "name" : "Istra"},
+    { "code" : "KA", "name" : "Karlovac"},
+    { "code" : "KK", "name" : "Koprivnica-Krizevci"},
+    { "code" : "KZ", "name" : "Krapina-Zagorje"},
+    { "code" : "LS", "name" : "Lika-Senj"},
+    { "code" : "ME", "name" : "Medimurje"},
+    { "code" : "OB", "name" : "Osijek-Baranja"},
+    { "code" : "PS", "name" : "Pozega-Slavonia"},
+    { "code" : "PG", "name" : "Primorje-Gorski Kotar"},
+    { "code" : "SI", "name" : "Sibenik"},
+    { "code" : "SM", "name" : "Sisak-Moslavina"},
+    { "code" : "SB", "name" : "Slavonski Brod-Posavina"},
+    { "code" : "SD", "name" : "Split-Dalmatia"},
+    { "code" : "VA", "name" : "Varazdin"},
+    { "code" : "VP", "name" : "Virovitica-Podravina"},
+    { "code" : "VS", "name" : "Vukovar-Srijem"},
+    { "code" : "ZK", "name" : "Zadar-Knin"},
+    { "code" : "ZA", "name" : "Zagreb"}
+]}

@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "BT", "name" : "Bocas del Toro"},
+    { "code" : "CH", "name" : "Chiriqui"},
+    { "code" : "CC", "name" : "Cocle"},
+    { "code" : "CL", "name" : "Colon"},
+    { "code" : "DA", "name" : "Darien"},
+    { "code" : "HE", "name" : "Herrera"},
+    { "code" : "LS", "name" : "Los Santos"},
+    { "code" : "PA", "name" : "Panama"},
+    { "code" : "SB", "name" : "San Blas"},
+    { "code" : "VG", "name" : "Veraguas"}
+]}

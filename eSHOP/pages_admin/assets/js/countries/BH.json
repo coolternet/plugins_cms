@@ -1,0 +1,7 @@
+{"states":[
+    { "code" : "CAP", "name" : "Capital"},
+    { "code" : "CEN", "name" : "Central"},
+    { "code" : "MUH", "name" : "Muharraq"},
+    { "code" : "NOR", "name" : "Northern"},
+    { "code" : "SOU", "name" : "Southern"}
+]}

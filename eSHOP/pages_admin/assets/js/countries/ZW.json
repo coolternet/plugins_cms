@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "BU", "name" : "Bulawayo"},
+    { "code" : "HA", "name" : "Harare"},
+    { "code" : "ML", "name" : "Manicaland"},
+    { "code" : "MC", "name" : "Mashonaland Central"},
+    { "code" : "ME", "name" : "Mashonaland East"},
+    { "code" : "MW", "name" : "Mashonaland West"},
+    { "code" : "MV", "name" : "Masvingo"},
+    { "code" : "MN", "name" : "Matabeleland North"},
+    { "code" : "MS", "name" : "Matabeleland South"},
+    { "code" : "MD", "name" : "Midlands"}
+]}

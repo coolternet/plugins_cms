@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "VAN", "name" : "Antwerpen"},
+    { "code" : "WBR", "name" : "Brabant Wallon"},
+    { "code" : "WHT", "name" : "Hainaut"},
+    { "code" : "WLG", "name" : "Liege"},
+    { "code" : "VLI", "name" : "Limburg"},
+    { "code" : "WLX", "name" : "Luxembourg"},
+    { "code" : "WNA", "name" : "Namur"},
+    { "code" : "VOV", "name" : "Oost-Vlaanderen"},
+    { "code" : "VBR", "name" : "Vlaams Brabant"},
+    { "code" : "VWV", "name" : "West-Vlaanderen"}
+]}

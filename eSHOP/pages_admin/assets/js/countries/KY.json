@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "CR", "name" : "Creek"},
+    { "code" : "EA", "name" : "Eastern"},
+    { "code" : "ML", "name" : "Midland"},
+    { "code" : "ST", "name" : "South Town"},
+    { "code" : "SP", "name" : "Spot Bay"},
+    { "code" : "SK", "name" : "Stake Bay"},
+    { "code" : "WD", "name" : "West End"},
+    { "code" : "WN", "name" : "Western"}
+]}

@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "AG", "name" : "Agadez"},
+    { "code" : "DF", "name" : "Diffa"},
+    { "code" : "DS", "name" : "Dosso"},
+    { "code" : "MA", "name" : "Maradi"},
+    { "code" : "NM", "name" : "Niamey"},
+    { "code" : "TH", "name" : "Tahoua"},
+    { "code" : "TL", "name" : "Tillaberi"},
+    { "code" : "ZD", "name" : "Zinder"}
+]}

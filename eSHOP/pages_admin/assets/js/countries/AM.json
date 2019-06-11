@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "AGT", "name" : "Aragatsotn"},
+    { "code" : "ARR", "name" : "Ararat"},
+    { "code" : "ARM", "name" : "Armavir"},
+    { "code" : "GEG", "name" : "Geghark unik"},
+    { "code" : "KOT", "name" : "Kotayk"},
+    { "code" : "LOR", "name" : "Lorri"},
+    { "code" : "SHI", "name" : "Shirak"},
+    { "code" : "SYU", "name" : "Syunik"},
+    { "code" : "TAV", "name" : "Tavush"},
+    { "code" : "VAY", "name" : "Vayots Dzor"},
+    { "code" : "YER", "name" : "Yerevan"}
+]}

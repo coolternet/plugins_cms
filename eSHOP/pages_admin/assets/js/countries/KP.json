@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "CHA", "name" : "Chagang-do"},
+    { "code" : "HAB", "name" : "Hamgyong-bukto"},
+    { "code" : "HAN", "name" : "Hamgyong-namdo"},
+    { "code" : "HWB", "name" : "Hwanghae-bukto"},
+    { "code" : "HWN", "name" : "Hwanghae-namdo"},
+    { "code" : "KAN", "name" : "Kangwon-do"},
+    { "code" : "PYB", "name" : "P'yongan-bukto"},
+    { "code" : "PYN", "name" : "P'yongan-namdo"},
+    { "code" : "YAN", "name" : "Ryanggang-do (Yanggang-do)"},
+    { "code" : "NAJ", "name" : "Rason Directly Governed City"},
+    { "code" : "PYO", "name" : "P'yongyang Special City"}
+]}

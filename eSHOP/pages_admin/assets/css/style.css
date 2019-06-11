@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,700|Ubuntu:300,400,500,700|Wire+One');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500');
+
+.wrapper {
+    margin-top: 20px;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #fff;
+    background-color: #f8f8f8;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+div#eshop-header {
+    margin-top: 0px;
+    position: sticky;
+    top: 64px;
+    width: 100%;
+    margin: 0 auto;
+    left: 13%;
+    z-index: 1;
+}
+
+div#eshop-content {
+    margin-top: 30px;
+}
+
+div#evo-section-title {
+    border-top-right-radius: 5px;
+    margin: 0px 0px 20px 0px;
+    height: 40px;
+    background: rgb(55, 71, 79);
+    background: -moz-linear-gradient(left, rgba(55,71,79) 48%, rgba(38,50,56) 100%);
+    background: -webkit-linear-gradient(left, rgb(55, 71, 79) 48%,rgb(38, 50, 56) 100%);
+    background: linear-gradient(to right, rgb(55, 71, 79) 48%,rgb(38, 50, 56) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#263238', endColorstr='#fd080800',GradientType=1 );
+}
+
+div#evo-section-title div {
+    width: fit-content;
+    width: -moz-fit-content;
+    padding-right: 20px;
+    line-height: 45px;
+}
+div#evo-section-title div {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    height: 0px;
+    border-right: 30px solid #fd080800;
+    border-bottom: 40px solid #eeeeee;
+}
+
+div#evo-section {
+    padding: 20px;
+}
+
+div.zone_btn {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px dashed #004691;
+}
+
+div#eshop-content, .ui.tab.active { 
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+} 
+
+#state_bg{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    transform: rotate(-30deg) scale(3);
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+#inv_recipient h4 {
+    margin: 0 !important;
+}
+
+#evo-table td, #evo-table th {
+    padding: 0;
+}
+
+.ui.icon.header .icon {
+    display: block !important;
+}
+
+#invoice-preview-option .state-change .button {
+    width: 100% !important;
+    margin: 10px 0px 10px 0px;
+}
+
+#invoice-preview-option .state-change {
+    padding-top: 10px;
+}
+
+i.purple, i.red, i.orange, i.green {
+    background-color: transparent !important;
+}
+
+.modal {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}

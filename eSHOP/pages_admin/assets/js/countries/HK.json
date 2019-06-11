@@ -1,0 +1,20 @@
+{"states":[
+    { "code" : "HCW", "name" : "Central and Western Hong Kong Is"},
+    { "code" : "HEA", "name" : "Eastern Hong Kong Island"},
+    { "code" : "HSO", "name" : "Southern Hong Kong Island"},
+    { "code" : "HWC", "name" : "Wan Chai Hong Kong Island"},
+    { "code" : "KKC", "name" : "Kowloon City Kowloon"},
+    { "code" : "KKT", "name" : "Kwun Tong Kowloon"},
+    { "code" : "KSS", "name" : "Sham Shui Po Kowloon"},
+    { "code" : "KWT", "name" : "Wong Tai Sin Kowloon"},
+    { "code" : "KYT", "name" : "Yau Tsim Mong Kowloon"},
+    { "code" : "NIS", "name" : "Islands New Territories"},
+    { "code" : "NKT", "name" : "Kwai Tsing New Territories"},
+    { "code" : "NNO", "name" : "North New Territories"},
+    { "code" : "NSK", "name" : "Sai Kung New Territories"},
+    { "code" : "NST", "name" : "Sha Tin New Territories"},
+    { "code" : "NTP", "name" : "Tai Po New Territories"},
+    { "code" : "NTW", "name" : "Tsuen Wan New Territories"},
+    { "code" : "NTM", "name" : "Tuen Mun New Territories"},
+    { "code" : "NYL", "name" : "Yuen Long New Territories"}
+]}

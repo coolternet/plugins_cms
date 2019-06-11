@@ -1,0 +1,23 @@
+{"states":[
+    { "code" : "K", "name" : "Blekinge"},
+    { "code" : "W", "name" : "Dalama"},
+    { "code" : "I", "name" : "Gotland"},
+    { "code" : "X", "name" : "Gävleborg"},
+    { "code" : "N", "name" : "Halland"},
+    { "code" : "Z", "name" : "Jämtland"},
+    { "code" : "F", "name" : "Jönköping"},
+    { "code" : "H", "name" : "Kalmar"},
+    { "code" : "G", "name" : "Kronoberg"},
+    { "code" : "BD", "name" : "Norrbotten"},
+    { "code" : "M", "name" : "Skåne"},
+    { "code" : "AB", "name" : "Stockholm"},
+    { "code" : "D", "name" : "Södermanland"},
+    { "code" : "C", "name" : "Uppsala"},
+    { "code" : "S", "name" : "Värmland"},
+    { "code" : "AC", "name" : "Västerbotten"},
+    { "code" : "Y", "name" : "Västernorrland"},
+    { "code" : "U", "name" : "Västmanland"},
+    { "code" : "O", "name" : "Västra Götaland"},
+    { "code" : "T", "name" : "Örebro"},
+    { "code" : "E", "name" : "Östergötland"}
+]}

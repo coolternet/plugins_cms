@@ -1,0 +1,8 @@
+{"states":[
+    { "code" : "C", "name" : "Charlotte"},
+    { "code" : "R", "name" : "Grenadines"},
+    { "code" : "A", "name" : "Saint Andrew"},
+    { "code" : "D", "name" : "Saint David"},
+    { "code" : "G", "name" : "Saint George"},
+    { "code" : "P", "name" : "Saint Patrick"}
+]}

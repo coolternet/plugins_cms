@@ -1,0 +1,17 @@
+{"states":[
+    { "code" : "CO", "name" : "Ch'ungch'ong-bukto"},
+    { "code" : "CH", "name" : "Ch'ungch'ong-namdo"},
+    { "code" : "CD", "name" : "Cheju-do"},
+    { "code" : "CB", "name" : "Cholla-bukto"},
+    { "code" : "CN", "name" : "Cholla-namdo"},
+    { "code" : "IG", "name" : "Inch'on-gwangyoksi"},
+    { "code" : "KA", "name" : "Kangwon-do"},
+    { "code" : "KG", "name" : "Kwangju-gwangyoksi"},
+    { "code" : "KD", "name" : "Kyonggi-do"},
+    { "code" : "KB", "name" : "Kyongsang-bukto"},
+    { "code" : "KN", "name" : "Kyongsang-namdo"},
+    { "code" : "PG", "name" : "Pusan-gwangyoksi"},
+    { "code" : "SO", "name" : "Soul-t'ukpyolsi"},
+    { "code" : "TA", "name" : "Taegu-gwangyoksi"},
+    { "code" : "TG", "name" : "Taejon-gwangyoksi"}
+]}

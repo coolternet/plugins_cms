@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "AR", "name" : "Anse-la-Raye"},
+    { "code" : "CA", "name" : "Castries"},
+    { "code" : "CH", "name" : "Choiseul"},
+    { "code" : "DA", "name" : "Dauphin"},
+    { "code" : "DE", "name" : "Dennery"},
+    { "code" : "GI", "name" : "Gros-Islet"},
+    { "code" : "LA", "name" : "Laborie"},
+    { "code" : "MI", "name" : "Micoud"},
+    { "code" : "PR", "name" : "Praslin"},
+    { "code" : "SO", "name" : "Soufriere"},
+    { "code" : "VF", "name" : "Vieux-Fort"}
+]}

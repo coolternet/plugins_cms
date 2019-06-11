@@ -1,0 +1,20 @@
+{"states":[
+    { "code" : "AT", "name" : "Atlantida"},
+    { "code" : "CH", "name" : "Choluteca"},
+    { "code" : "CL", "name" : "Colon"},
+    { "code" : "CM", "name" : "Comayagua"},
+    { "code" : "CP", "name" : "Copan"},
+    { "code" : "CR", "name" : "Cortes"},
+    { "code" : "PA", "name" : "El Paraiso"},
+    { "code" : "FM", "name" : "Francisco Morazan"},
+    { "code" : "GD", "name" : "Gracias a Dios"},
+    { "code" : "IN", "name" : "Intibuca"},
+    { "code" : "IB", "name" : "Islas de la Bahia (Bay Islands)"},
+    { "code" : "PZ", "name" : "La Paz"},
+    { "code" : "LE", "name" : "Lempira"},
+    { "code" : "OC", "name" : "Ocotepeque"},
+    { "code" : "OL", "name" : "Olancho"},
+    { "code" : "SB", "name" : "Santa Barbara"},
+    { "code" : "VA", "name" : "Valle"},
+    { "code" : "YO", "name" : "Yoro"}
+]}

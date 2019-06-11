@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "BF", "name" : "Bafata Region"},
+    { "code" : "BB", "name" : "Biombo Region"},
+    { "code" : "BS", "name" : "Bissau Region"},
+    { "code" : "BL", "name" : "Bolama Region"},
+    { "code" : "CA", "name" : "Cacheu Region"},
+    { "code" : "GA", "name" : "Gabu Region"},
+    { "code" : "OI", "name" : "Oio Region"},
+    { "code" : "QU", "name" : "Quinara Region"},
+    { "code" : "TO", "name" : "Tombali Region"}
+]}

@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "CE", "name" : "Central"},
+    { "code" : "CO", "name" : "Coast"},
+    { "code" : "EA", "name" : "Eastern"},
+    { "code" : "NA", "name" : "Nairobi Area"},
+    { "code" : "NE", "name" : "North Eastern"},
+    { "code" : "NY", "name" : "Nyanza"},
+    { "code" : "RV", "name" : "Rift Valley"},
+    { "code" : "WE", "name" : "Western"}
+]}

@@ -1,0 +1,15 @@
+{"states":[
+    { "code" : "AL", "name" : "Aileu"},
+    { "code" : "AN", "name" : "Ainaro"},
+    { "code" : "BA", "name" : "Baucau"},
+    { "code" : "BO", "name" : "Bobonaro"},
+    { "code" : "CO", "name" : "Cova Lima"},
+    { "code" : "DI", "name" : "Dili"},
+    { "code" : "ER", "name" : "Ermera"},
+    { "code" : "LA", "name" : "Lautem"},
+    { "code" : "LI", "name" : "Liquica"},
+    { "code" : "MT", "name" : "Manatuto"},
+    { "code" : "MF", "name" : "Manufahi"},
+    { "code" : "OE", "name" : "Oecussi"},
+    { "code" : "VI", "name" : "Viqueque"}
+]}

@@ -1,0 +1,17 @@
+{"states":[
+    { "code" : "CT", "name" : "Couva/Tabaquite/Talparo"},
+    { "code" : "DM", "name" : "Diego Martin"},
+    { "code" : "MR", "name" : "Mayaro/Rio Claro"},
+    { "code" : "PD", "name" : "Penal/Debe"},
+    { "code" : "PT", "name" : "Princes Town"},
+    { "code" : "SG", "name" : "Sangre Grande"},
+    { "code" : "SL", "name" : "San Juan/Laventille"},
+    { "code" : "SI", "name" : "Siparia"},
+    { "code" : "TP", "name" : "Tunapuna/Piarco"},
+    { "code" : "PS", "name" : "Port of Spain"},
+    { "code" : "SF", "name" : "San Fernando"},
+    { "code" : "AR", "name" : "Arima"},
+    { "code" : "PF", "name" : "Point Fortin"},
+    { "code" : "CH", "name" : "Chaguanas"},
+    { "code" : "TO", "name" : "Tobago"}
+]}

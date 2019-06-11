@@ -1,0 +1,15 @@
+{"states":[
+    { "code" : "BH", "name" : "Al Bahah"},
+    { "code" : "HS", "name" : "Al Hudud ash Shamaliyah"},
+    { "code" : "JF", "name" : "Al Jawf"},
+    { "code" : "MD", "name" : "Al Madinah"},
+    { "code" : "QS", "name" : "Al Qasim"},
+    { "code" : "RD", "name" : "Ar Riyad"},
+    { "code" : "AQ", "name" : "Ash Sharqiyah (Eastern)"},
+    { "code" : "AS", "name" : "'Asir"},
+    { "code" : "HL", "name" : "Ha'il"},
+    { "code" : "JZ", "name" : "Jizan"},
+    { "code" : "ML", "name" : "Makkah"},
+    { "code" : "NR", "name" : "Najran"},
+    { "code" : "TB", "name" : "Tabuk"}
+]}

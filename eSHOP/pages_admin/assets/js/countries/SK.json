@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "BA", "name" : "Banskobystricky"},
+    { "code" : "BR", "name" : "Bratislavsky"},
+    { "code" : "KO", "name" : "Kosicky"},
+    { "code" : "NI", "name" : "Nitriansky"},
+    { "code" : "PR", "name" : "Presovsky"},
+    { "code" : "TC", "name" : "Trenciansky"},
+    { "code" : "TV", "name" : "Trnavsky"},
+    { "code" : "ZI", "name" : "Zilinsky"}
+]}

@@ -1,0 +1,22 @@
+{"states":[
+    { "code" : "BUM", "name" : "Bumthang"},
+    { "code" : "CHU", "name" : "Chukha"},
+    { "code" : "DAG", "name" : "Dagana"},
+    { "code" : "GAS", "name" : "Gasa"},
+    { "code" : "HAA", "name" : "Haa"},
+    { "code" : "LHU", "name" : "Lhuntse"},
+    { "code" : "MON", "name" : "Mongar"},
+    { "code" : "PAR", "name" : "Paro"},
+    { "code" : "PEM", "name" : "Pemagatshel"},
+    { "code" : "PUN", "name" : "Punakha"},
+    { "code" : "SJO", "name" : "Samdrup Jongkhar"},
+    { "code" : "SAT", "name" : "Samtse"},
+    { "code" : "SAR", "name" : "Sarpang"},
+    { "code" : "THI", "name" : "Thimphu"},
+    { "code" : "TRG", "name" : "Trashigang"},
+    { "code" : "TRY", "name" : "Trashiyangste"},
+    { "code" : "TRO", "name" : "Trongsa"},
+    { "code" : "TSI", "name" : "Tsirang"},
+    { "code" : "WPH", "name" : "Wangdue Phodrang"},
+    { "code" : "ZHE", "name" : "Zhemgang"}
+]}

@@ -1,0 +1,20 @@
+{"states":[
+    { "code" : "BRO", "name" : "Brcko district"},
+    { "code" : "FBP", "name" : "Bosanskopodrinjski Kanton"},
+    { "code" : "FHN", "name" : "Hercegovacko-neretvanski Kanton"},
+    { "code" : "FPO", "name" : "Posavski Kanton"},
+    { "code" : "FSA", "name" : "Kanton Sarajevo"},
+    { "code" : "FSB", "name" : "Srednjebosanski Kanton"},
+    { "code" : "FTU", "name" : "Tuzlanski Kanton"},
+    { "code" : "FUS", "name" : "Unsko-Sanski Kanton"},
+    { "code" : "FZA", "name" : "Zapadnobosanska"},
+    { "code" : "FZE", "name" : "Zenicko-Dobojski Kanton"},
+    { "code" : "FZH", "name" : "Zapadnohercegovacka Zupanija"},
+    { "code" : "SBI", "name" : "Bijeljina"},
+    { "code" : "SBL", "name" : "Banja Luka"},
+    { "code" : "SDO", "name" : "Doboj"},
+    { "code" : "SFO", "name" : "Foca"},
+    { "code" : "SSR", "name" : "Sarajevo-Romanija or Sokolac"},
+    { "code" : "STR", "name" : "Trebinje"},
+    { "code" : "SVL", "name" : "Vlasenica"}
+]}

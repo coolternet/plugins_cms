@@ -1,0 +1,20 @@
+{"states":[
+    { "code" : "BGO", "name" : "Bengo"},
+    { "code" : "BGU", "name" : "Benguela"},
+    { "code" : "BIE", "name" : "Bie"},
+    { "code" : "CAB", "name" : "Cabinda"},
+    { "code" : "CCU", "name" : "Cuando-Cubango"},
+    { "code" : "CNO", "name" : "Cuanza Norte"},
+    { "code" : "CUS", "name" : "Cuanza Sul"},
+    { "code" : "CNN", "name" : "Cunene"},
+    { "code" : "HUA", "name" : "Huambo"},
+    { "code" : "HUI", "name" : "Huila"},
+    { "code" : "LUA", "name" : "Luanda"},
+    { "code" : "LNO", "name" : "Lunda Norte"},
+    { "code" : "LSU", "name" : "Lunda Sul"},
+    { "code" : "MAL", "name" : "Malange"},
+    { "code" : "MOX", "name" : "Moxico"},
+    { "code" : "NAM", "name" : "Namibe"},
+    { "code" : "UIG", "name" : "Uige"},
+    { "code" : "ZAI", "name" : "Zaire"}
+]}

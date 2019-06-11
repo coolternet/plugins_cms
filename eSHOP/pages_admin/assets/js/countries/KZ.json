@@ -1,0 +1,19 @@
+{"states":[
+    { "code" : "AL", "name" : "Almaty"},
+    { "code" : "AC", "name" : "Almaty City"},
+    { "code" : "AM", "name" : "Aqmola"},
+    { "code" : "AQ", "name" : "Aqtobe"},
+    { "code" : "AS", "name" : "Astana City"},
+    { "code" : "AT", "name" : "Atyrau"},
+    { "code" : "BA", "name" : "Batys Qazaqstan"},
+    { "code" : "BY", "name" : "Bayqongyr City"},
+    { "code" : "MA", "name" : "Mangghystau"},
+    { "code" : "ON", "name" : "Ongtustik Qazaqstan"},
+    { "code" : "PA", "name" : "Pavlodar"},
+    { "code" : "QA", "name" : "Qaraghandy"},
+    { "code" : "QO", "name" : "Qostanay"},
+    { "code" : "QY", "name" : "Qyzylorda"},
+    { "code" : "SH", "name" : "Shyghys Qazaqstan"},
+    { "code" : "SO", "name" : "Soltustik Qazaqstan"},
+    { "code" : "ZH", "name" : "Zhambyl"}
+]}

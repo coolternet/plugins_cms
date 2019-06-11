@@ -1,0 +1,22 @@
+{"states":[
+    { "code" : "BV", "name" : "Bougainville"},
+    { "code" : "CE", "name" : "Central"},
+    { "code" : "CH", "name" : "Chimbu"},
+    { "code" : "EH", "name" : "Eastern Highlands"},
+    { "code" : "EB", "name" : "East New Britain"},
+    { "code" : "ES", "name" : "East Sepik"},
+    { "code" : "EN", "name" : "Enga"},
+    { "code" : "GU", "name" : "Gulf"},
+    { "code" : "MD", "name" : "Madang"},
+    { "code" : "MN", "name" : "Manus"},
+    { "code" : "MB", "name" : "Milne Bay"},
+    { "code" : "MR", "name" : "Morobe"},
+    { "code" : "NC", "name" : "National Capital"},
+    { "code" : "NI", "name" : "New Ireland"},
+    { "code" : "NO", "name" : "Northern"},
+    { "code" : "SA", "name" : "Sandaun"},
+    { "code" : "SH", "name" : "Southern Highlands"},
+    { "code" : "WE", "name" : "Western"},
+    { "code" : "WH", "name" : "Western Highlands"},
+    { "code" : "WB", "name" : "West New Britain"}
+]}

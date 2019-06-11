@@ -1,0 +1,20 @@
+{"states":[
+    { "code" : "AB", "name" : "Al Anbar"},
+    { "code" : "AL", "name" : "Arbil"},
+    { "code" : "BA", "name" : "Al Basrah"},
+    { "code" : "BB", "name" : "Babil"},
+    { "code" : "BD", "name" : "Baghdad"},
+    { "code" : "DH", "name" : "Dahuk"},
+    { "code" : "DQ", "name" : "Dhi Qar"},
+    { "code" : "DY", "name" : "Diyala"},
+    { "code" : "KB", "name" : "Al Karbala"},
+    { "code" : "MU", "name" : "Al Muthanna"},
+    { "code" : "MY", "name" : "Maysan"},
+    { "code" : "NJ", "name" : "An Najaf"},
+    { "code" : "NN", "name" : "Ninawa"},
+    { "code" : "QA", "name" : "Al Qadisyah"},
+    { "code" : "SD", "name" : "Salah ad Din"},
+    { "code" : "SL", "name" : "As Sulaymaniyah"},
+    { "code" : "TM", "name" , "At Ta'mim"},
+    { "code" : "WS", "name" : "Wasit"}
+]}

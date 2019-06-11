@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "ANG", "name" : "Anguillita"},
+    { "code" : "ANG", "name" : "Anguila"},
+    { "code" : "DOG", "name" : "Dog"},
+    { "code" : "LIT", "name" : "Little Scrub"},
+    { "code" : "PRI", "name" : "Prickly Pear"},
+    { "code" : "SAN", "name" : "Sandy"},
+    { "code" : "SCR", "name" : "Scrub"},
+    { "code" : "SEA", "name" : "Seal"},
+    { "code" : "SOM", "name" : "Sombrero"}
+]}

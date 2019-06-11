@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "AO", "name" : "Aiwo"},
+    { "code" : "AA", "name" : "Anabar"},
+    { "code" : "AT", "name" : "Anetan"},
+    { "code" : "AI", "name" : "Anibare"},
+    { "code" : "BA", "name" : "Baiti"},
+    { "code" : "BO", "name" : "Boe"},
+    { "code" : "BU", "name" : "Buada"},
+    { "code" : "DE", "name" : "Denigomodu"},
+    { "code" : "EW", "name" : "Ewa"},
+    { "code" : "IJ", "name" : "Ijuw"},
+    { "code" : "ME", "name" : "Meneng"},
+    { "code" : "NI", "name" : "Nibok"},
+    { "code" : "UA", "name" : "Uaboe"},
+    { "code" : "YA", "name" : "Yaren"}
+]}

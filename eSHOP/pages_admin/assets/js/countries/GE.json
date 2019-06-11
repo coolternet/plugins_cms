@@ -1,0 +1,14 @@
+{"states":[
+    { "code" : "AB", "name" : "Abkhazia"},
+    { "code" : "AJ", "name" : "Ajaria"},
+    { "code" : "GU", "name" : "Guria"},
+    { "code" : "IM", "name" : "Imereti"},
+    { "code" : "KA", "name" : "Kakheti"},
+    { "code" : "KK", "name" : "Kvemo Kartli"},
+    { "code" : "MM", "name" : "Mtskheta-Mtianeti"},
+    { "code" : "RL", "name" : "Racha Lechkhumi and Kvemo Svanet"},
+    { "code" : "SJ", "name" : "Samtskhe-Javakheti"},
+    { "code" : "SK", "name" : "Shida Kartli"},
+    { "code" : "SZ", "name" : "Samegrelo-Zemo Svaneti"},
+    { "code" : "TB", "name" : "Tbilisi"}
+]}

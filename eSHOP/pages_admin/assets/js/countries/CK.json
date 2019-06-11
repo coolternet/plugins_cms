@@ -1,0 +1,17 @@
+{"states":[
+    { "code" : "AI", "name" : "Aitutaki"},
+    { "code" : "AT", "name" : "Atiu"},
+    { "code" : "MA", "name" : "Manuae"},
+    { "code" : "MG", "name" : "Mangaia"},
+    { "code" : "MK", "name" : "Manihiki"},
+    { "code" : "MT", "name" : "Mitiaro"},
+    { "code" : "MU", "name" : "Mauke"},
+    { "code" : "NI", "name" : "Nassau Island"},
+    { "code" : "PA", "name" : "Palmerston"},
+    { "code" : "PE", "name" : "Penrhyn"},
+    { "code" : "PU", "name" : "Pukapuka"},
+    { "code" : "RK", "name" : "Rakahanga"},
+    { "code" : "RR", "name" : "Rarotonga"},
+    { "code" : "SU", "name" : "Surwarrow"},
+    { "code" : "TA", "name" : "Takutea"}
+]}

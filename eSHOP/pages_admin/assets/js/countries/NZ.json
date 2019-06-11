@@ -1,0 +1,21 @@
+{"states":[
+    { "code" : "AUK", "name" : "Auckland"},
+    { "code" : "BOP", "name" : "Bay of Plenty"},
+    { "code" : "CAN", "name" : "Canterbury"},
+    { "code" : "COR", "name" : "Coromandel"},
+    { "code" : "GIS", "name" : "Gisborne"},
+    { "code" : "FIO", "name" : "Fiordland"},
+    { "code" : "HKB", "name" : "Hawke's Bay"},
+    { "code" : "MBH", "name" : "Marlborough"},
+    { "code" : "MWT", "name" : "Manawatu-Wanganui"},
+    { "code" : "MCM", "name" : "Mt Cook-Mackenzie"},
+    { "code" : "NSN", "name" : "Nelson"},
+    { "code" : "NTL", "name" : "Northland"},
+    { "code" : "OTA", "name" : "Otago"},
+    { "code" : "STL", "name" : "Southland"},
+    { "code" : "TKI", "name" : "Taranaki"},
+    { "code" : "WGN", "name" : "Wellington"},
+    { "code" : "WKO", "name" : "Waikato"},
+    { "code" : "WAI", "name" : "Wairprarapa"},
+    { "code" : "WTC", "name" : "West Coast"}
+]}

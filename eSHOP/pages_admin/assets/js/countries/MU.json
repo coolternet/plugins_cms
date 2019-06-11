@@ -1,0 +1,19 @@
+{"states":[
+    { "code" : "AG", "name" : "Agalega Islands"},
+    { "code" : "BL", "name" : "Black River"},
+    { "code" : "BR", "name" : "Beau Bassin-Rose Hill"},
+    { "code" : "CC", "name" : "Cargados Carajos Shoals (Saint B)"},
+    { "code" : "CU", "name" : "Curepipe"},
+    { "code" : "FL", "name" : "Flacq"},
+    { "code" : "GP", "name" : "Grand Port"},
+    { "code" : "MO", "name" : "Moka"},
+    { "code" : "PA", "name" : "Pamplemousses"},
+    { "code" : "PL", "name" : "Port Louis"},
+    { "code" : "PU", "name" : "Port Louis"},
+    { "code" : "PW", "name" : "Plaines Wilhems"},
+    { "code" : "QB", "name" : "Quatre Bornes"},
+    { "code" : "RO", "name" : "Rodrigues"},
+    { "code" : "RR", "name" : "Riviere du Rempart"},
+    { "code" : "SA", "name" : "Savanne"},
+    { "code" : "VP", "name" : "Vacoas-Phoenix"}
+]}

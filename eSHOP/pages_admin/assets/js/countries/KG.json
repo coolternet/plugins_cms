@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "GB", "name" : "Bishkek"},
+    { "code" : "B", "name" : "Batken"},
+    { "code" : "C", "name" : "Chu"},
+    { "code" : "J", "name" : "Jalal-Abad"},
+    { "code" : "N", "name" : "Naryn"},
+    { "code" : "O", "name" : "Osh"},
+    { "code" : "T", "name" : "Talas"},
+    { "code" : "Y", "name" : "Ysyk-Kol"}
+]}

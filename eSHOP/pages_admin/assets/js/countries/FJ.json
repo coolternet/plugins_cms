@@ -1,0 +1,7 @@
+{"states":[
+    { "code" : "C", "name" : "Central Division"},
+    { "code" : "E", "name" : "Eastern Division"},
+    { "code" : "N", "name" : "Northern Division"},
+    { "code" : "R", "name" : "Rotuma"},
+    { "code" : "W", "name" : "Western Division"}
+]}

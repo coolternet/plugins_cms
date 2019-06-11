@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "V", "name" : "Vaduz"},
+    { "code" : "A", "name" : "Schaan"},
+    { "code" : "B", "name" : "Balzers"},
+    { "code" : "N", "name" : "Triesen"},
+    { "code" : "E", "name" : "Eschen"},
+    { "code" : "M", "name" : "Mauren"},
+    { "code" : "T", "name" : "Triesenberg"},
+    { "code" : "R", "name" : "Ruggell"},
+    { "code" : "G", "name" : "Gamprin"},
+    { "code" : "L", "name" : "Schellenberg"},
+    { "code" : "P", "name" : "Planken"}
+]}

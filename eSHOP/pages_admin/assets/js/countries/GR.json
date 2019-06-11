@@ -1,0 +1,15 @@
+{"states":[
+    { "code" : "AT", "name" : "Attica"},
+    { "code" : "CN", "name" : "Central Greece"},
+    { "code" : "CM", "name" : "Central Macedonia"},
+    { "code" : "CR", "name" : "Crete"},
+    { "code" : "EM", "name" : "East Macedonia and Thrace"},
+    { "code" : "EP", "name" : "Epirus"},
+    { "code" : "II", "name" : "Ionian Islands"},
+    { "code" : "NA", "name" : "North Aegean"},
+    { "code" : "PP", "name" : "Peloponnesos"},
+    { "code" : "SA", "name" : "South Aegean"},
+    { "code" : "TH", "name" : "Thessaly"},
+    { "code" : "WG", "name" : "West Greece"},
+    { "code" : "WM", "name" : "West Macedonia"}
+]}

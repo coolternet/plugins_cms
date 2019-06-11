@@ -1,0 +1,9 @@
+{"states":[
+    { "code" : "BR", "name" : "Brestskaya (Brest)"},
+    { "code" : "HO", "name" : "Homyel'skaya (Homyel)"},
+    { "code" : "HM", "name" : "Horad Minsk"},
+    { "code" : "HR", "name" : "Hrodzyenskaya (Hrodna)"},
+    { "code" : "MA", "name" : "Mahilyowskaya (Mahilyow)"},
+    { "code" : "MI", "name" : "Minskaya"},
+    { "code" : "VI", "name" : "Vitsyebskaya (Vitsyebsk)"}
+]}

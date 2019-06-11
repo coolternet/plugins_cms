@@ -1,0 +1,6 @@
+{"states":[
+    { "code" : "FV", "name" : "Fontvieille"},
+    { "code" : "LC", "name" : "La Condamine"},
+    { "code" : "MV", "name" : "Monaco-Ville"},
+    { "code" : "MC", "name" : "Monte-Carlo"}
+]}

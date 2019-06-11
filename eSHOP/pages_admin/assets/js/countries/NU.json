@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "MAK", "name" : "Makefu"},
+    { "code" : "TUA", "name" : "Tuapa"},
+    { "code" : "NAM", "name" : "Namukulu"},
+    { "code" : "HIK", "name" : "Hikutavake"},
+    { "code" : "TOI", "name" : "Toi"},
+    { "code" : "MUT", "name" : "Mutalau"},
+    { "code" : "LAK", "name" : "Lakepa"},
+    { "code" : "LIK", "name" : "Liku"},
+    { "code" : "HAK", "name" : "Hakupu"},
+    { "code" : "VAI", "name" : "Vaiea"},
+    { "code" : "AVA", "name" : "Avatele"},
+    { "code" : "TAM", "name" : "Tamakautoga"},
+    { "code" : "ALO", "name" : "Alofi South"},
+    { "code" : "ALO", "name" : "Alofi North"}
+]}

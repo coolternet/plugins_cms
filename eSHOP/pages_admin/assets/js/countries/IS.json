@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "AL", "name" : "Austurland"},
+    { "code" : "HF", "name" : "Hofuoborgarsvaeoi"},
+    { "code" : "NE", "name" : "Norourland eystra"},
+    { "code" : "NV", "name" : "Norourland vestra"},
+    { "code" : "SL", "name" : "Suourland"},
+    { "code" : "SN", "name" : "Suournes"},
+    { "code" : "VF", "name" : "Vestfiroir"},
+    { "code" : "VL", "name" : "Vesturland"}
+]}

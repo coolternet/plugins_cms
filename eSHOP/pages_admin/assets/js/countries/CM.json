@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "ADA", "name" : "Adamawa (Adamaoua)"},
+    { "code" : "CEN", "name" : "Centre"},
+    { "code" : "EST", "name" : "East (Est)"},
+    { "code" : "EXN", "name" : "Extrême-Nord"},
+    { "code" : "LIT", "name" : "Littoral"},
+    { "code" : "NOR", "name" : "North (Nord)"},
+    { "code" : "NOT", "name" : "Northwest (Nord-Ouest)"},
+    { "code" : "OUE", "name" : "West (Ouest)"},
+    { "code" : "SUD", "name" : "South (Sud)"},
+    { "code" : "SOU", "name" : "Southwest (Sud-Ouest)"}
+]}

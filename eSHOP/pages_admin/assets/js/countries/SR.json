@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "BR", "name" : "Brokopondo"},
+    { "code" : "CM", "name" : "Commewijne"},
+    { "code" : "CR", "name" : "Coronie"},
+    { "code" : "MA", "name" : "Marowijne"},
+    { "code" : "NI", "name" : "Nickerie"},
+    { "code" : "PA", "name" : "Para"},
+    { "code" : "PM", "name" : "Paramaribo"},
+    { "code" : "SA", "name" : "Saramacca"},
+    { "code" : "SI", "name" : "Sipaliwini"},
+    { "code" : "WA", "name" : "Wanica"}
+]}

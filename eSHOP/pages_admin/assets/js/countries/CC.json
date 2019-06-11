@@ -1,0 +1,7 @@
+{"states":[
+    { "code" : "D", "name" : "Direction Island"},
+    { "code" : "H", "name" : "Home Island"},
+    { "code" : "O", "name" : "Horsburgh Island"},
+    { "code" : "S", "name" : "South Island"},
+    { "code" : "W", "name" : "West Island"}
+]}

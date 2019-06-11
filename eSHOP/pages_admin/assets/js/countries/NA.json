@@ -1,0 +1,15 @@
+{"states":[
+    { "code" : "CA", "name" : "Caprivi"},
+    { "code" : "ER", "name" : "Erongo"},
+    { "code" : "HA", "name" : "Hardap"},
+    { "code" : "KR", "name" : "Karas"},
+    { "code" : "KV", "name" : "Kavango"},
+    { "code" : "KH", "name" : "Khomas"},
+    { "code" : "KU", "name" : "Kunene"},
+    { "code" : "OW", "name" : "Ohangwena"},
+    { "code" : "OK", "name" : "Omaheke"},
+    { "code" : "OT", "name" : "Omusati"},
+    { "code" : "ON", "name" : "Oshana"},
+    { "code" : "OO", "name" : "Oshikoto"},
+    { "code" : "OJ", "name" : "Otjozondjupa"}
+]}

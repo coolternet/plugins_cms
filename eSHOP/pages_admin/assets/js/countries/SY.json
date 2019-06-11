@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "HA", "name" : "Al Hasakah"},
+    { "code" : "LA", "name" : "Al Ladhiqiyah"},
+    { "code" : "QU", "name" : "Al Qunaytirah"},
+    { "code" : "RQ", "name" : "Ar Raqqah"},
+    { "code" : "SU", "name" : "As Suwayda"},
+    { "code" : "DA", "name" : "Dara"},
+    { "code" : "DZ", "name" : "Dayr az Zawr"},
+    { "code" : "DI", "name" : "Dimashq"},
+    { "code" : "HL", "name" : "Halab"},
+    { "code" : "HM", "name" : "Hamah"},
+    { "code" : "HI", "name" : "Hims"},
+    { "code" : "ID", "name" : "Idlib"},
+    { "code" : "RD", "name" : "Rif Dimashq"},
+    { "code" : "TA", "name" : "Tartus"}
+]}

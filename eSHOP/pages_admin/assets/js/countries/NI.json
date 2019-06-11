@@ -1,0 +1,19 @@
+{"states":[
+    { "code" : "AN", "name" : "Atlantico Norte"},
+    { "code" : "AS", "name" : "Atlantico Sur"},
+    { "code" : "BO", "name" : "Boaco"},
+    { "code" : "CA", "name" : "Carazo"},
+    { "code" : "CI", "name" : "Chinandega"},
+    { "code" : "CO", "name" : "Chontales"},
+    { "code" : "ES", "name" : "Esteli"},
+    { "code" : "GR", "name" : "Granada"},
+    { "code" : "JI", "name" : "Jinotega"},
+    { "code" : "LE", "name" : "Leon"},
+    { "code" : "MD", "name" : "Madriz"},
+    { "code" : "MN", "name" : "Managua"},
+    { "code" : "MS", "name" : "Masaya"},
+    { "code" : "MT", "name" : "Matagalpa"},
+    { "code" : "NS", "name" : "Nuevo Segovia"},
+    { "code" : "RS", "name" : "Rio San Juan"},
+    { "code" : "RI", "name" : "Rivas"}
+]}

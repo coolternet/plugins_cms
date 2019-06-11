@@ -1,0 +1,5 @@
+{"states":[
+    { "code" : "ARR", "name" : "Arrondissements Of The Guadeloup"},
+    { "code" : "CAN", "name" : "Cantons Of The Guadeloup Depart"},
+    { "code" : "COM", "name" : "Communes Of The Guadeloup Depart"}
+]}

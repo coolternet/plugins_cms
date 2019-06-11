@@ -1,0 +1,7 @@
+{"states":[
+    { "code" : "BON", "name" : "Bonaire"},
+    { "code" : "CUR", "name" : "Curaçao"},
+    { "code" : "SAB", "name" : "Saba"},
+    { "code" : "SEU", "name" : "Sint Eustatius"},
+    { "code" : "SMA", "name" : "Sint Maarten"}
+]}

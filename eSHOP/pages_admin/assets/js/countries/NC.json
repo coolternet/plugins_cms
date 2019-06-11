@@ -1,0 +1,5 @@
+{"states":[
+    { "code" : "L", "name" : "Iles Loyaute"},
+    { "code" : "N", "name" : "Nord"},
+    { "code" : "S", "name" : "Sud"}
+]}

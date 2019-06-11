@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "BC", "name" : "Bas-Congo"},
+    { "code" : "BN", "name" : "Bandundu"},
+    { "code" : "EQ", "name" : "Equateur"},
+    { "code" : "KA", "name" : "Katanga"},
+    { "code" : "KE", "name" : "Kasai-Oriental"},
+    { "code" : "KN", "name" : "Kinshasa"},
+    { "code" : "KW", "name" : "Kasai-Occidental"},
+    { "code" : "MA", "name" : "Maniema"},
+    { "code" : "NK", "name" : "Nord-Kivu"},
+    { "code" : "OR", "name" : "Orientale"},
+    { "code" : "SK", "name" : "Sud-Kivu"}
+]}

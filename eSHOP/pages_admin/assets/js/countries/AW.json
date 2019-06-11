@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "ARU", "name" : "Aruba"},
+    { "code" : "DRU", "name" : "Druif Beach"},
+    { "code" : "MAN", "name" : "Manchebo Beach"},
+    { "code" : "NOO", "name" : "Noord"},
+    { "code" : "ORA", "name" : "Oranjestad"},
+    { "code" : "PAL", "name" : "Palm Beach"},
+    { "code" : "ROO", "name" : "Rooi Thomas"},
+    { "code" : "SIN", "name" : "Sint Nicolaas"},
+    { "code" : "SIN", "name" : "Sint Nicolas"},
+    { "code" : "WAY", "name" : "Wayaca"}
+]}

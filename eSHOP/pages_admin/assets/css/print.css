@@ -1,0 +1,53 @@
+.collection, .section-title, .navbar {
+    display:none;
+}
+
+body {
+    background-color: white !important;
+    position: relative;
+    top: -120px;
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 100%;
+    width: 100%;
+    transform: scale (-1);
+}
+#admin-header, .sidenav, #footer, #eshop-header, #invoice-preview-option  {display: none !important;}
+div#evo-section-title div {
+    display: none;
+    border: none !important;
+    position: absolute;
+}
+
+.ui.piled.segment {
+    border:none !important;
+    box-shadow: none;
+    webkit-box-shadow: none;
+}
+.ui.piled.segment:before {
+    border:none !important;
+    box-shadow: none;
+    webkit-box-shadow: none;
+}
+
+.ui.piled.segment:after {
+    border:none !important;
+    box-shadow: none;
+    webkit-box-shadow: none;
+}
+
+table, tr {border: none !important;}
+
+.ui.horizontal.divider {
+    display: table;
+    white-space: nowrap;
+    height: auto;
+    margin: '';
+    line-height: 1;
+    text-align: center;
+}
+
+body
+{
+  margin: 25mm 0mm 0mm 0mm;
+}

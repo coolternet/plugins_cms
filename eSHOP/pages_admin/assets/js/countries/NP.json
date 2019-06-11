@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "BA", "name" : "Bagmati"},
+    { "code" : "BH", "name" : "Bheri"},
+    { "code" : "DH", "name" : "Dhawalagiri"},
+    { "code" : "GA", "name" : "Gandaki"},
+    { "code" : "JA", "name" : "Janakpur"},
+    { "code" : "KA", "name" : "Karnali"},
+    { "code" : "KO", "name" : "Kosi"},
+    { "code" : "LU", "name" : "Lumbini"},
+    { "code" : "MA", "name" : "Mahakali"},
+    { "code" : "ME", "name" : "Mechi"},
+    { "code" : "NA", "name" : "Narayani"},
+    { "code" : "RA", "name" : "Rapti"},
+    { "code" : "SA", "name" : "Sagarmatha"},
+    { "code" : "SE", "name" : "Seti"}
+]}

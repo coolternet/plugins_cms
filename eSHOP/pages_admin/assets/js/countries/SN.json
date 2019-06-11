@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "DA", "name" : "Dakar"},
+    { "code" : "DI", "name" : "Diourbel"},
+    { "code" : "FA", "name" : "Fatick"},
+    { "code" : "KA", "name" : "Kaolack"},
+    { "code" : "KO", "name" : "Kolda"},
+    { "code" : "LO", "name" : "Louga"},
+    { "code" : "MA", "name" : "Matam"},
+    { "code" : "SL", "name" : "Saint-Louis"},
+    { "code" : "TA", "name" : "Tambacounda"},
+    { "code" : "TH", "name" : "Thies"},
+    { "code" : "ZI", "name" : "Ziguinchor"}
+]}

@@ -1,0 +1,20 @@
+{"states":[
+    { "code" : "VT", "name" : "Vientiane"},
+    { "code" : "AT", "name" : "Attapu"},
+    { "code" : "BK", "name" : "Bokeo"},
+    { "code" : "BL", "name" : "Bolikhamxai"},
+    { "code" : "CH", "name" : "Champasak"},
+    { "code" : "HO", "name" : "Houaphan"},
+    { "code" : "KH", "name" : "Khammouan"},
+    { "code" : "LM", "name" : "Louang Namtha"},
+    { "code" : "LP", "name" : "Louangphabang"},
+    { "code" : "OU", "name" : "Oudomxai"},
+    { "code" : "PH", "name" : "Phongsali"},
+    { "code" : "SL", "name" : "Salavan"},
+    { "code" : "SV", "name" : "Savannakhet"},
+    { "code" : "VI", "name" : "Vientiane"},
+    { "code" : "XA", "name" : "Xaignabouli"},
+    { "code" : "XE", "name" : "Xekong"},
+    { "code" : "XI", "name" : "Xiangkhoang"},
+    { "code" : "XN", "name" : "Xaisomboun"}
+]}

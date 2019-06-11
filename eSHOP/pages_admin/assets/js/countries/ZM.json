@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "CE", "name" : "Central"},
+    { "code" : "CB", "name" : "Copperbelt"},
+    { "code" : "EA", "name" : "Eastern"},
+    { "code" : "LP", "name" : "Luapula"},
+    { "code" : "LK", "name" : "Lusaka"},
+    { "code" : "NO", "name" : "Northern"},
+    { "code" : "NW", "name" : "North-Western"},
+    { "code" : "SO", "name" : "Southern"},
+    { "code" : "WE", "name" : "Western"}
+]}

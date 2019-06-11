@@ -1,0 +1,15 @@
+{"states":[
+    { "code" : "AD", "name" : "Adrar"},
+    { "code" : "AS", "name" : "Assaba"},
+    { "code" : "BR", "name" : "Brakna"},
+    { "code" : "DN", "name" : "Dakhlet Nouadhibou"},
+    { "code" : "GO", "name" : "Gorgol"},
+    { "code" : "GM", "name" : "Guidimaka"},
+    { "code" : "HC", "name" : "Hodh Ech Chargui"},
+    { "code" : "HG", "name" : "Hodh El Gharbi"},
+    { "code" : "IN", "name" : "Inchiri"},
+    { "code" : "TA", "name" : "Tagant"},
+    { "code" : "TZ", "name" : "Tiris Zemmour"},
+    { "code" : "TR", "name" : "Trarza"},
+    { "code" : "NO", "name" : "Nouakchott"}
+]}

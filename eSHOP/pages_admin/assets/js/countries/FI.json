@@ -1,0 +1,8 @@
+{"states":[
+    { "code" : "AL", "name" : "Ahvenanmaan Laani"},
+    { "code" : "ES", "name" : "Etela-Suomen Laani"},
+    { "code" : "IS", "name" : "Ita-Suomen Laani"},
+    { "code" : "LS", "name" : "Lansi-Suomen Laani"},
+    { "code" : "LA", "name" : "Lapin Lanani"},
+    { "code" : "OU", "name" : "Oulun Laani"}
+]}

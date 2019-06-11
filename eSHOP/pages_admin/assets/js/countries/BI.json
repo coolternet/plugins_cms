@@ -1,0 +1,18 @@
+{"states":[
+    { "code" : "BB", "name" : "Bubanza"},
+    { "code" : "BJ", "name" : "Bujumbura"},
+    { "code" : "BR", "name" : "Bururi"},
+    { "code" : "CA", "name" : "Cankuzo"},
+    { "code" : "CI", "name" : "Cibitoke"},
+    { "code" : "GI", "name" : "Gitega"},
+    { "code" : "KR", "name" : "Karuzi"},
+    { "code" : "KY", "name" : "Kayanza"},
+    { "code" : "KI", "name" : "Kirundo"},
+    { "code" : "MA", "name" : "Makamba"},
+    { "code" : "MU", "name" : "Muramvya"},
+    { "code" : "MY", "name" : "Muyinga"},
+    { "code" : "MW", "name" : "Mwaro"},
+    { "code" : "NG", "name" : "Ngozi"},
+    { "code" : "RT", "name" : "Rutana"},
+    { "code" : "RY", "name" : "Ruyigi"}
+]}

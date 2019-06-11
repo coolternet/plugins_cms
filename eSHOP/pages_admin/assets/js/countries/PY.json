@@ -1,0 +1,20 @@
+{"states":[
+    { "code" : "AG", "name" : "Alto Paraguay"},
+    { "code" : "AN", "name" : "Alto Parana"},
+    { "code" : "AM", "name" : "Amambay"},
+    { "code" : "AS", "name" : "Asuncion"},
+    { "code" : "BO", "name" : "Boqueron"},
+    { "code" : "CG", "name" : "Caaguazu"},
+    { "code" : "CZ", "name" : "Caazapa"},
+    { "code" : "CN", "name" : "Canindeyu"},
+    { "code" : "CE", "name" : "Central"},
+    { "code" : "CC", "name" : "Concepcion"},
+    { "code" : "CD", "name" : "Cordillera"},
+    { "code" : "GU", "name" : "Guaira"},
+    { "code" : "IT", "name" : "Itapua"},
+    { "code" : "MI", "name" : "Misiones"},
+    { "code" : "NE", "name" : "Neembucu"},
+    { "code" : "PA", "name" : "Paraguari"},
+    { "code" : "PH", "name" : "Presidente Hayes"},
+    { "code" : "SP", "name" : "San Pedro"}
+]}

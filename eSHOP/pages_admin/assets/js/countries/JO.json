@@ -1,0 +1,14 @@
+{"states":[
+    { "code" : "AM", "name" : "Amman"},
+    { "code" : "AJ", "name" : "Ajlun"},
+    { "code" : "AA", "name" : "Al'Aqabah"},
+    { "code" : "AB", "name" : "Al Balqa"},
+    { "code" : "AK", "name" : "Al Karak"},
+    { "code" : "AL", "name" : "Al Mafraq"},
+    { "code" : "AT", "name" : "At Tafilah"},
+    { "code" : "AZ", "name" : "Az Zarqa"},
+    { "code" : "IR", "name" : "Irbid"},
+    { "code" : "JA", "name" : "Jarash"},
+    { "code" : "MA", "name" : "Ma'an"},
+    { "code" : "MD", "name" : "Madaba"}
+]}

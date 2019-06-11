@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "AY", "name" : "Ayeyarwady"},
+    { "code" : "BG", "name" : "Bago"},
+    { "code" : "MG", "name" : "Magway"},
+    { "code" : "MD", "name" : "Mandalay"},
+    { "code" : "SG", "name" : "Sagaing"},
+    { "code" : "TN", "name" : "Tanintharyi"},
+    { "code" : "YG", "name" : "Yangon"},
+    { "code" : "CH", "name" : "Chin State"},
+    { "code" : "KC", "name" : "Kachin State"},
+    { "code" : "KH", "name" : "Kayah State"},
+    { "code" : "KN", "name" : "Kayin State"},
+    { "code" : "MN", "name" : "Mon State"},
+    { "code" : "RK", "name" : "Rakhine State"},
+    { "code" : "SH", "name" : "Shan State"}
+]}

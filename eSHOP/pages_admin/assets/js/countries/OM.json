@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "DA", "name" : "Ad Dakhiliyah"},
+    { "code" : "BA", "name" : "Al Batinah"},
+    { "code" : "WU", "name" : "Al Wusta"},
+    { "code" : "SH", "name" : "Ash Sharqiyah"},
+    { "code" : "ZA", "name" : "Az Zahirah"},
+    { "code" : "MA", "name" : "Masqat"},
+    { "code" : "MU", "name" : "Musandam"},
+    { "code" : "ZU", "name" : "Zufar"}
+]}

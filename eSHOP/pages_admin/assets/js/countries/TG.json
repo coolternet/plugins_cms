@@ -1,0 +1,7 @@
+{"states":[
+    { "code" : "K", "name" : "Kara"},
+    { "code" : "P", "name" : "Plateaux"},
+    { "code" : "S", "name" : "Savanes"},
+    { "code" : "C", "name" : "Centrale"},
+    { "code" : "M", "name" : "Maritime"}
+]}

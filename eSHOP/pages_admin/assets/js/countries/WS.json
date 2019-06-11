@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "AN", "name" : "A'ana"},
+    { "code" : "AI", "name" : "Aiga-i-le-Tai"},
+    { "code" : "AT", "name" : "Atua"},
+    { "code" : "FA", "name" : "Fa'asaleleaga"},
+    { "code" : "GE", "name" : "Gaga'emauga"},
+    { "code" : "GF", "name" : "Gagaifomauga"},
+    { "code" : "PA", "name" : "Palauli"},
+    { "code" : "SA", "name" : "Satupa'itea"},
+    { "code" : "TU", "name" : "Tuamasaga"},
+    { "code" : "VF", "name" : "Va'a-o-Fonoti"},
+    { "code" : "VS", "name" : "Vaisigano"}
+]}

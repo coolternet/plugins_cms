@@ -1,0 +1,19 @@
+{"states":[
+    { "code" : "DZA", "name" : "Dzaoudzi"},
+    { "code" : "PAM", "name" : "Pamandzi"},
+    { "code" : "MAM", "name" : "Mamoudzou"},
+    { "code" : "DEM", "name" : "Dembeni"},
+    { "code" : "BAN", "name" : "Bandrele"},
+    { "code" : "KAN", "name" : "Kani-Kéli"},
+    { "code" : "BOU", "name" : "Bouéni"},
+    { "code" : "CHI", "name" : "Chirongui"},
+    { "code" : "SAD", "name" : "Sada"},
+    { "code" : "OUA", "name" : "Ouangani"},
+    { "code" : "CHI", "name" : "Chiconi"},
+    { "code" : "TSI", "name" : "Tsingoni"},
+    { "code" : "MTS", "name" : "M'Tsangamouji"},
+    { "code" : "ACO", "name" : "Acoua"},
+    { "code" : "MTS", "name" : "Mtsamboro"},
+    { "code" : "BAN", "name" : "Bandraboua"},
+    { "code" : "KOU", "name" : "Koungou"}
+]}

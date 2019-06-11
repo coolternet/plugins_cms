@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "CC", "name" : "Christ Church"},
+    { "code" : "AND", "name" : "Saint Andrew"},
+    { "code" : "GEO", "name" : "Saint George"},
+    { "code" : "JAM", "name" : "Saint James"},
+    { "code" : "JOH", "name" : "Saint John"},
+    { "code" : "JOS", "name" : "Saint Joseph"},
+    { "code" : "LUC", "name" : "Saint Lucy"},
+    { "code" : "MIC", "name" : "Saint Michael"},
+    { "code" : "PET", "name" : "Saint Peter"},
+    { "code" : "PHI", "name" : "Saint Philip"},
+    { "code" : "THO", "name" : "Saint Thomas"}
+]}

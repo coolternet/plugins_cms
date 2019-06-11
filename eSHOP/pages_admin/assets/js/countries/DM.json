@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "AND", "name" : "Saint Andrew Parish"},
+    { "code" : "DAV", "name" : "Saint David Parish"},
+    { "code" : "GEO", "name" : "Saint George Parish"},
+    { "code" : "JOH", "name" : "Saint John Parish"},
+    { "code" : "JOS", "name" : "Saint Joseph Parish"},
+    { "code" : "LUK", "name" : "Saint Luke Parish"},
+    { "code" : "MAR", "name" : "Saint Mark Parish"},
+    { "code" : "PAT", "name" : "Saint Patrick Parish"},
+    { "code" : "PAU", "name" : "Saint Paul Parish"},
+    { "code" : "PET", "name" : "Saint Peter Parish"}
+]}

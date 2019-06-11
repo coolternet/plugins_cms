@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "GA", "name" : "Gao"},
+    { "code" : "KY", "name" : "Kayes"},
+    { "code" : "KD", "name" : "Kidal"},
+    { "code" : "KL", "name" : "Koulikoro"},
+    { "code" : "MP", "name" : "Mopti"},
+    { "code" : "SG", "name" : "Segou"},
+    { "code" : "SK", "name" : "Sikasso"},
+    { "code" : "TB", "name" : "Tombouctou"},
+    { "code" : "CD", "name" : "Bamako Capital District"}
+]}

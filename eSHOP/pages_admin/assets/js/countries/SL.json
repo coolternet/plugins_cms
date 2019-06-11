@@ -1,0 +1,6 @@
+{"states":[
+    { "code" : "E", "name" : "Eastern"},
+    { "code" : "N", "name" : "Northern"},
+    { "code" : "S", "name" : "Southern"},
+    { "code" : "W", "name" : "Western"}
+]}

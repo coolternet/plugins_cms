@@ -1,0 +1,18 @@
+{"states":[
+    { "code" : "BAW", "name" : "Baden-Württemberg"},
+    { "code" : "BAY", "name" : "Bayern"},
+    { "code" : "BER", "name" : "Berlin"},
+    { "code" : "BRG", "name" : "Brandenburg"},
+    { "code" : "BRE", "name" : "Bremen"},
+    { "code" : "HAM", "name" : "Hamburg"},
+    { "code" : "HES", "name" : "Hessen"},
+    { "code" : "MEC", "name" : "Mecklenburg-Vorpommern"},
+    { "code" : "NDS", "name" : "Niedersachsen"},
+    { "code" : "NRW", "name" : "Nordrhein-Westfalen"},
+    { "code" : "RHE", "name" : "Rheinland-Pfalz"},
+    { "code" : "SAR", "name" : "Saarland"},
+    { "code" : "SAS", "name" : "Sachsen"},
+    { "code" : "SAC", "name" : "Sachsen-Anhalt"},
+    { "code" : "SCN", "name" : "Schleswig-Holstein"},
+    { "code" : "THE", "name" : "Thüringen"}
+]}

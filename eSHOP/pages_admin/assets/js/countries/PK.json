@@ -1,0 +1,8 @@
+{"states":[
+    { "code" : "B", "name" : "Balochistan"},
+    { "code" : "T", "name" : "Federally Administered Tribal Ar"},
+    { "code" : "I", "name" : "Islamabad Capital Territory"},
+    { "code" : "N", "name" : "North-West Frontier"},
+    { "code" : "P", "name" : "Punjab"},
+    { "code" : "S", "name" : "Sindh"}
+]}

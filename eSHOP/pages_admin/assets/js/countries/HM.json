@@ -1,0 +1,6 @@
+{"states":[
+    { "code" : "F", "name" : "Flat Island"},
+    { "code" : "M", "name" : "McDonald Island"},
+    { "code" : "S", "name" : "Shag Island"},
+    { "code" : "H", "name" : "Heard Island"}
+]}

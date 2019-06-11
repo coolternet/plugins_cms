@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "A", "name" : "Hlavní město Praha"},
+    { "code" : "B", "name" : "Jihomoravský"},
+    { "code" : "C", "name" : "Jihočeský"},
+    { "code" : "E", "name" : "Pardubický"},
+    { "code" : "H", "name" : "Královéhradecký"},
+    { "code" : "J", "name" : "Vysočina"},
+    { "code" : "K", "name" : "Karlovarský"},
+    { "code" : "L", "name" : "Liberecký"},
+    { "code" : "M", "name" : "Olomoucký"},
+    { "code" : "P", "name" : "Plzeňský"},
+    { "code" : "S", "name" : "Středočeský"},
+    { "code" : "T", "name" : "Moravskoslezský"},
+    { "code" : "U", "name" : "Ústecký"},
+    { "code" : "Z", "name" : "Zlínský"}
+]}

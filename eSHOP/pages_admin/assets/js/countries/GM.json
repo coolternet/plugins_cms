@@ -1,0 +1,15 @@
+{"states":[
+    { "code" : "BJ", "name" : "Banjul"},
+    { "code" : "BS", "name" : "Basse"},
+    { "code" : "BR", "name" : "Brikama"},
+    { "code" : "JA", "name" : "Janjangbure"},
+    { "code" : "KA", "name" : "Kanifeng"},
+    { "code" : "KE", "name" : "Kerewan"},
+    { "code" : "KU", "name" : "Kuntaur"},
+    { "code" : "MA", "name" : "Mansakonko"},
+    { "code" : "LR", "name" : "Lower River"},
+    { "code" : "CR", "name" : "Central River"},
+    { "code" : "NB", "name" : "North Bank"},
+    { "code" : "UR", "name" : "Upper River"},
+    { "code" : "WE", "name" : "Western"}
+]}

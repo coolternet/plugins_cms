@@ -1,0 +1,183 @@
+div [class*="left floated"] {
+    float: left;
+    margin-left: 0.25em;
+}
+
+div [class*="right floated"] {
+    float: right;
+    margin-right: 0.25em;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#invoice_model {
+    padding: 30px;
+    margin-top: 0px !important;
+}
+div#inv_contents table tbody tr td {
+    font-size: 9pt !important;
+}
+
+.borderless {
+    border: none !important;
+}
+
+/* Old CSS from HTML version*/
+table {
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.collection{
+    border: none;
+}
+.collection .collection-item{
+    border:none;
+}
+
+.input > .label > .flag {
+  margin: 0;
+}
+
+/* FIX CSS EvoCMS */
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th{
+    vertical-align: middle !important;
+}
+
+.en-container {
+    box-sizing: inherit;
+    padding-top: 0px !important;
+}
+
+.ui.yellow.message {
+    background-color: #fff8db !important;
+    color: #b58105 !important;
+    -webkit-box-shadow: 0 0 0 1px #b58105 inset, 0 0 0 0 transparent !important;
+    box-shadow: 0 0 0 1px #b58105 inset, 0 0 0 0 transparent !important;
+}
+
+.ui.blue.message {
+    background-color: #dff0ff !important;
+    color: #2185d0 !important;
+    -webkit-box-shadow: 0 0 0 1px #2185d0 inset, 0 0 0 0 transparent !important;
+    box-shadow: 0 0 0 1px #2185d0 inset, 0 0 0 0 transparent !important;
+}
+
+
+
+
+/*
+ * Source : Bootstrap 4.3.1
+ */
+
+.table-danger {
+    background-color: #f5c6cb;
+}
+.ui.modal > .header, .actions_modal {
+    background: #f9fafb;
+    padding: 1rem 1rem;
+    border-top: 1px solid rgba(34,36,38,.15);
+}
+.actions_modal{
+	text-align: right;
+}
+.ui.modal > .header{
+	text-align: left;
+}
+
+.ui.modal > .actions {
+    background: #f9fafb;
+    padding: 1rem 1rem;
+    border-top: 1px solid rgba(34,36,38,.15);
+    text-align: right;
+}
+
+/*
+ * Source : Semantic 2.4
+ */
+
+ .ui.vertical.menu .item > i.icon {
+    margin: 0em 0.5em 0em 0.5em !important;
+}
+
+.ui.left_aligned.header {
+    text-align: left;
+}
+.ui.right_aligned.header {
+    text-align: right;
+}
+.ui.centered_header,
+.ui.center_aligned.header {
+    text-align: center;
+}
+
+.ui.red.table {
+    border-top: 0.2em solid #DB2828;
+    background-color: #fff !important;
+}
+
+.ui.blue.table {
+    border-top: 0.2em solid #2185D0;
+    background-color: #fff !important;
+}
+
+.ui.vertical.tabular.menu .active.item {
+    background: #f2f2f2;
+    color: rgba(0, 0, 0, 0.95);
+    border-color: #D4D4D5;
+    margin: 0px;
+    border-radius: 0.28571429rem 0px 0px 0.28571429rem !important;
+}
+
+.tab > .ui.grid {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+
+/*
+ *  CSS Eshop
+ */
+
+div.eshop-segments-title{
+    background-color: #37474f !important;
+    color: white;
+}
+
+select.eshop_select {
+    border-radius: 5px 0px 0px 5px !important;
+}
+
+#rates-table {
+    border-radius: 5px 5px 0px 0px;
+    border-top: 0.2em solid #6435C9;
+    max-height: 217px;
+    overflow: overlay;
+}
+
+.eshop-item {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+div#newprodstep .active {
+    background: #37474f;
+    color: rgb(255, 255, 255);
+    border-color: #263238;
+}
+
+div#newprodstep .active:after {
+    background-color: #37474f;
+    border-top: none;
+    border-right: none;
+	right: 0.01%;
+}

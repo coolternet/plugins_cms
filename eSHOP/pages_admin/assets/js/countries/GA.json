@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "ES", "name" : "Estuaire"},
+    { "code" : "HO", "name" : "Haut-Ogooue"},
+    { "code" : "MO", "name" : "Moyen-Ogooue"},
+    { "code" : "NG", "name" : "Ngounie"},
+    { "code" : "NY", "name" : "Nyanga"},
+    { "code" : "OI", "name" : "Ogooue-Ivindo"},
+    { "code" : "OL", "name" : "Ogooue-Lolo"},
+    { "code" : "OM", "name" : "Ogooue-Maritime"},
+    { "code" : "WN", "name" : "Woleu-Ntem"}
+]}

@@ -1,0 +1,19 @@
+{"states":[
+    { "code" : "BAN", "name" : "Bangui"},
+    { "code" : "BBA", "name" : "Bamingui-Bangoran"},
+    { "code" : "BKO", "name" : "Basse-Kotto"},
+    { "code" : "HKO", "name" : "Haute-Kotto"},
+    { "code" : "HMB", "name" : "Haut-Mbomou"},
+    { "code" : "KEM", "name" : "Kemo"},
+    { "code" : "LOB", "name" : "Lobaye"},
+    { "code" : "MBO", "name" : "Mbomou"},
+    { "code" : "MKD", "name" : "Mambéré-Kadéï"},
+    { "code" : "NGR", "name" : "Nana-Grebizi"},
+    { "code" : "NMM", "name" : "Nana-Mambere"},
+    { "code" : "OMP", "name" : "Ombella M'Poko"},
+    { "code" : "OPE", "name" : "Ouham-Pende"},
+    { "code" : "OUH", "name" : "Ouham"},
+    { "code" : "OUK", "name" : "Ouaka"},
+    { "code" : "SMB", "name" : "Sangha-Mbaere"},
+    { "code" : "VAK", "name" : "Vakaga"}
+]}

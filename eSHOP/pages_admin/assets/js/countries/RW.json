@@ -1,0 +1,14 @@
+{"states":[
+    { "code" : "BU", "name" : "Butare"},
+    { "code" : "BY", "name" : "Byumba"},
+    { "code" : "CY", "name" : "Cyangugu"},
+    { "code" : "GK", "name" : "Gikongoro"},
+    { "code" : "GS", "name" : "Gisenyi"},
+    { "code" : "GT", "name" : "Gitarama"},
+    { "code" : "KG", "name" : "Kibungo"},
+    { "code" : "KY", "name" : "Kibuye"},
+    { "code" : "KR", "name" : "Kigali Rurale"},
+    { "code" : "KV", "name" : "Kigali-ville"},
+    { "code" : "RU", "name" : "Ruhengeri"},
+    { "code" : "UM", "name" : "Umutara"}
+]}

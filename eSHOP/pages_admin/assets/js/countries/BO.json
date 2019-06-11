@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "BEN", "name" : "Beni"},
+    { "code" : "CHU", "name" : "Chuquisaca"},
+    { "code" : "COC", "name" : "Cochabamba"},
+    { "code" : "LPZ", "name" : "La Paz"},
+    { "code" : "ORU", "name" : "Oruro"},
+    { "code" : "PAN", "name" : "Pando"},
+    { "code" : "POT", "name" : "Potosi"},
+    { "code" : "SCZ", "name" : "Santa Cruz"},
+    { "code" : "TAR", "name" : "Tarija"}
+]}

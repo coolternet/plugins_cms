@@ -1,0 +1,15 @@
+{"states":[
+    { "code" : "BI", "name" : "Bomi"},
+    { "code" : "BG", "name" : "Bong"},
+    { "code" : "GB", "name" : "Grand Bassa"},
+    { "code" : "CM", "name" : "Grand Cape Mount"},
+    { "code" : "GG", "name" : "Grand Gedeh"},
+    { "code" : "GK", "name" : "Grand Kru"},
+    { "code" : "LO", "name" : "Lofa"},
+    { "code" : "MG", "name" : "Margibi"},
+    { "code" : "ML", "name" : "Maryland"},
+    { "code" : "MS", "name" : "Montserrado"},
+    { "code" : "NB", "name" : "Nimba"},
+    { "code" : "RC", "name" : "River Cess"},
+    { "code" : "SN", "name" : "Sinoe"}
+]}

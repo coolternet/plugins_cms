@@ -1,0 +1,22 @@
+{"states":[
+    { "code" : "AC", "name" : "Açores"},
+    { "code" : "AV", "name" : "Aveiro"},
+    { "code" : "BE", "name" : "Beja"},
+    { "code" : "BR", "name" : "Braga"},
+    { "code" : "BA", "name" : "Bragança"},
+    { "code" : "CB", "name" : "Castelo Branco"},
+    { "code" : "CO", "name" : "Coimbra"},
+    { "code" : "EV", "name" : "évora"},
+    { "code" : "FA", "name" : "Faro"},
+    { "code" : "GU", "name" : "Guarda"},
+    { "code" : "LE", "name" : "Leiria"},
+    { "code" : "LI", "name" : "Lisboa"},
+    { "code" : "ME", "name" : "Madeira"},
+    { "code" : "PO", "name" : "Portalegre"},
+    { "code" : "PR", "name" : "Porto"},
+    { "code" : "SA", "name" : "Santarém"},
+    { "code" : "SE", "name" : "SetÚbal"},
+    { "code" : "VC", "name" : "Viana do Castelo"},
+    { "code" : "VR", "name" : "Vila Real"},
+    { "code" : "VI", "name" : "Viseu"}
+]}

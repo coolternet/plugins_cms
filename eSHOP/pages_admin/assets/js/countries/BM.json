@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "DS", "name" : "Devonshire"},
+    { "code" : "HC", "name" : "Hamilton City"},
+    { "code" : "HA", "name" : "Hamilton"},
+    { "code" : "PG", "name" : "Paget"},
+    { "code" : "PB", "name" : "Pembroke"},
+    { "code" : "GC", "name" : "Saint George City"},
+    { "code" : "SG", "name" : "Saint George's"},
+    { "code" : "SA", "name" : "Sandys"},
+    { "code" : "SM", "name" : "Smith's"},
+    { "code" : "SH", "name" : "Southampton"},
+    { "code" : "WA", "name" : "Warwick"}
+]}

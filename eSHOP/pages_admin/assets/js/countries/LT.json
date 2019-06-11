@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "AL", "name" : "Alytus"},
+    { "code" : "KA", "name" : "Kaunas"},
+    { "code" : "KL", "name" : "Klaipeda"},
+    { "code" : "MA", "name" : "Marijampole"},
+    { "code" : "PA", "name" : "Panevezys"},
+    { "code" : "SI", "name" : "Siauliai"},
+    { "code" : "TA", "name" : "Taurage"},
+    { "code" : "TE", "name" : "Telsiai"},
+    { "code" : "UT", "name" : "Utena"},
+    { "code" : "VI", "name" : "Vilnius"}
+]}

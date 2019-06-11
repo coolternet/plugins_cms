@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "BO", "name" : "Bouenza"},
+    { "code" : "BR", "name" : "Brazzaville"},
+    { "code" : "CU", "name" : "Cuvette"},
+    { "code" : "CO", "name" : "Cuvette-Ouest"},
+    { "code" : "KO", "name" : "Kouilou"},
+    { "code" : "LE", "name" : "Lekoumou"},
+    { "code" : "LI", "name" : "Likouala"},
+    { "code" : "NI", "name" : "Niari"},
+    { "code" : "PL", "name" : "Plateaux"},
+    { "code" : "PO", "name" : "Pool"},
+    { "code" : "SA", "name" : "Sangha"}
+]}

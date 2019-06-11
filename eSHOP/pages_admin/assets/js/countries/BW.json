@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "CE", "name" : "Central"},
+    { "code" : "GH", "name" : "Ghanzi"},
+    { "code" : "KD", "name" : "Kgalagadi"},
+    { "code" : "KT", "name" : "Kgatleng"},
+    { "code" : "KW", "name" : "Kweneng"},
+    { "code" : "NG", "name" : "Ngamiland"},
+    { "code" : "NE", "name" : "North East"},
+    { "code" : "NW", "name" : "North West"},
+    { "code" : "SE", "name" : "South East"},
+    { "code" : "SO", "name" : "Southern"}
+]}

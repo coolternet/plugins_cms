@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "EAS", "name" : "East Side"},
+    { "code" : "NOR", "name" : "North District"},
+    { "code" : "REC", "name" : "Reclamation Areas"},
+    { "code" : "SAN", "name" : "Sandpits Area"},
+    { "code" : "SOU", "name" : "South District"},
+    { "code" : "TOW", "name" : "Town Area"},
+    { "code" : "UPP", "name" : "Upper Town"},
+    { "code" : "OTH", "name" : "Other"}
+]}

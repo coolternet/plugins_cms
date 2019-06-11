@@ -1,0 +1,22 @@
+{"states":[
+    { "code" : "AAD", "name" : "Ari Atoll Dheknu"},
+    { "code" : "AAU", "name" : "Ari Atoll Uthuru"},
+    { "code" : "ADD", "name" : "Addu"},
+    { "code" : "FAA", "name" : "Faadhippolhu"},
+    { "code" : "FEA", "name" : "Felidhe Atoll"},
+    { "code" : "FMU", "name" : "Fua Mulaku"},
+    { "code" : "HAD", "name" : "Huvadhu Atoll Dhekunu"},
+    { "code" : "HAU", "name" : "Huvadhu Atoll Uthuru"},
+    { "code" : "HDH", "name" : "Hadhdhunmathi"},
+    { "code" : "KLH", "name" : "Kolhumadulu"},
+    { "code" : "MAA", "name" : "Male Atoll"},
+    { "code" : "MAD", "name" : "Maalhosmadulu Dhekunu"},
+    { "code" : "MAU", "name" : "Maalhosmadulu Uthuru"},
+    { "code" : "MLD", "name" : "Miladhunmadulu Dhekunu"},
+    { "code" : "MLU", "name" : "Miladhunmadulu Uthuru"},
+    { "code" : "MUA", "name" : "Mulaku Atoll"},
+    { "code" : "NAD", "name" : "Nilandhe Atoll Dhekunu"},
+    { "code" : "NAU", "name" : "Nilandhe Atoll Uthuru"},
+    { "code" : "THD", "name" : "Thiladhunmathi Dhekunu"},
+    { "code" : "THU", "name" : "Thiladhunmathi Uthuru"}
+]}

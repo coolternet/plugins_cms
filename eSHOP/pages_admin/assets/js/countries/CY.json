@@ -1,0 +1,8 @@
+{"states":[
+    { "code" : "F", "name" : "Famagusta"},
+    { "code" : "K", "name" : "Kyrenia"},
+    { "code" : "A", "name" : "Larnaca"},
+    { "code" : "I", "name" : "Limassol"},
+    { "code" : "N", "name" : "Nicosia"},
+    { "code" : "P", "name" : "Paphos"}
+]}

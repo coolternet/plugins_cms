@@ -1,0 +1,19 @@
+{"states":[
+    { "code" : "BV", "name" : "Boa Vista"},
+    { "code" : "BR", "name" : "Brava"},
+    { "code" : "CS", "name" : "Calheta de Sao Miguel"},
+    { "code" : "MA", "name" : "Maio"},
+    { "code" : "MO", "name" : "Mosteiros"},
+    { "code" : "PA", "name" : "Paul"},
+    { "code" : "PN", "name" : "Porto Novo"},
+    { "code" : "PR", "name" : "Praia"},
+    { "code" : "RG", "name" : "Ribeira Grande"},
+    { "code" : "SL", "name" : "Sal"},
+    { "code" : "CA", "name" : "Santa Catarina"},
+    { "code" : "CR", "name" : "Santa Cruz"},
+    { "code" : "SD", "name" : "Sao Domingos"},
+    { "code" : "SF", "name" : "Sao Filipe"},
+    { "code" : "SN", "name" : "Sao Nicolau"},
+    { "code" : "SV", "name" : "Sao Vicente"},
+    { "code" : "TA", "name" : "Tarrafal"}
+]}

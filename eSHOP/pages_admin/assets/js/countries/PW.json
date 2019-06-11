@@ -1,0 +1,18 @@
+{"states":[
+    { "code" : "AM", "name" : "Aimeliik"},
+    { "code" : "AR", "name" : "Airai"},
+    { "code" : "AN", "name" : "Angaur"},
+    { "code" : "HA", "name" : "Hatohobei"},
+    { "code" : "KA", "name" : "Kayangel"},
+    { "code" : "KO", "name" : "Koror"},
+    { "code" : "ME", "name" : "Melekeok"},
+    { "code" : "NA", "name" : "Ngaraard"},
+    { "code" : "NG", "name" : "Ngarchelong"},
+    { "code" : "ND", "name" : "Ngardmau"},
+    { "code" : "NT", "name" : "Ngatpang"},
+    { "code" : "NC", "name" : "Ngchesar"},
+    { "code" : "NR", "name" : "Ngeremlengui"},
+    { "code" : "NW", "name" : "Ngiwal"},
+    { "code" : "PE", "name" : "Peleliu"},
+    { "code" : "SO", "name" : "Sonsorol"}
+]}

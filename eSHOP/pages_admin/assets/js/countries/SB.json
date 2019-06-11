@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "CE", "name" : "Central"},
+    { "code" : "CH", "name" : "Choiseul"},
+    { "code" : "GC", "name" : "Guadalcanal"},
+    { "code" : "HO", "name" : "Honiara"},
+    { "code" : "IS", "name" : "Isabel"},
+    { "code" : "MK", "name" : "Makira"},
+    { "code" : "ML", "name" : "Malaita"},
+    { "code" : "RB", "name" : "Rennell and Bellona"},
+    { "code" : "TM", "name" : "Temotu"},
+    { "code" : "WE", "name" : "Western"}
+]}

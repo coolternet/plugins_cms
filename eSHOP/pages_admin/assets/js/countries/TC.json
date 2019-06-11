@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "AC", "name" : "Ambergris Cays"},
+    { "code" : "DC", "name" : "Dellis Cay"},
+    { "code" : "FC", "name" : "French Cay"},
+    { "code" : "LW", "name" : "Little Water Cay"},
+    { "code" : "RC", "name" : "Parrot Cay"},
+    { "code" : "PN", "name" : "Pine Cay"},
+    { "code" : "SL", "name" : "Salt Cay"},
+    { "code" : "GT", "name" : "Grand Turk"},
+    { "code" : "SC", "name" : "South Caicos"},
+    { "code" : "EC", "name" : "East Caicos"},
+    { "code" : "MC", "name" : "Middle Caicos"},
+    { "code" : "NC", "name" : "North Caicos"},
+    { "code" : "PR", "name" : "Providenciales"},
+    { "code" : "WC", "name" : "West Caicos"}
+]}

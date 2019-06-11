@@ -1,0 +1,8 @@
+{"states":[
+    { "code" : "AN", "name" : "Antananarivo"},
+    { "code" : "AS", "name" : "Antsiranana"},
+    { "code" : "FN", "name" : "Fianarantsoa"},
+    { "code" : "MJ", "name" : "Mahajanga"},
+    { "code" : "TM", "name" : "Toamasina"},
+    { "code" : "TL", "name" : "Toliara"}
+]}

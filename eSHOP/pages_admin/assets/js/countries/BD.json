@@ -1,0 +1,8 @@
+{"states":[
+    { "code" : "BAR", "name" : "Barisal"},
+    { "code" : "CHI", "name" : "Chittagong"},
+    { "code" : "DHA", "name" : "Dhaka"},
+    { "code" : "KHU", "name" : "Khulna"},
+    { "code" : "RAJ", "name" : "Rajshahi"},
+    { "code" : "SYL", "name" : "Sylhet"}
+]}

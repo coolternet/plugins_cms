@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "CE", "name" : "Central"},
+    { "code" : "EA", "name" : "Eastern"},
+    { "code" : "NC", "name" : "North Central"},
+    { "code" : "NO", "name" : "Northern"},
+    { "code" : "NW", "name" : "North Western"},
+    { "code" : "SA", "name" : "Sabaragamuwa"},
+    { "code" : "SO", "name" : "Southern"},
+    { "code" : "UV", "name" : "Uva"},
+    { "code" : "WE", "name" : "Western"}
+]}

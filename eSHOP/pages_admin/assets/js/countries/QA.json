@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "DW", "name" : "Ad Dawhah"},
+    { "code" : "GW", "name" : "Al Ghuwayriyah"},
+    { "code" : "JM", "name" : "Al Jumayliyah"},
+    { "code" : "KR", "name" : "Al Khawr"},
+    { "code" : "WK", "name" : "Al Wakrah"},
+    { "code" : "RN", "name" : "Ar Rayyan"},
+    { "code" : "JB", "name" : "Jarayan al Batinah"},
+    { "code" : "MS", "name" : "Madinat ash Shamal"},
+    { "code" : "UD", "name" : "Umm Sa'id"},
+    { "code" : "UL", "name" : "Umm Salal"}
+]}

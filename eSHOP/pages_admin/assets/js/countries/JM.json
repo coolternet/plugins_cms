@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "CLA", "name" : "Clarendon Parish"},
+    { "code" : "HAN", "name" : "Hanover Parish"},
+    { "code" : "KIN", "name" : "Kingston Parish"},
+    { "code" : "MAN", "name" : "Manchester Parish"},
+    { "code" : "POR", "name" : "Portland Parish"},
+    { "code" : "AND", "name" : "Saint Andrew Parish"},
+    { "code" : "ANN", "name" : "Saint Ann Parish"},
+    { "code" : "CAT", "name" : "Saint Catherine Parish"},
+    { "code" : "ELI", "name" : "Saint Elizabeth Parish"},
+    { "code" : "JAM", "name" : "Saint James Parish"},
+    { "code" : "MAR", "name" : "Saint Mary Parish"},
+    { "code" : "THO", "name" : "Saint Thomas Parish"},
+    { "code" : "TRL", "name" : "Trelawny Parish"},
+    { "code" : "WML", "name" : "Westmoreland Parish"}
+]}

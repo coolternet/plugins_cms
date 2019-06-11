@@ -1,0 +1,7 @@
+{"states":[
+    { "code" : "M", "name" : "Archipel des Marquises"},
+    { "code" : "T", "name" : "Archipel des Tuamotu"},
+    { "code" : "I", "name" : "Archipel des Tubuai"},
+    { "code" : "V", "name" : "Iles du Vent"},
+    { "code" : "S", "name" : "Iles Sous-le-Vent"}
+]}

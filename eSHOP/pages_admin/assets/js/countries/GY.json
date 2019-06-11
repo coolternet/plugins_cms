@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "BW", "name" : "Barima-Waini"},
+    { "code" : "CM", "name" : "Cuyuni-Mazaruni"},
+    { "code" : "DM", "name" : "Demerara-Mahaica"},
+    { "code" : "EC", "name" : "East Berbice-Corentyne"},
+    { "code" : "EW", "name" : "Essequibo Islands-West Demerara"},
+    { "code" : "MB", "name" : "Mahaica-Berbice"},
+    { "code" : "PM", "name" : "Pomeroon-Supenaam"},
+    { "code" : "PI", "name" : "Potaro-Siparuni"},
+    { "code" : "UD", "name" : "Upper Demerara-Berbice"},
+    { "code" : "UT", "name" : "Upper Takutu-Upper Essequibo"}
+]}

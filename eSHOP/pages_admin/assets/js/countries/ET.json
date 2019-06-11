@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "AF", "name" : "Afar"},
+    { "code" : "AH", "name" : "Amhara"},
+    { "code" : "BG", "name" : "Benishangul-Gumaz"},
+    { "code" : "GB", "name" : "Gambela"},
+    { "code" : "HR", "name" : "Hariai"},
+    { "code" : "OR", "name" : "Oromia"},
+    { "code" : "SM", "name" : "Somali"},
+    { "code" : "SN", "name" : "Southern Nations - Nationalities"},
+    { "code" : "TG", "name" : "Tigray"},
+    { "code" : "AA", "name" : "Addis Ababa"},
+    { "code" : "DD", "name" : "Dire Dawa"}
+]}

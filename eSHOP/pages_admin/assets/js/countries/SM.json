@@ -1,0 +1,11 @@
+{"states":[
+    { "code" : "AC", "name" : "Acquaviva"},
+    { "code" : "BM", "name" : "Borgo Maggiore"},
+    { "code" : "CH", "name" : "Chiesanuova"},
+    { "code" : "DO", "name" : "Domagnano"},
+    { "code" : "FA", "name" : "Faetano"},
+    { "code" : "FI", "name" : "Fiorentino"},
+    { "code" : "MO", "name" : "Montegiardino"},
+    { "code" : "SM", "name" : "Citta di San Marino"},
+    { "code" : "SE", "name" : "Serravalle"}
+]}

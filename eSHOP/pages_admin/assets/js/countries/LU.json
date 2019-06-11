@@ -1,0 +1,14 @@
+{"states":[
+    { "code" : "DD", "name" : "Diekirch"},
+    { "code" : "DC", "name" : "Clervaux"},
+    { "code" : "DR", "name" : "Redange"},
+    { "code" : "DV", "name" : "Vianden"},
+    { "code" : "DW", "name" : "Wiltz"},
+    { "code" : "GG", "name" : "Grevenmacher"},
+    { "code" : "GE", "name" : "Echternach"},
+    { "code" : "GR", "name" : "Remich"},
+    { "code" : "LL", "name" : "Luxembourg"},
+    { "code" : "LC", "name" : "Capellen"},
+    { "code" : "LE", "name" : "Esch-sur-Alzette"},
+    { "code" : "LM", "name" : "Mersch"}
+]}

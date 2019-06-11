@@ -1,0 +1,9 @@
+{"states":[
+    { "code" : "ALV", "name" : "Andorra la Vella"},
+    { "code" : "CAN", "name" : "Canillo"},
+    { "code" : "ENC", "name" : "Encamp"},
+    { "code" : "ESE", "name" : "Escaldes-Engordany"},
+    { "code" : "LMA", "name" : "La Massana"},
+    { "code" : "ORD", "name" : "Ordino"},
+    { "code" : "SJL", "name" : "Sant Julià de Lòria"}
+]}

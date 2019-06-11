@@ -1,0 +1,10 @@
+{"states":[
+    { "code" : "ASG", "name" : "Saint George"},
+    { "code" : "ASH", "name" : "Saint Philip"},
+    { "code" : "ASJ", "name" : "Saint John"},
+    { "code" : "ASL", "name" : "Saint Paul"},
+    { "code" : "ASM", "name" : "Saint Mary"},
+    { "code" : "ASR", "name" : "Saint Peter"},
+    { "code" : "BAR", "name" : "Barbuda"},
+    { "code" : "RED", "name" : "Redonda"}
+]}

@@ -1,0 +1,7 @@
+{"states":[
+	{ "code" : "E", "name" : "Eastern"},
+	{ "code" : "M", "name" : "Manua"},
+	{ "code" : "R", "name" : "Rose Island"},
+	{ "code" : "S", "name" : "Swains Island"},
+	{ "code" : "W", "name" : "Western"}
+]}

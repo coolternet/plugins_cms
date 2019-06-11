@@ -1,0 +1,12 @@
+{"states":[
+    { "code" : "BE", "name" : "Berea"},
+    { "code" : "BB", "name" : "Butha-Buthe"},
+    { "code" : "LE", "name" : "Leribe"},
+    { "code" : "MF", "name" : "Mafeteng"},
+    { "code" : "MS", "name" : "Maseru"},
+    { "code" : "MH", "name" : "Mohale's Hoek"},
+    { "code" : "MK", "name" : "Mokhotlong"},
+    { "code" : "QN", "name" : "Qacha's Nek"},
+    { "code" : "QT", "name" : "Quthing"},
+    { "code" : "TT", "name" : "Thaba-Tseka"}
+]}

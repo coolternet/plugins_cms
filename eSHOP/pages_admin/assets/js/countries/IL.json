@@ -1,0 +1,13 @@
+{"states":[
+    { "code" : "BS", "name" : "Be'er Sheva"},
+    { "code" : "BH", "name" : "Bika'at Hayarden"},
+    { "code" : "EA", "name" : "Eilat and Arava"},
+    { "code" : "GA", "name" : "Galil"},
+    { "code" : "HA", "name" : "Haifa"},
+    { "code" : "JM", "name" : "Jehuda Mountains"},
+    { "code" : "JE", "name" : "Jerusalem"},
+    { "code" : "NE", "name" : "Negev"},
+    { "code" : "SE", "name" : "Semaria"},
+    { "code" : "SH", "name" : "Sharon"},
+    { "code" : "TA", "name" : "Tel Aviv (Gosh Dan)"}
+]}

@@ -1,0 +1,17 @@
+{"states":[
+    { "code" : "HA", "name" : "Harjumaa (Tallinn)"},
+    { "code" : "HI", "name" : "Hiiumaa (Kardla)"},
+    { "code" : "IV", "name" : "Ida-Virumaa (Johvi)"},
+    { "code" : "JA", "name" : "Jarvamaa (Paide)"},
+    { "code" : "JO", "name" : "Jogevamaa (Jogeva)"},
+    { "code" : "LV", "name" : "Laane-Virumaa (Rakvere)"},
+    { "code" : "LA", "name" : "Laanemaa (Haapsalu)"},
+    { "code" : "PA", "name" : "Parnumaa (Parnu)"},
+    { "code" : "PO", "name" : "Polvamaa (Polva)"},
+    { "code" : "RA", "name" : "Raplamaa (Rapla)"},
+    { "code" : "SA", "name" : "Saaremaa (Kuessaare)"},
+    { "code" : "TA", "name" : "Tartumaa (Tartu)"},
+    { "code" : "VA", "name" : "Valgamaa (Valga)"},
+    { "code" : "VI", "name" : "Viljandimaa (Viljandi)"},
+    { "code" : "VO", "name" : "Vorumaa (Voru)"}
+]}

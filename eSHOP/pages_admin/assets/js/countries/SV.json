@@ -1,0 +1,16 @@
+{"states":[
+    { "code" : "AH", "name" : "Ahuachapan"},
+    { "code" : "CA", "name" : "Cabanas"},
+    { "code" : "CH", "name" : "Chalatenango"},
+    { "code" : "CU", "name" : "Cuscatlan"},
+    { "code" : "LB", "name" : "La Libertad"},
+    { "code" : "PZ", "name" : "La Paz"},
+    { "code" : "UN", "name" : "La Union"},
+    { "code" : "MO", "name" : "Morazan"},
+    { "code" : "SM", "name" : "San Miguel"},
+    { "code" : "SS", "name" : "San Salvador"},
+    { "code" : "SV", "name" : "San Vicente"},
+    { "code" : "SA", "name" : "Santa Ana"},
+    { "code" : "SO", "name" : "Sonsonate"},
+    { "code" : "US", "name" : "Usulutan"}
+]}

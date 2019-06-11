@@ -1,0 +1,17 @@
+{"states":[
+    { "code" : "CA", "name" : "Camaguey"},
+    { "code" : "CD", "name" : "Ciego de Avila"},
+    { "code" : "CI", "name" : "Cienfuegos"},
+    { "code" : "CH", "name" : "Ciudad de La Habana"},
+    { "code" : "GR", "name" : "Granma"},
+    { "code" : "GU", "name" : "Guantanamo"},
+    { "code" : "HO", "name" : "Holguin"},
+    { "code" : "IJ", "name" : "Isla de la Juventud"},
+    { "code" : "LH", "name" : "La Habana"},
+    { "code" : "LT", "name" : "Las Tunas"},
+    { "code" : "MA", "name" : "Matanzas"},
+    { "code" : "PR", "name" : "Pinar del Rio"},
+    { "code" : "SS", "name" : "Sancti Spiritus"},
+    { "code" : "SC", "name" : "Santiago de Cuba"},
+    { "code" : "VC", "name" : "Villa Clara"}
+]}
