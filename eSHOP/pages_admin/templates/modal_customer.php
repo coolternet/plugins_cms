@@ -155,7 +155,7 @@
 
 		<div class="ui stretched tab" data-tab="customer_activity">
             <h4 class="ui dividing header">eShop Event Log (5 last results)</h4>
-            <table name="customer_activity" class="ui very basic table">
+            <table name="customer_activity" class="ui table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -168,7 +168,7 @@
             </table>
             <br>
             <h4 class="ui dividing header">System Event Log (5 last results)</h4>
-            <table name="system_activity" class="ui very basic table">
+            <table name="system_activity" class="ui table">
                 <thead>
                     <tr>
                         <th>ID</th>

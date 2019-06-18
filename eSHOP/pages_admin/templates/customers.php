@@ -27,11 +27,11 @@
             </div>
         </div>
         <form method="post">
-            <table class="ui very basic table">
+            <table class="ui table">
                 <thead>
                     <tr>
                         <th class="collapsing">
-                            <div class="ui checkbox">
+                            <div class="ui checkbox middle aligned">
                                 <input type="checkbox" id="checkAll">
                                 <label for="checkAll"> </label>
                             </div>
@@ -46,7 +46,7 @@
                     <?php foreach(get_customers() as $user_list) { ?>
                     <tr>
                         <td class="collapsing">
-                            <div class="ui checkbox">
+                            <div class="ui checkbox middle aligned">
                                 <input type="checkbox" id="<?= $user_list['id'] ?>">
                                 <label for="<?= $user_list['id'] ?>"> </label>
                             </div>

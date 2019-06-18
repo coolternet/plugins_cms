@@ -6,6 +6,8 @@
         $currency = get_eshop_currency();
         
         $provider = get_eshop_currency_provider();
+		
+		$taxes = eshop_taxes();
         
         include 'templates/settings.php';
     ?>

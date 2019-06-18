@@ -62,7 +62,6 @@
 	 */
 	function eshop_log_event($event = '')
 	{	
-	    /*
 	    global $user_session;
 		return \DB::Insert('eshop_log', [
 			'uid'   		=> $user_session['id'] ?: 0,
@@ -70,7 +69,6 @@
     		'ip'            => $_SERVER['REMOTE_ADDR'],
     		'event'         => $event
 		]);
-		*/
 	}
 
 	function evocms_log($uid) {
@@ -239,20 +237,23 @@
             }
             
         /*** Change default currency ***/
-            
-            if (isset($_POST['save_default_currency'])) {
-                
-                $code = $_POST['currency'];
-                
+		
+			function update_default_currency($code){
+				
                 // Query for replacement of the value
-                \DB::Exec("Update `eshop_settings` SET `shop_currency_default` = :code", [':code' => $code]);
-
-                // Alert Ajax for success
-			    App::setSuccess('Default currency is changed for '.$code.' with success');
+                \DB::Exec("Update {eshop_settings} SET `shop_currency_default` = :code", [':code' => $code]);
 			    
 			    // Log system
 				eshop_log_event('Default currency is changed for '.$code);
+				
+				return 'success';
+			}
+            
+			/*
+            if (isset($_POST['save_default_currency'])) {
+                $code = $_POST['currency'];
             }
+			*/
             
         
         /*** Change provider of currency (Bank) ***/ ### Next Feature !
@@ -399,9 +400,91 @@
 
 			#eshop_log_event('Default currency is changed for '.$code);
         }
+		
+	// Count products per subcategory
+		
+	// GET every tax
+	function eshop_taxes(){
+		return \DB::QueryAll('SELECT * FROM {eshop_taxes}');
+	}
+	
+	// GET Only one tax to editor
+	function eshop_get_taxe($id){
+		return \DB::Get('SELECT * FROM {eshop_taxes} WHERE `id` = :id', [':id' => $id]);
+	}
+	
+	// Delete only one tax
+	function eshop_delete_taxe($id){
+		return \DB::Delete('eshop_taxes', ['id' => $id]);
+	}
+	
+	// Create a tax
+	function eshop_create_taxe($name, $code, $rate, $tnum){
+		\DB::Insert('eshop_taxes', ['name' => $name, 'code' => $code, 'rate' => $rate, 'tnumber' => $tnum]);
+		return \DB::$insert_id;
+	}
+	
+	// Save changes of tax settings
+	function eshop_edit_taxe($id, $name, $code, $rate, $tnum){
+		$query = \DB::Get('SELECT * FROM {eshop_taxes} WHERE `id` = :id', [':id' => $id]);
+		if($query){
+			\DB::Exec('UPDATE {eshop_taxes} SET `name` = :name, `code` = :code, `rate` = :rate, `tnumber` = :tnumber WHERE id = :id', [
+				':id'		=> $id,
+				':name'		=> $name,
+				':code' 	=> $code,
+				':rate' 	=> $rate,
+				':tnumber' 	=> $tnum
+			]);
+			eshop_log_event('La taxe '. $code .' a été mis à jour');
+			return '1';
+		}else{
+			return '0';
+		}
+	}
+	
+	// GET a Category
+	function eshop_get_category($id){
+		return \DB::Get('SELECT * FROM {eshop_products_categories} WHERE `id` = :id', [':id' => $id]);
+	}
+	
+	// GET all Categories
+	function eshop_get_categories(){
+		return \DB::QueryAll('SELECT * FROM {eshop_products_categories}');
+	}
+	
+	// Create a new category
+	function eshop_create_category($name){
+		$slug = format_slug($name);
+		\DB::Insert('eshop_products_categories', ['name' => $name, 'slug_name' => $slug]);
+		return \DB::$insert_id;
+	}
+	
+	// Update a category
+	function eshop_update_category($id, $name){
+		$slug = format_slug($name);
+		\DB::Update('eshop_products_categories', ['name' => $name, 'slug_name' => $slug], ['id' => $id]);
+		eshop_log_event('La catégory '. $name .' à été modifiée.');
+		return '1';
+	}
+	
+	// Delete a category
+	function eshop_delete_category($id){
+		return \DB::Delete('eshop_products_categories', ['id' => $id]);
+	}
+	
+	// Create a new sub-category
+	function eshop_create_subcategory($name, $subname){
+		$slug = format_slug($name);
+		\DB::Insert('eshop_products_sub_categories', ['name' => $name, 'slug_name' => $slug, 'category_id' => $subname]);
+		return \DB::$insert_id;
+	}
 	
 	
-	
+	// Count sub-category per category
+	function subcat_counting($id){
+		$query = \DB::QueryAll("SELECT Count(*) AS nbr FROM eshop_products_sub_categories WHERE category_id = :cid", [':cid' => $id]);
+		return $query[0]['nbr'];
+	}
 	
 /*
 	function eshop_customers_update() {

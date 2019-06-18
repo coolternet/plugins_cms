@@ -15,6 +15,9 @@ class eshop extends \Plugins
 	const DESCRIPTION 	= 'E-Commerce management for Evo-CMS with Paypal'; // Bref description
 	const VERSION 		= '0.1'; // Version de votre plugin
 
+    protected static $plugin_id;
+    protected static $plugin_dir;
+
 	// Permet d'ajouter des paramètres de configuration par l'administration utilisable pour le plugin
 	protected static $settings = array(
 		'name' => array('type' => 'text',  'label' => "Merchant's name"),
@@ -192,8 +195,16 @@ class eshop extends \Plugins
 		], false, true);
 		
 		\DB::CreateTable('eshop_taxes', [
+			'id'			=> 'increment',
+			'name'			=> 'string',
 			'code'			=> 'string',
-			'rate'  		=> 'float'
+			'rate'  		=> 'float',
+			'tnumber'		=> 'string'
+		], false, true);
+		
+		\DB::CreateTable('eshop_carriers', [
+			'id'			=> 'increment',
+			'name'			=> 'string',
 		], false, true);
 		
 		\DB::CreateTable('eshop_currency_provider', [
@@ -244,13 +255,19 @@ class eshop extends \Plugins
 		\DB::DropTable('eshop_settings');
 		\DB::DropTable('eshop_invoices');
 		\DB::DropTable('eshop_invoices_items');
+		\DB::DropTable('eshop_products');
+		\DB::DropTable('eshop_products_sub_categories');
+		\DB::DropTable('eshop_products_categories');
+		\DB::DropTable('eshop_products_company');
 		\DB::DropTable('eshop_customers');
+		\DB::DropTable('eshop_customers_discount');
 		\DB::DropTable('eshop_log');
 		\DB::DropTable('eshop_discounts');
-		\DB::DropTable('eshop_customers_discount');
 		\DB::DropTable('eshop_deposite');
 		\DB::DropTable('eshop_currency');
 		\DB::DropTable('eshop_currency_provider');
+		\DB::DropTable('eshop_taxes');
+		\DB::DropTable('eshop_carriers');
 
 		App::setNotice("Mon plugin est déchargé et désactivé");
 	}

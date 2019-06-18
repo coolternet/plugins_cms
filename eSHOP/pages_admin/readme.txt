@@ -7,6 +7,7 @@
 		DB::Get			=> Returns one column if only one column is present in the result. Otherwise it returns the whole row.
 		DB::Exec		=> Execute an SQL statement and returns the number of affected rows
 		DB::Insert		=> Inserts one or more rows in a table > Insert($table, array $rows, $replace = false)
+		DB::Delete		=> Delete one or more rows in a table > Delete($table, array $where) «$table, $where = ['id' => 0]»
 		DB::Update		=> Updates one or more rows in a table > Update($table, array $fields, $where = ['id' => 0])
 
 	/******************** Fonctions GET ********************

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap');
+
 div [class*="left floated"] {
     float: left;
     margin-left: 0.25em;
@@ -101,6 +103,7 @@ table {
     text-align: right;
 }
 
+
 /*
  * Source : Semantic 2.4
  */
@@ -148,6 +151,47 @@ table {
  *  CSS Eshop
  */
 
+
+.poptart.top-right {
+	right: 20px;
+	top: 100px;
+}
+
+.poptart.bottom-right {
+	right: 10px;
+	bottom: 10px;
+}
+
+.poptart.bottom-left {
+	left: 10px;
+	bottom: 10px;
+}
+
+.poptart.top-left {
+	left: 10px;
+	top: 10px;
+}
+
+.poptart {
+	margin:0px; 
+	position: fixed;
+	z-index: 999;
+}
+
+.poptart a {
+	color: inherit;
+	font-family: Dosis, sans-serif;
+	font-weight: bold;
+}
+
+.poptart > div {
+	margin:10px;
+}
+ 
+div#eshop-header {border-radius: 0px 0px 5px 5px}
+div#category {margin: calc(2rem - 0.14285714em ) 0em 1rem;}
+div#category h3 {text-transform: capitalize}
+
 div.eshop-segments-title{
     background-color: #37474f !important;
     color: white;
@@ -157,9 +201,16 @@ select.eshop_select {
     border-radius: 5px 0px 0px 5px !important;
 }
 
-#rates-table {
+#currency-globalrates-table {
     border-radius: 5px 5px 0px 0px;
     border-top: 0.2em solid #6435C9;
+    max-height: 217px;
+    overflow: overlay;
+}
+
+#currency-toolrates-table {
+    border-radius: 5px 5px 0px 0px;
+    border-top: 0.2em solid #e03997;
     max-height: 217px;
     overflow: overlay;
 }
@@ -181,3 +232,76 @@ div#newprodstep .active:after {
     border-right: none;
 	right: 0.01%;
 }
+
+/*
+ *	Page Sous-Catégories
+ */
+ 
+	/* Fix Semantic-UI */
+	.ui.form select {height: 38px}
+	.ui.form button {min-height: 38px}
+	hr {border-top: 1px solid #cfd0d0}
+	.ui.sub.header {font-weight: 500;}
+	.ui.vertical.tabular.menu .active.item {background: #37474f;color: #ffffff}
+	.ui.vertical.tabular.menu .active.item:after{background: #37474f}
+	.ui.vertical.pointing.menu .item:after {border-top: none;border-right: none;margin: 0em 0.5px 0em 0em;}
+	.ui.basic{background-color:white !important}
+	select.ui.basic.blue {
+		color: #2196F3 !important;
+		box-shadow: 0px 0px 0px 1px #2196F3 inset !important;
+		background-color: white !important;
+		border: none;
+		position: relative;
+		left: 1px;
+	}
+	.ui.purple.message {background-color: #F6E7FF !important}
+	.ui.orange.message {background-color: #FFEDDE !important}
+	.ui.checkbox {margin: 0 !important}
+	.ui.toggle.checkbox input:checked ~ .box:before, .ui.toggle.checkbox input:checked ~ label:before {background-color: #21ba45 !important;}
+	.ui.toggle.checkbox .box:before, .ui.toggle.checkbox label:before {background: #db2828;}
+	
+	/* Eshop CSS */
+	form span#tips {min-height: 38px;}
+	form span#tips i {margin: 0px;height: 1em;vertical-align: middle;}
+	table.ui.table th {background: rgb(55, 71, 79);color: white;font-weight: 400}
+	.ui.form .field {margin:0}
+	
+	/* CSS 3.0 */
+	input[name=amount_to_convert]{
+		box-shadow: 0px 0px 0px 1px #E03997 inset !important;
+		color: #E03997 !important;
+	}
+	select[name=currency_to_convert]{
+		width: initial !important;
+		border-radius: 0px 5px 5px 0px !important;
+		height: 40px !important;
+		position: relative;
+		right: 3px !important;
+		color: #E03997 !important;
+	}
+
+
+/*
+ *	Page TAXES CSS
+ */
+#form-taxe div.input-group {margin-left: 15px;max-width: 195px;} 
+#form-taxe .input-group input {} 
+ 
+ 
+
+/*
+ *	Preview Bloc CSS
+ */
+#new_product_preview {margin-top: 30px;}
+#preview_bloc button {margin-right: 0px;}
+#preview_bloc div.prev_title {border-bottom: 1px dashed #d4d4d5;}
+#preview_bloc h2.prev_limit {text-align:left}
+#preview_bloc div.prev_rating {font: 11px 'Open Sans',Helvetica,Arial,sans-serif;border-bottom: 1px dashed gray;padding-bottom: 10px;}
+#preview_bloc div.prev_rating a.nbr_rater {position:relative;top:-2px;}
+#preview_bloc div.prev_img img {text-align:center}
+#preview_bloc h1.prev_price {text-align: center;margin: 0; font-family: 'Teko', sans-serif;font-weight: 100;font-size: 38pt;margin: 0;}
+#preview_bloc h2.prev_pfees, h2.prev_limit {margin: 10px 0px 10px 0px !important; text-align:right}
+#preview_bloc div.prev_short_desc, div.prev_options, div.prev_associated, div.prev_title,div.prev_rating {margin: 10px 0px;}
+#preview_bloc div.prev_associated {margin-top: 30px}
+#preview_bloc div.prev_associated button {margin: 2px;}
+#preview_bloc div.ui.tab {margin: 10px;}

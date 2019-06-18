@@ -7,7 +7,7 @@
 <script type="text/javascript" src="../plugins/eshop/pages_admin/assets/js/semantic.js"></script>
 <script type="text/javascript" src="../plugins/eshop/pages_admin/assets/js/ajax.js"></script>
 
-<div id="eshop-header" class="ui menu">
+<div id="eshop-header" class="ui menu stackable">
     <div class="header item">{ eSH0P }</div>
         <a href="?p=eshop/dashboard" name="dash" class="evo-item item"><i class="desktop icon"></i> Dashboard</a>
         <a href="?p=eshop/customers" name="customers" class="evo-item item"><i class="users icon"></i> Consumers</a>
@@ -32,6 +32,7 @@
     </div>
     <div class="right menu">
         <a href="?p=eshop/settings" class="item" name="settings" ><i class="cog icon"></i> Settings</a>
+		<a href="?p=eshop/help" class="item" name="help" ><i class="far fa-question-circle"></i></a>
     </div>
 </div>
 

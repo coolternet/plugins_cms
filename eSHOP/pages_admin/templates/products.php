@@ -56,11 +56,13 @@
 					<a class="item" data-tab="newprod_step4"><i class="far right fa-check-square"></i> Options</a>
 					<a class="item" data-tab="newprod_step5"><i class="fas right fa-hand-holding-usd"></i> Fees</a>
 					<a class="item" data-tab="newprod_step6"><i class="far right fa-thumbs-up"></i> Availabilitys</a>
-					<a class="item" data-tab="newprod_step7"><i class="fas right fa-balance-scale"></i> Weight and Size</a>
-					<a class="item" data-tab="newprod_step8"><i class="far right fa-check-circle"></i> Final action</a>
+					<a class="item" data-tab="newprod_step7"><i class="fas right fa-truck"></i> Carrier</a>
+					<a class="item" data-tab="newprod_step8"><i class="fas right fa-balance-scale"></i> Weight and Size</a>
+					<a class="item" data-tab="newprod_step9"><i class="far right fa-check-circle"></i> Final action</a>
+					<a class="item" data-tab="newprod_preview"><i class="far right fa-eye"></i> Preview</a>
 				</div>
 			</div>
-			<div class="eleven wide column">
+			<div class="twelve wide column">
 				<div class="ui active tab" data-tab="newprod_step1">
 					</br>
 					<div class="ui column grid">
@@ -81,8 +83,36 @@
 										</div>
 										<div class="middle aligned content">
 											<div class="ui radio checkbox">
-												<input type="radio" name="asmain" tabindex="0" checked class="hidden">
-												<label>Set as main</label>
+												<input type="radio" name="asmain" tabindex="0" value="https://semantic-ui.com/images/wireframe/image.png">
+												<label for="asmain">Set as main</label>
+											</div>
+										</div>
+										<div class="right">
+											<button class="ui basic mini red button" style="margin-top: 20px;">Delete</button>
+										</div>
+									</div>
+									<div class="item">
+										<div class="ui tiny image">
+											<img src="https://images-na.ssl-images-amazon.com/images/I/81n-1MM5i-L._SL1500_.jpg">
+										</div>
+										<div class="middle aligned content">
+											<div class="ui radio checkbox">
+												<input type="radio" name="asmain" tabindex="0" value="https://images-na.ssl-images-amazon.com/images/I/81n-1MM5i-L._SL1500_.jpg">
+												<label for="asmain">Set as main</label>
+											</div>
+										</div>
+										<div class="right">
+											<button class="ui basic mini red button" style="margin-top: 20px;">Delete</button>
+										</div>
+									</div>
+									<div class="item">
+										<div class="ui tiny image">
+											<img src="https://images-na.ssl-images-amazon.com/images/I/61vZGmaIdRL._SL1500_.jpg">
+										</div>
+										<div class="middle aligned content">
+											<div class="ui radio checkbox">
+												<input type="radio" name="asmain" tabindex="0" value="https://images-na.ssl-images-amazon.com/images/I/61vZGmaIdRL._SL1500_.jpg">
+												<label for="asmain">Set as main</label>
 											</div>
 										</div>
 										<div class="right">
@@ -102,8 +132,8 @@
 							<label class="col-sm-4 control-label">Category</label>
 							<div class="col-sm-5">
 								<select name="newprodcat" class="form-control" placeholder="Choose">
-									<option>Informatique</option>
-									<option>Jeux Vidéo</option>
+									<option value="informatique">Informatique</option>
+									<option value="jeux_video">Jeux Vidéo</option>
 								</select>
 							</div>
 						</div>
@@ -111,8 +141,8 @@
 							<label class="col-sm-4 control-label">Sub-Category</label>
 							<div class="col-sm-5">
 								<select name="newprodsub" class="form-control" placeholder="Choose">
-									<option>Carte Graphique</option>
-									<option>Processeur</option>
+									<option value="carte_graphique">Carte Graphique</option>
+									<option value="processeur">Processeur</option>
 								</select>
 							</div>
 						</div>
@@ -143,6 +173,12 @@
 							<label class="col-sm-4 control-label">Short Description</label>
 							<div class="col-sm-5">
 								<textarea name="newshortdesc" class="form-control" rows="3">Talk us about your product</textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Product barcode</label>
+							<div class="col-sm-5">
+								<input name="newbarcode" class="form-control" type="text">
 							</div>
 						</div>
 					</div>
@@ -184,9 +220,9 @@
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Frais de livraison</label>
 							<div class="col-sm-5">
-								<select class="form-control" name="newprodtaxes">
-									<option>Oui</option>
-									<option>Non</option>
+								<select class="form-control" name="newprodshipping">
+									<option value="1">Oui</option>
+									<option value="0">Non</option>
 								</select>
 							</div>
 						</div>
@@ -194,8 +230,8 @@
 							<label class="col-sm-4 control-label">Taxes applicable</label>
 							<div class="col-sm-5">
 								<select multiple class="form-control" name="newprodtaxes">
-									<option>TPS</option>
-									<option>TVQ</option>
+									<option value="1">TPS</option>
+									<option value="2">TVQ</option>
 								</select>
 							</div>
 						</div>
@@ -203,19 +239,26 @@
 					
 				</div>
 				<div class="ui tab" data-tab="newprod_step6">
+
 					<h2 class="ui header dividing" style="margin: 10px 10px 30px 10px">Disponibilités</h2>
 					
 					<div class="form-horizontal">
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Quantité disponible</label>
 							<div class="col-sm-5">
-								<input name="newprodqtyavailable" type="number" class="form-control" placeholder="Amount">
+								<input name="newprodqtyavailable" type="number" class="form-control" placeholder="Amount" min="0">
 							</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Quantité trop base</label>
 							<div class="col-sm-5">
-								<input name="newprodqtyavailablelow" type="number" class="form-control" placeholder="Amount">
+								<input name="newprodqtyavailablelow" type="number" class="form-control" placeholder="Amount" min="0">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Limitation par client</label>
+							<div class="col-sm-5">
+								<input name="newprodqtylimitcustomer" type="number" class="form-control" placeholder="0" min="0">
 							</div>
 						</div>
 						<div class="form-group">
@@ -240,42 +283,48 @@
 					
 				</div>
 				<div class="ui tab" data-tab="newprod_step7">
+					<h2 class="ui header dividing" style="margin: 10px 10px 30px 10px">Carrier</h2>
+				</div>
+				<div class="ui tab" data-tab="newprod_step8">
 					<h2 class="ui header dividing" style="margin: 10px 10px 30px 10px">Poids et grandeur du package</h2>
 					
 					<div class="form-horizontal grid middle alligned">
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Largeur</label>
-							<div class="col-sm-3">
-								<input name="newprodwidth" type="number" class="form-control" step="any">
+							<div class="input-group col-sm-3" style="padding-left: 15px;">
+								<input name="newprodwidth" type="number" class="form-control" placeholder="0" step="any" min="0">
+								<span class="input-group-addon">inch</span>
 							</div>
-							<div class="col-sm-1 control-label">Pouces</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-4 control-label">hauteur</label>
-							<div class="col-sm-3">
-								<input name="newprodheigh" type="number" class="form-control" step="any">
+							<div class="input-group col-sm-3" style="padding-left: 15px;">
+								<input name="newprodheigh" type="number" class="form-control" placeholder="0" step="any" min="0">
+								<span class="input-group-addon">inch</span>
 							</div>
-							<div class="col-sm-1 control-label">Pouces</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Profondeur</label>
-							<div class="col-sm-3">
-								<input name="newproddepth" type="number" class="form-control" step="any">
+							<div class="input-group col-sm-3" style="padding-left: 15px;">
+								<input name="newproddepth" type="number" class="form-control" placeholder="0" step="any" min="0">
+								<span class="input-group-addon">inch</span>
 							</div>
-							<div class="col-sm-1 control-label">Pouces</div>
 						</div>
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Poids</label>
-							<div class="col-sm-3">
-								<input name="newprodweight" type="number" class="form-control" step="any">
+							<div class="input-group col-sm-3" style="padding-left: 15px;">
+								<input name="newprodweight" type="number" class="form-control" placeholder="0" step="any" min="0">
+								<span class="input-group-addon">Lbs</span>
 							</div>
-							<div class="col-sm-1 control-label">Livres</div>
 						</div>
 					</div>
 					
 				</div>
-				<div class="ui tab" data-tab="newprod_step8">
-					<h2 class="ui header dividing" style="margin: 10px 10px 30px 10px">Action final</h2>
+				<div class="ui tab" data-tab="newprod_step9">
+					<h2 class="ui header dividing" style="margin: 10px 10px 30px 10px">Previewing</h2>
+				</div>
+				<div class="ui tab" data-tab="newprod_preview">
+					<?php include 'blocs/new_prod_preview.php' ?>
 				</div>
 			</div>
 		</div>

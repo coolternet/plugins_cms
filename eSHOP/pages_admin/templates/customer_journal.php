@@ -1,5 +1,5 @@
             <h4 class="ui dividing header">Journal d'Événement Commercial</h4>
-            <table class="ui very basic table">
+            <table class="ui table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -21,7 +21,7 @@
             </table>
             <br>
             <h4 class="ui dividing header">Journal d'Événement général</h4>
-            <table class="ui very basic table">
+            <table class="ui table">
                 <thead>
                     <tr>
                         <th>ID</th>
