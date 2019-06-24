@@ -13,7 +13,7 @@ class eshop extends \Plugins
 	const AUTHOR 		= 'Yan Bourgeois'; // Votre nom
 	const NAME 			= 'eSH0P'; // Nom du plugin
 	const DESCRIPTION 	= 'E-Commerce management for Evo-CMS with Paypal'; // Bref description
-	const VERSION 		= '1.0'; // Version de votre plugin
+	const VERSION 		= '1.0.1'; // Version de votre plugin
 
     protected static $plugin_id;
     protected static $plugin_dir;
