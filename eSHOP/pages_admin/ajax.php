@@ -9,21 +9,86 @@ function eshop_ajax_return_error($error) {
 }
 
 
-if (_GET('action') === 'customer_profil') {
-	$customer_profil = get_customer($_GET['id']);
-	eshop_ajax_return_success($customer_profil);
-}
-
-
-// DEFAULT CURRENCY CHANGER
-if (_POST('action') === 'update_default_currency') {
-	$update_default_currency = update_default_currency($_POST['shop_currency_default']);
-	if ($update_default_currency) {
-		eshop_ajax_return_success($update_default_currency);
+// Save Customer's profil Modal
+if (_POST('action') === 'save_customer_profil') {
+	$setuser = set_customer($_POST['uid'],$_POST['first_name'],$_POST['last_name'],$_POST['address'],$_POST['apt'],$_POST['city'],$_POST['state'],$_POST['zip'],$_POST['phone'],$_POST['country'],$_POST['email'],$_POST['currency']);
+	if ($setuser) {
+		eshop_ajax_return_success($setuser);
 	} else {
 		eshop_ajax_return_error("Not found");
 	}
 }
+
+// Delete customers
+if (_POST('action') === 'del_customer') {
+	$deluser = del_customer($_POST['uid']);
+	if ($deluser) {
+		eshop_ajax_return_success($deluser);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+// Button random password for Customer
+if (_POST('action') === 'customer_regenpassword') {
+	$password = password_customer($_POST['id']);
+	if ($password) {
+		eshop_ajax_return_success($password);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+// Get Customer's information Modal
+if (_GET('action') === 'get_customer_profil') {
+	$getuser = get_customer_profil($_GET['uid']);
+	if ($getuser) {
+		eshop_ajax_return_success($getuser);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+
+// DEFAULT CURRENCY CHANGER
+if (_POST('action') === 'change_default_currency') {
+	$change = change_default_currency($_POST['shop_currency_default']);
+	if ($change) {
+		eshop_ajax_return_success($change);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+// Update Currency's rate
+if (_POST('action') === 'update_currency_rate') {
+	$update = update_currency_rate();
+	if ($update) {
+		eshop_ajax_return_success($update);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+// Return all currency's rate after rate's update
+if (_GET('action') === 'get_rates') {
+	$get_rates = get_eshop_currency();
+	if ($get_rates) {
+		eshop_ajax_return_success($get_rates);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+// Uptade Global Company's information
+	if (_POST('action') === 'save_company_global') {
+		$update = save_company_global($_POST['shop_name'],$_POST['shop_contractor'],$_POST['shop_address'],$_POST['shop_city'],$_POST['shop_zip'],$_POST['shop_state'],$_POST['shop_country'],$_POST['shop_phone'],$_POST['shop_business_mail'],$_POST['shop_vat']);
+		if ($update) {
+			eshop_ajax_return_success($update);
+		} else {
+			eshop_ajax_return_error("Not found");
+		}
+	}
 
 
 // TAX CHARGE MANAGEMENT
@@ -79,7 +144,7 @@ if (_POST('action') === 'save_tax') {
 if (_POST('action') === 'create_category') {
 	$addcat = eshop_create_category($_POST['name']);
 	if ($addcat) {
-		eshop_ajax_return_success(['id' => $addcat, 'name' => $addcat]);
+		eshop_ajax_return_success(['id' => $addcat]);
 	} else {
 		eshop_ajax_return_error("Not found");
 	}
@@ -105,6 +170,16 @@ if (_GET('action') === 'get_category') {
 	}
 }
 
+// Get all Category
+if (_GET('action') === 'get_categories') {
+	$getcat = eshop_get_categories();
+	if ($getcat) {
+		eshop_ajax_return_success($getcat);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
 // Delete a Categories
 if (_POST('action') === 'delete_category') {
 	$delcat = eshop_delete_category($_POST['id']);
@@ -117,9 +192,20 @@ if (_POST('action') === 'delete_category') {
 
 // Create Sub-Categories
 if (_POST('action') === 'create_subcategory') {
-	$newsubcat = eshop_create_subcategory($_POST['name'], $_POST['subcatid']);
+	$newsubcat = eshop_create_subcategory($_POST['name'], $_POST['cid']);
 	if ($newsubcat) {
 		eshop_ajax_return_success(['id' => $newsubcat]);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+
+// get All Sub-Categories
+if (_GET('action') === 'get_subcategory') {
+	$getsubcat = eshop_get_subcategories();
+	if ($getsubcat) {
+		eshop_ajax_return_success($getsubcat);
 	} else {
 		eshop_ajax_return_error("Not found");
 	}
@@ -134,72 +220,6 @@ if (_GET('action') === 'system_activity') {
 if (_GET('action') === 'customer_activity') {
 	$eshop_activity = eshop_log_query($_GET['id']);
 	eshop_ajax_return_success($eshop_activity);
-}
-
-if (_POST('action') === 'customer_save_profil') {
-	
-	function save_profil_admin($uid){
-		
-		$fname      = $_POST['first_name'];
-		$lname      = $_POST['last_name'];
-		$email      = $_POST['email'];
-		$address    = $_POST['address'];
-		$apt        = $_POST['apt'];
-		$city       = $_POST['city'];
-		$zip        = $_POST['zip'];
-		$state      = $_POST['state'];
-		$country    = $_POST['country'];
-		$phone      = $_POST['phone'];
-		$uid        = $_POST['user'];
-		
-		// Check if user already existe in Customers table
-		$check = \DB::Get('SELECT * FROM eshop_customers WHERE uid = :uid',[':uid' => $uid]);
-		
-		if(!$check){
-			
-			// if not exist, add info
-			\DB::Exec('INSERT INTO {eshop_customers} (`uid`, `first_name`,`last_name`,`address`,`apt`,`city`,`zip`,`state`,`phone`) VALUE (:uid, :first, :last, :address, :apt, :city, :zip, :state, :phone)', [
-				':uid'      => $uid,
-				':first' 	=> $fname,
-				':last' 	=> $lname,
-				':address' 	=> $addre,
-				':apt' 		=> $apt,
-				':city' 	=> $city,
-				':zip'	 	=> $zip,
-				':state' 	=> $state,
-				':phone' 	=> $phone
-			]);
-
-			#\DB::Update('users', ['email' => $email, 'country' => $country], ['id' => $uid]);
-			
-			 App::setSuccess('Condition INSERT');
-				
-		}else{
-			
-			// If exist, update info
-			\DB::Update('eshop_customers',
-				[
-					'first_name' => $fname,
-					'last_name' => $lname,
-					'address' => $addre,
-					'apt' => $apt,
-					'city' => $city,
-					'state' => $state,
-					'zip' => $zip,
-					'phone' => $phone
-				],
-				['uid' => $uid]);
-				
-			\DB::Update('users', ['email' => $email, 'country' => $country], ['id' => $uid]);
-			
-			App::setSuccess('User updated with success');
-			
-		}
-		#eshop_log_event('Default currency is changed for '.$code);
-	}
-	
-	$update_profil = save_profil_admin($_GET['id']);
-	eshop_ajax_return_success($update_profil);
 }
 
 exit;

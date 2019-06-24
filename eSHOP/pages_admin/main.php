@@ -36,4 +36,4 @@
     </div>
 </div>
 
-<div id="eshop-content" class="ui container"> <!-- Start of eshop-content div !-->
+<div id="eshop-content" class="container"> <!-- Start of eshop-content div !-->

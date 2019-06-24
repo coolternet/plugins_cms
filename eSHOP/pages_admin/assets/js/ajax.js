@@ -10,6 +10,27 @@ $(document).ready(function(){
 	$('.ui.rating').rating();
 	$('.activating.element').popup();
 	$('#multiple').dropdown();
+	$('.ui.dropdown').dropdown();
+	$(function(){ $("ul.checktree").checktree(); });
+
+	(function($){
+		$.fn.checktree = function(){
+			$(':checkbox').on('click', function (event){
+				event.stopPropagation();
+				var clk_checkbox = $(this),
+				chk_state = clk_checkbox.is(':checked'),
+				parent_li = clk_checkbox.closest('li'),
+				parent_uls = parent_li.parents('ul');
+				parent_li.find(':checkbox').prop('checked', chk_state);
+				parent_uls.each(function(){
+					parent_ul = $(this);
+					parent_state = (parent_ul.find(':checkbox').length == parent_ul.find(':checked').length); 
+					parent_ul.siblings(':checkbox').prop('checked', parent_state);
+				});
+			 });
+		};
+	}(jQuery));
+	
 	
 	function notifs(type, icon, header, message, sound, location) {
 		var pop = $('div.poptart');
@@ -33,7 +54,6 @@ $(document).ready(function(){
 	function before(string, delim) {
 		return string.toString().split(delim)[0];
 	}
-
 
 	function ajax_call(type, data, callback) {
 		data.csrf = csrf;
@@ -100,8 +120,158 @@ $(document).ready(function(){
 		return false;
 		
 	});
-		
-/////////////////////////////////// ADMIN > CONTENTS > TAXES
+
+/*
+ *  ADMIN > Global's Setting
+ */
+
+	// Country and State dropdown
+	$("select[name=country]").on('change', function(){
+		var country = $("select[name=country] :selected").val();
+		alert(country);
+		$.get({
+			url: 'http://dev.evolution-network.ca/plugins/eshop/pages_admin/assets/js/countries/' + country + '.json',
+			cache: false,
+			dataType: 'json',
+            success: function(data){
+				var state = $('select[name=shop_state]');
+                state.empty();
+                $(data.states).each(function(code, name) {
+                    state.append("<option class='item' value='"+ this.code +"'>"+ this.name +"</option>");
+                });
+            }
+		});
+    });
+	
+	// Save changes button
+	$("button[name=update_global_company]").on('click', function(){
+		var $sname = $("input[name=shop_name]").val();
+		var $svat = $("input[name=shop_vat]").val();
+		var $sowner = $("input[name=shop_owner]").val();
+		var $saddr = $("input[name=shop_address]").val();
+		var $scity = $("input[name=shop_city]").val();
+		var $sstate = $('select[name=shop_state]').val()
+		var $country = $("select[name=country]").val();
+		var $szip = $("input[name=shop_zip]").val();
+		var $sphone = $("input[name=shop_phone]").val();
+		var $semail = $("input[name=shop_email]").val();
+		if($('#global_company_registration').form('validate form')) {
+			ajax_post({
+				action: 'save_company_global',
+				shop_name: $sname,
+				shop_contractor: $sowner,
+				shop_address: $saddr,
+				shop_city: $scity,
+				shop_zip: $szip,
+				shop_state: $sstate,
+				shop_country: $country,
+				shop_phone: $sphone,
+				shop_business_mail: $semail,
+				shop_vat: $svat
+			}, function(data){
+				if (data.success){
+					notifs('success', 'far fa-check-circle fa-3x', 'Modification effectuée. !', 'Les informations de votre boutique ont été enregistrées.', false, 'top-right', 3000);
+				}else{
+					alert(data.error);
+				}
+			});
+		}
+		return false;
+	});
+
+/*
+ *  ADMIN > Customer's Profil editor by Modal
+ */
+
+	// Retreive Customer's information for Modal Profil
+	$('span[name=custoprofil]').on('click', function() {
+		var $id = $(this).closest("tr").data('userid');
+		$('.ui.longer.modal').modal('show');
+		$("button[name=save_profil]").attr('data-userid', $id);
+		ajax_get({
+			action: 'get_customer_profil',
+			uid: $id
+		}, function(data){
+			if(data.success){
+				$('input').empty();
+				$('.customname').children().text(data.first_name + ' ' + data.last_name);
+				$('input[name=first_name]').val(data.first_name);
+				$('input[name=last_name]').val(data.last_name);
+				$('input[name=email]').val(data.email);
+				$('input[name=address]').val(data.address);
+				$('input[name=city]').val(data.city);
+				$('input[name=apt]').val(data.apt);
+				$('input[name=zip]').val(data.zip);
+				$('select[name=country]').val(data.country);
+				$('input[name=state]').val(data.state);
+				$('input[name=phone]').val(data.phone);
+				$('input[name=currency]').val(data.currency);
+			}else{
+				console.log(data.error);
+			}
+		});
+	});
+
+	// Save button Profil from Modal
+	$('button[name=save_profil]').click(function(){
+		var email = $('input[name=email]').val();
+		ajax_post({
+			action: 'save_customer_profil',
+			uid			: $('button[name=save_profil]').data('userid'),
+			first_name	: $('input[name=first_name]').val(),
+			last_name	: $('input[name=last_name]').val(),
+			address		: $('input[name=address]').val(),
+			apt			: $('input[name=apt]').val(),
+			city		: $('input[name=city]').val(),
+			state		: $('input[name=state]').val(),
+			zip			: $('input[name=zip]').val(),
+			phone		: $('input[name=phone]').val(),
+			country		: $('select[name=country]').val(),
+			email		: $('input[name=email]').val(),
+			currency	: $('input[name=currency]').val(),
+		}, function(data){
+			if(data.success){
+				notifs('success', 'far fa-check-circle fa-3x', 'Modification du profil de : ' + email + 'Les changements ont été pris en compte.', false, 'top-right', 3000);
+			}else{
+				alert(data.error);
+			}
+		});
+	});
+
+	// Delete button from customers page
+	$('span[name=custodel]').click(function(){
+		var $id = $(this).closest("tr").data('userid');
+		ajax_post({
+			action: 'del_customer',
+			uid			: $id,
+		}, function(data){
+			if(data.success){
+				alert("Utilisateur supprimé avec succès.")
+			}else{
+				alert(data.error);
+			}
+		});
+	});
+
+	// New Password button
+	$("button[name=regenpassword]").on('click', function(){
+		var $id = $("button[name=save_profil]").data('userid');
+		ajax_post({
+			action: 'customer_regenpassword',
+			id: $id
+		}, function(data){
+			if(data.success){
+				console.log(data);
+			}else{
+				alert(data.error);
+			}
+		});
+	});
+
+	
+/*
+ *  ADMIN > Tax's Setting
+ */
 
 	// Tax Charge Calculator Tool
 	$("input[name=ht_amount]").on("keyup", function(){
@@ -193,7 +363,6 @@ $(document).ready(function(){
 						alert(data.error);
 					}
 				});
-				
 				return false;
 			}
 		} 
@@ -225,7 +394,6 @@ $(document).ready(function(){
 						reload_taxe_selector_after_action()
 						notifs('success', 'far fa-check-circle fa-3x', $name, 'Les modifications de cette taxe ont bien été pris en compte.', false, 'top-right', 3000);
 					} else {
-						//alert("OMG IT DIDNT WORK" + data.error);
 						notifs('error', 'far fa-check-circle fa-3x', $name, data.error, false, 'top-right', 3000);
 					}
 				});
@@ -235,9 +403,43 @@ $(document).ready(function(){
 
 	});
 
-
-
-/////////////////////////////////// ADMIN > SETTING'S CURRENCY'S
+/*
+ *
+ *  ADMIN > SETTING'S CURRENCY'S
+ * 
+ */
+	// Update Currency's rate on system and table
+	$("button[name=update_currency]").on('click', function(){
+		$(this).attr("disabled", true).addClass("loading");
+		$("div#currency-globalrates-table tr").remove();
+		ajax_post({
+			action: 'update_currency_rate',		
+		}, function(data) {
+			if(data.success){
+				notifs('success', 'far fa-check-circle fa-3x', 'Mise à jour du taux de change', 'Le taux de change est maintenant à jours.', false, 'top-right', 3000);
+				ajax_get({
+					action: 'get_rates',
+				}, function(table){
+					if(table.success){
+						var $table = $("table[name=rates-table]");
+						var $currency = $("label[name=current_currency]").text();
+						$.each(table, function() {
+							if(this.code){
+								$table.append('<tr><td class="eight wide" style="text-align: right"> 1 ' + $currency + ' = </td><td class="eight wide">' + this.rate + ' ' + this.code + '</td></tr>');
+							}
+						});
+					}else{
+						console.log(table);
+					}
+				});
+				$("button[name=update_currency]").attr("disabled", false).removeClass("loading");
+			}else{
+				$("button[name=update_currency]").attr("disabled", false).removeClass("loading");
+				notifs('error', 'fas fa-bug fa-3x', "Une erreur est survenue !", "Le taux de change n'a pas pu être mis à jours. Veuillez attendre 24h avant de refaire une tentative.", false, 'top-right', 3000);
+			}
+		});
+		return false;
+	});
 
 	// Convertion tool
 	$("input[name=amount_to_convert]").on("keyup", function(){
@@ -249,28 +451,28 @@ $(document).ready(function(){
 	});
 	
 	// Change default currency
-	$("button[name=update_default_currency]").on('click', function(){
+	$("button[name=change_currency]").on('click', function(){
 		var $currency = $("select[name=currency] option:selected").dropdown().val();
-		
 		ajax_post({
-			action: 'update_default_currency',
+			action: 'change_default_currency',
 			shop_currency_default: $currency
 		}, function(data){
 			if (data.success) {
 				$("label[name=current_currency]").html($currency);
 				notifs('success', 'far fa-check-circle fa-3x', 'Changement de devise par défaut', 'La devise par défaut est maintenant <b>' + $currency + '</b>', false, 'top-right', 3000);
 			} else {
-				console.log('' + data.error);
+				console.log(data.error);
 			}
 		});
-
 		return false;
-		
 	});
 	
-
-/////////////////////////////////// ADMIN > CONTENTS > CATEGORIES
-
+	
+/*
+ *
+ *  ADMIN > CONTENTS > CATEGORIES & SUB-CATEFORIES
+ * 
+ */
 	// Category Save Changes or Create
 	$("button[name=create_category]").on('click', function(){
 		var $id = $(this).data('id');
@@ -284,10 +486,10 @@ $(document).ready(function(){
 					name: $name
 				}, function(data){
 					if (data.success) {
-						alert('Une catégorie a été créé avec succès');
 						$("input[name=new_category_name]").val('');
-						$('table[name=cat_table]').append('<tr data-id="'+ data.id +'"><td>'+ data.id +'</td><td>'+ $name +'</td><td>0</td><td>0</td><td></td></tr>');
-						notifs('green', 'far fa-check-circle fa-3x', "Congratulation !", 'The new category is create.', false, 'top-right', 2000);
+						$('table[name=cat_table]').append('<tr data-id="'+ data.id +'"><td>'+ data.id +'</td><td>'+ $name +'</td><td>0</td><td>0</td><td style="text-align: right"><button data-id="'+ data.id +'" data-name="' + $name + '" name="category_edit" class="btn btn-primary btn-sm">Edit</button> <button data-id="'+ data.id +'" name="delete_category" class="btn btn-danger btn-sm">Delete</button></td></tr>');
+						$('select[name=subselect_category]').append('<option data-id="' + data.id + '">' + $name + '</option>')
+						notifs('positive', 'far fa-check-circle fa-3x', "Congratulation !", 'The new category is create.', false, 'top-right', 2000);
 					} else {
 						console.log(data.error);
 					}
@@ -329,7 +531,7 @@ $(document).ready(function(){
 		var $id = $(this).data('id');
 		ajax_get({
 			action: 'get_category',
-			id: $id
+			id: $id,
 		}, function(data){
 			if (data.success){
 				$("button[name=create_category]").removeClass('green').addClass('purple').html('Save Changes').prop('name', 'save_category').attr('data-id', $id);
@@ -358,54 +560,42 @@ $(document).ready(function(){
 			}
 		});
 	});
-	
-	
-	// Réaction du bouton avec le formulaire
-	$("input[name=new_category_name]").on('keyup', function(){
-		if($("input[name=new_category_name]").parent().hasClass('error')){
-			$("button[name=create_cat]").find().addClass('disabled');
-		}
-		if(!$("input[name=new_category_name]").parent().hasClass('error')){
-			$("button[name=create_cat]").find().removeClass('disabled');
-		}
-	});
 
 	// Select Category for sub-categories
-	$("select[name=subselect_category]").on('focus', function(){		
+	$("input[name=new_subcat_name]").on('change', function(){
+		var $select = $("select[name=subselect_category]");
+		$(this).empty();
+		$select.empty();
 		ajax_get({
-			action: 'get_category',
+			action: 'get_categories',
 		}, function(data){
-			
 			if(data.success){
-				var s = '<option value="-1">Please select a category</option>';
-				for (var i = 0; i < data.length; i++){
-					s += '<option value="' + data[i].id + '">' + data[i].name + '</option>';
-				}
-				$("select[name=subselect_category]").html(s); 
+				$.each(data, function(){
+					console.log(data);
+					if(this.id){
+						$select.append('<option value="' + this.id + '">' + this.name + '</option>');
+					}
+				})
 			}else{
 				console.log(data.error)
 			}
-			
 		});
-	});
-	
-	$("select[name=subselect_category]").change(function () {
-		$('#msg').text('Selected Item: ' + this.options[this.selectedIndex].text);
 	});
 	
 	// Create Sub-Category
 	$("button[name=create_subcat]").on('click', function(){
 		var $name = $("input[name=new_subcat_name]").val();
-		var $subcatid = $("select[name=subselect_category]:selected").val();
-		
+		var $cid = $("select[name=subselect_category] :selected").val();
+		var $table = $("table[name=subcat_table]").attr("data-cid", $cid);
 		if($('#bloc_add_subcategory').form('validate form')) {
 			ajax_post({
 				action: 'create_subcategory',
 				name: $name,
-				category_id: $subcatid
+				cid: $cid
 			}, function(data){
 				if (data.success){
-					console.log(success);
+					notifs('positive', 'far fa-hdd fa-3x', "Création d'une sous-catégorie", 'The sub-category named '+ $name +' has just created.', false, 'top-right', 2000);
+					$table.append("<tr data-cid='"+ data.id +"'><td>"+ data.id +"</td><td>"+ $name +"</td><td>0</td><td>button</td></tr>");
 				}else{
 					console.log(data.error);
 				}
@@ -415,15 +605,22 @@ $(document).ready(function(){
 			return false;
 		}
 	});
-	
 
 
-// ADMIN > CONTENTS > PRODUCTS
+/*
+ *
+ *  ADMIN > CONTENTS > ADD NEW PRODUCTS
+ * 
+ */
 
-		// To Do > Search field
+		// To Do
 
-// ADMIN > CONTENTS > PREVIEW NEW PRODUCT
 
+/*
+ *
+ *  ADMIN > CONTENTS > PREVIEW'S PRODUCT CREATOR
+ * 
+ */
 	var mainpic_preview = $("input[name=asmain]").val();
 	var shipping = $("select[name=newprodshipping]").val();
 	
@@ -437,129 +634,7 @@ $(document).ready(function(){
 		var new_prod_price = $(this).val();
 		$("h1[name=preview_price]").html(new_prod_price);
 	});
-    
-	
-    $("a[name=addfund]").click(function(){
-        $.ajax({
-            url : '/core/function.php',
-            type : 'GET',
-            data : 'currency=' + base,
-            dataType : 'json',
-            success : function(success, statut){
-                alert("Success");
-            },
-            error : function(resultat, statut, erreur){
-                alert("Error");
-            },
-            complete : function(resultat, statut){
-                alert("Completed");
-            }
-        });
-        
-    });
-    
-    /*$("a[name=custoprofil]").click(function(event){
-        $('.ui.modal').modal('show');
-        alert($(this).data("userid"));
-        var userid = $(this).data("userid");
-    });
-	*/
-	
-	$('a[name=custoprofil]').on('click', function() {
-		var $id = $(this).data('userid');
-		$('.ui.longer.modal').modal('show');
-		$('div.tab').attr("data-userid", $id);
-		$('button[name=save_profil]').attr("data-userid", $id);
-		
-		// Request for Profil
-		$.ajax({
-			type: "GET",
-			dataType: 'json',
-			url: "index.php?p=eshop/ajax",
-			data: {action: 'customer_profil', id: $id},
-			success: function(output){
-				$('input').empty();
-				$('.customname').children().text(output.first_name + ' ' + output.last_name);
-				$('input[name=user]').val($id);
-				$('input[name=first_name]').val(output.first_name);
-				$('input[name=last_name]').val(output.last_name);
-				$('input[name=email]').val(output.email);
-				$('input[name=address]').val(output.address);
-				$('input[name=city]').val(output.city);
-				$('input[name=apt]').val(output.apt);
-				$('input[name=zip]').val(output.zip);
-				$('input[name=country]').val(output.country);
-				$('input[name=state]').val(output.state);
-				$('input[name=phone]').val(output.phone);
-            }
-		});
-		
-		// Request for System Activity's
-		$.ajax({
-			type: "GET",
-			dataType: 'json',
-			url: "index.php?p=eshop/ajax",
-			data: {action: 'system_activity', id: $id},
-			success: function(output){
-				var table = $('table[name=system_activity]');
-				table.find("tbody tr").remove();
-				$.each(output, function(index, value){
-					if(value.id){
-						var event = value.event;
-						var timer = value.timestamp;
-						table.append('<tr><td>' + value.id + '</td><td>' + timer + '</td><td>' + value.ip + '</td><td>' + before(event, "!") + '</td></tr>');
-					}
-				});
-            }
-		});
-		
-		// Request for E-Shop Activity's
-		$.ajax({
-			type: "GET",
-			dataType: 'json',
-			url: "index.php?p=eshop/ajax",
-			data: {action: 'customer_activity', id: $id},
-			success: function(output){
-				var table = $('table[name=customer_activity]');
-				table.find("tbody tr").remove();
-				$.each(output, function(index, value){
-					if(value.id){
-						var event = value.event;
-						table.append('<tr><td>' + value.id + '</td><td>' + value.date_created + '</td><td>' + value.ip + '</td><td>' + before(event, "!") + '</td></tr>');
-					}
-				});
-            }
-		});
-	});
-	
-	$('button[name=save_profil]').click(function(){
-		
-		var customer_profil = {
-			'user'			: $(this).data('userid'),
-			'first_name'	: $('input[name=first_name]').val(),
-			'last_name'		: $('input[name=last_name]').val(),
-			'email'			: $('input[name=email]').val(),
-			'phone'			: $('input[name=phone]').val(),
-			'address'		: $('input[name=address]').val(),
-			'city'			: $('input[name=city]').val(),
-			'apt'			: $('input[name=apt]').val(),
-			'zip'			: $('input[name=zip]').val(),
-			'state'			: $('input[name=state]').val(),
-			'country'		: $('input[name=country]').val(),
-		}
-		
-		$.ajax({
-			url			: 'index.php?p=eshop/ajax',
-			type		: 'POST',
-			dataType	: 'text',
-			data		: {action: 'customer_save_profil', customer_profil},
-			success		: function(data){
-				console.log(customer_profil)
-			}
-		});
-		
-	});
-    
+
     $("#checkAll").click(function(){
         $('input:checkbox').not(this).prop('checked', this.checked);
     });
@@ -570,7 +645,7 @@ $(document).ready(function(){
       window.print();
     }
     
-    /* INVOICES ACTION */
+    // INVOICES ACTION 
     
     $("select.inv_state").change(function(){
     
@@ -595,22 +670,9 @@ $(document).ready(function(){
             $("div#state_bg").empty().append(inv_state_txt);
         }
     });
-    
 
-    $(".country.item").click(function(){
-        var country = $(this).attr("data-value");
-        $.ajax({
-            url: 'http://dev.evolution-network.ca/plugins/eshop/pages_admin/assets/js/countries/' + country + '.json',
-            dataType: 'json',
-            type: 'get',
-            cache: false,
-            success: function(data){
-                $('#states').empty();
-                $(data.states).each(function(code, name) {
-                    $("#states").append("<option value='"+ this.code +"'>"+ this.name +"</option>");
-                });
-            }
-        });
-    });
+});
 
+$('a.active[data-tab="add_sub_category"]').on('click', function(){
+	console.log("category");
 });

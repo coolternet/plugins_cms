@@ -13,7 +13,7 @@ class eshop extends \Plugins
 	const AUTHOR 		= 'Yan Bourgeois'; // Votre nom
 	const NAME 			= 'eSH0P'; // Nom du plugin
 	const DESCRIPTION 	= 'E-Commerce management for Evo-CMS with Paypal'; // Bref description
-	const VERSION 		= '0.1'; // Version de votre plugin
+	const VERSION 		= '1.0'; // Version de votre plugin
 
     protected static $plugin_id;
     protected static $plugin_dir;
@@ -83,7 +83,9 @@ class eshop extends \Plugins
 			'shop_currency_default'     => array('string', 'CAD'),
 			'shop_currency_provider'    => array('int', '2'),
 			'shop_currency_format'      => array('string', 'json'),
-			'shop_currency_last_update' => array('date', NULL)
+			'shop_currency_last_update' => array('date', NULL),
+			'plugin_version'			=> array('string', '1.0.0'),
+			'plugin_db_version'			=> array('string', '1.0'),
 		], false, true);
 
 		\DB::CreateTable('eshop_invoices', [
@@ -126,19 +128,21 @@ class eshop extends \Plugins
 			'available'				=> array('integer', '1')
 		], false, true);
 		
-		\DB::CreateTable('eshop_products_categories', [
+		\DB::CreateTable('eshop_categories', [
 			'id'			=> 'increment',
+			'name'			=> 'string',
 			'slug_name'	    => 'string',
 			'available'		=> array('integer', '1')
 		], false, true);
 		
-		\DB::CreateTable('eshop_products_sub_categories', [
+		\DB::CreateTable('eshop_subcategories', [
 			'id'			=> 'increment',
+			'name'			=> 'string',
 			'slug_name'	    => 'string',
-			'available'		=> array('integer', '1')
+			'category_id'	=> 'integer'
 		], false, true);
 		
-		\DB::CreateTable('eshop_products_company', [
+		\DB::CreateTable('eshop_company', [
 			'id'			=> 'increment',
 			'slug_name'	    => 'string',
 			'logo'			=> array('string', NULL)
@@ -155,7 +159,7 @@ class eshop extends \Plugins
             'zip'           => array('string', NULL),
 			'phone'       	=> array('string', NULL),
 			'currency'     	=> 'string',
-            'deposite'		=> 'float'
+            'deposite'		=> array('float', '0.00'),
 		], false, true);
 
 		\DB::CreateTable('eshop_log', [
@@ -256,9 +260,9 @@ class eshop extends \Plugins
 		\DB::DropTable('eshop_invoices');
 		\DB::DropTable('eshop_invoices_items');
 		\DB::DropTable('eshop_products');
-		\DB::DropTable('eshop_products_sub_categories');
-		\DB::DropTable('eshop_products_categories');
-		\DB::DropTable('eshop_products_company');
+		\DB::DropTable('eshop_subcategories');
+		\DB::DropTable('eshop_categories');
+		\DB::DropTable('eshop_company');
 		\DB::DropTable('eshop_customers');
 		\DB::DropTable('eshop_customers_discount');
 		\DB::DropTable('eshop_log');

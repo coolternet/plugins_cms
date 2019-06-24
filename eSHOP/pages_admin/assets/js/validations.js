@@ -19,6 +19,77 @@ $('#bloc_add_subcategory').form({
     }
 });
 
+$('#global_company_registration').form({
+    on: 'blur',
+    fields: {
+		ShopName: {
+			identifier : 'shop_name',
+			rules: [{
+				type   : 'empty',
+				prompt : 'Shop Name is not valid'
+			}]
+		},
+		
+		ShopVAT: {
+			identifier : 'shop_vat',
+			rules: [{
+				type   : 'empty',
+				prompt : 'VAT Number is not valid'
+          }]
+		},
+		
+		ShopOwner: {
+			identifier : 'shop_owner',
+			rules: [{
+				type   : 'empty',
+				prompt : 'Owner Name is not valid'
+          }]
+		},
+		ShopAddr: {
+			identifier : 'shop_address',
+			rules: [{
+				type   : 'empty',
+				prompt : 'Address is not valid'
+          }]
+		},
+		ShopState: {
+			identifier : 'shop_state',
+			rules: [{
+				type   : 'empty',
+				prompt : 'State is not valid'
+          }]
+		},
+		ShopCountry: {
+			identifier : 'shop_country',
+			rules: [{
+				type   : 'empty',
+				prompt : 'Country is not valid'
+          }]
+		},
+		ShopCountry: {
+			identifier : 'shop_zip',
+			rules: [{
+				type   : 'empty',
+				prompt : 'Zip Code is not valid'
+          }]
+		},
+		ShopCountry: {
+			identifier : 'shop_phone',
+			rules: [{
+				type   : 'number',
+				prompt : 'Phone is not valid.  Format : 000000000000'
+          }]
+		},
+		ShopCountry: {
+			identifier : 'shop_email',
+			rules: [{
+				type   : 'email',
+				prompt : 'Email is not valid'
+          }]
+		}
+    }
+});
+
 $('#bloc_category').form({
     on: 'blur',
     fields: {

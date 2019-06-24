@@ -1,6 +1,6 @@
 <div class="ui grid">
 	<div class="four wide column">
-		<div class="ui vertical tabular pointing menu" style="min-height: 575px;">
+		<div class="ui vertical tabular pointing menu" style="min-height: 621px;">
 			<a class="item active" data-tab="customer_profil"><i class="user circle left icon"></i> Profil</a>
 			<a class="item" data-tab="customer_security"><i class="lock left icon"></i> Security</a>
 			<a class="item" data-tab="customer_vault"><i class="usd left icon"></i> Vault</a>
@@ -38,6 +38,12 @@
 						<input type="tel" name="phone" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" class="ui fluid dropdown form-control" />
 					</div>
 				</div>
+				<div class="form-group">
+					<label for="currency" class="col-sm-4 control-label">Currency</label>
+					<div class="col-sm-6">
+						<input type="text" name="currency" class="form-control">
+					</div>
+				</div>
 				
 				<h4 class="ui dividing header">Billing Address</h4>
 				<div class="form-group">
@@ -73,7 +79,7 @@
 				<div class="form-group">
 					<label for="country" class="col-sm-4 control-label">Country</label>
 					<div class="col-sm-6">
-						<input type="text" name="country" class="form-control">
+						<?= html_select('country', COUNTRIES); ?>
 					</div>
 				</div>
 			</div>
@@ -190,5 +196,4 @@
 		</div>
 		
 	</div>
-
 </div>

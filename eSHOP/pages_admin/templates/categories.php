@@ -44,7 +44,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<?php foreach($category AS $key => $val){ ?>
+						<?php foreach($categories AS $key => $val){ ?>
 						<tr data-id="<?= $val['id'] ?>">
 							<td><?= $val['id'] ?></td>
 							<td><?= $val['name'] ?></td>
@@ -79,13 +79,41 @@
 						</div>
 						<div class="five wide column bottom aligned">
 							<div class="field">
-								<button name="create_subcat" type="submit" class="ui purple submit fluid button">Create a Sub-Category</button>
+								<button name="create_subcat" type="submit" class="ui green submit fluid button">Create a Sub-Category</button>
 							</div>
 						</div>
 					</div>
 					<div class="ui error message"></div>
 				</form>
-				
+
+				<table class="ui table">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Sub-Category's Name</th>
+							<th>Category</th>
+							<th>Products</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Processeur</td>
+							<td>Informatique</td>
+							<td>0</td>
+							<td><button class="btn btn-sm btn-outline-primary">Edit</button> <button class="btn btn-sm btn-outline-danger">Delete</button></td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Tapis de souris</td>
+							<td>Informatique > Accessoires</td>
+							<td>0</td>
+							<td><button class="ui button purple">Edit</button> <button class="ui button error">Delete</button></td>
+						</tr>
+					</tbody>
+				</table>
+
 				<?php show_table(); ?>
 			</div>
 
@@ -134,11 +162,24 @@
 						<tr>
 							<th>ID</th>
 							<th>Company's name</th>
-							<th>Sub-Category</th>
-							<th></th>
+							<th>Category</th>
+							<th>Products</th>
 						</tr>
 					</thead>
-					<tbody></tbody>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Nintendo</td>
+							<td>Consoles, Jeux, Accessoires</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Intel</td>
+							<td>Carte Mère, Unité de stockage, Processeur</td>
+							<td>0</td>
+						</tr>
+					</tbody>
 				</table>
 			
 			</div>

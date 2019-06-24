@@ -47,7 +47,7 @@
 	
 	<div class="ui bottom tab" data-tab="newprod">
 
-		<div class="ui grid" style="background-color: white;border: 1px #d4d4d5 solid;border-top: none;">
+		<div class="ui stackable grid" style="background-color: white;border: 1px #d4d4d5 solid;border-top: none;">
 			<div class="four wide column">
 				<div id="newprodstep" class="ui vertical pointing tabular menu">
 					<a class="item active" data-tab="newprod_step1"><i class="far right fa-images"></i> Pictures</a>

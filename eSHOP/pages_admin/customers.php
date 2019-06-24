@@ -10,6 +10,8 @@
 
         } else {
 
+            $customer = get_customers();
+
             include 'templates/customers.php';
             
         }

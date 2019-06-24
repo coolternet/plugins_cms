@@ -37,7 +37,7 @@
                                                 <select name="currency" class="eshop_select ui basic blue">
                                                     <?php foreach($currency as $key) { echo "<option value='". $key['code'] ."'>". $key['code'] ."</option>"; } ?>
                                                 </select>
-                                                <button name="update_default_currency" class="ui blue basic button" type="submit" title="Update the default currency">Save</button>
+                                                <button name="change_currency" class="ui blue basic button" title="Update the default currency">Save</button>
                                             </div>
                                         </div>
                                     </div>
@@ -50,7 +50,7 @@
                                         <div class="field">
                                             <div class="ui action">
                                                 <label name="currency" style="margin-top: 7px;"><?= $settings['shop_currency_last_update'] ?></label>
-												<button name="install_currency" class="ui purple basic button floated right" title="Update price and rates">Update Currency</button>
+												<button name="update_currency" class="ui purple basic button floated right" title="Update price and rates">Update Currency</button>
                                             </div>
                                         </div>
                                     </div>
@@ -72,9 +72,9 @@
 				<div class="container stackable ui grid">
 					<div class="eight wide column">
 						<div id="currency-globalrates-table">
-							<table class="ui table">
+							<table name="rates-table" class="ui table">
 								<tbody>
-									<?php foreach($currency as $key => $val){ echo "<tr><td style='text-align: right'> 1 ". $settings['shop_currency_default'] ." = </td><td>". $val['rate'] ." ". $val['code'] ."</td></tr>"; } ?>
+									<?php foreach($currency as $key => $val){ echo "<tr><td class='eight wide' style='text-align: right'> 1 ". $settings['shop_currency_default'] ." = </td><td class='eight wide'>". $val['rate'] ."  ". $val['code'] ."</td></tr>"; } ?>
 								</tbody>
 							</table>
 						</div>
