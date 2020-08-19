@@ -1,41 +1,27 @@
 {
-	"TSM":
+	"Ticket System Management":
 		[
 			{
-        			"plugin_name": "Ticket System Management",
+        			
 				"plugin_version": "1.1.0",
-			        "release_date": "19-08-2020",
+			  	"release_date": "19-08-2020",
 				"cms_version": "1.0",
 				"level": "low",
 				"change_log": "text, text, text, text, text, text, text, text, text"
 			},
 			{
-        			"plugin_name": "Ticket System Management",
 				"plugin_version": "1.1.0",
-			        "release_date": "19-08-2020",
+			  	"release_date": "19-08-2020",
 				"cms_version": "1.0",
 				"level": "low",
 				"change_log": "text, text, text, text, text, text, text, text, text"
 			},
 			{
-        			"plugin_name": "Ticket System Management",
 				"plugin_version": "1.1.0",
-			        "release_date": "19-08-2020",
+			  	"release_date": "19-08-2020",
 				"cms_version": "1.0",
 				"level": "low",
 				"change_log": "text, text, text, text, text, text, text, text, text"
 			}
-		],
-    
-	"ESHOP_EM":
-		[
-			{
-        			"plugin_name": "Evo-SHOP Ecommerce Management",
-        			"release_date": "19-08-2020",
-				"plugin_version": "1.1.0",
-				"cms_version": "1.0",
-				"level": "low",
-				"change_log": "text, text, text, text, text, text, text, text, text"
-			}
-		]
+	  ]
 }
