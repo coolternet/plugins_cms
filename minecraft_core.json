@@ -333,7 +333,15 @@
             "date": "2020-08-11"
         }
       ],
-      "CraftBukkit": [],
+      "CraftBukkit": [
+        {
+            "id": "48",
+            "version": "1.16.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.2.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.2",
+            "date": "2020-08-12"
+        }
+      ],
       "SpigotMC": []
     }
   }
