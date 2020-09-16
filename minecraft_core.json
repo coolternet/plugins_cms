@@ -4,342 +4,522 @@
     "minecraft": {
       "Vanilla": [
         {
-            "id": "1",
             "version": "1.6.4",
             "server": "https://launcher.mojang.com/v1/objects/050f93c1f3fe9e2052398f7bd6aca10c63d64a87/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.6.4",
             "date": "2013-09-19"
         },
         {
-            "id": "2",
             "version": "1.7.2",
             "server": "https://launcher.mojang.com/v1/objects/3716cac82982e7c2eb09f83028b555e9ea606002/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.2",
             "date": "2013-10-25"
         },
         {
-            "id": "3",
             "version": "1.7.3",
             "server": "https://launcher.mojang.com/v1/objects/707857a7bc7bf54fe60d557cca71004c34aa07bb/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.3",
             "date": "2013-12-06"
         },
         {
-            "id": "4",
             "version": "1.7.5",
             "server": "https://launcher.mojang.com/v1/objects/e1d557b2e31ea881404e41b05ec15c810415e060/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.5",
             "date": "2014-02-26"
         },
         {
-            "id": "5",
             "version": "1.7.6",
             "server": "https://launcher.mojang.com/v1/objects/41ea7757d4d7f74b95fc1ac20f919a8e521e910c/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.6",
             "date": "2014-04-09"
         },
         {
-            "id": "6",
             "version": "1.7.7",
             "server": "https://launcher.mojang.com/v1/objects/a6ffc1624da980986c6cc12a1ddc79ab1b025c62/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.7",
             "date": "2014-04-09"
         },
         {
-            "id": "7",
             "version": "1.7.8",
             "server": "https://launcher.mojang.com/v1/objects/c69ebfb84c2577661770371c4accdd5f87b8b21d/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.8",
             "date": "2014-04-11"
         },
         {
-            "id": "8",
             "version": "1.7.9",
             "server": "https://launcher.mojang.com/v1/objects/4cec86a928ec171fdc0c6b40de2de102f21601b5/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.9",
             "date": "2014-04-14"
         },
         {
-            "id": "9",
             "version": "1.7.10",
             "server": "https://launcher.mojang.com/v1/objects/952438ac4e01b4d115c5fc38f891710c4941df29/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.10",
             "date": "2014-06-26"
         },
         {
-            "id": "10",
             "version": "1.8",
             "server": "https://launcher.mojang.com/v1/objects/a028f00e678ee5c6aef0e29656dca091b5df11c7/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8",
             "date": "2014-09-02"
         },
         {
-            "id": "11",
             "version": "1.8.1",
             "server": "https://launcher.mojang.com/v1/objects/68bfb524888f7c0ab939025e07e5de08843dac0f/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.1",
             "date": "2014-11-24"
         },
         {
-            "id": "12",
             "version": "1.8.2",
             "server": "https://launcher.mojang.com/v1/objects/a37bdd5210137354ed1bfe3dac0a5b77fe08fe2e/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.2",
             "date": "2015-02-19"
         },
         {
-            "id": "13",
             "version": "1.8.3",
             "server": "https://launcher.mojang.com/v1/objects/163ba351cb86f6390450bb2a67fafeb92b6c0f2f/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.3",
             "date": "2015-02-20"
         },
         {
-            "id": "14",
             "version": "1.8.4",
             "server": "https://launcher.mojang.com/v1/objects/dd4b5eba1c79500390e0b0f45162fa70d38f8a3d/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.4",
             "date": "2015-04-17"
         },
         {
-            "id": "15",
             "version": "1.8.5",
             "server": "https://launcher.mojang.com/v1/objects/ea6dd23658b167dbc0877015d1072cac21ab6eee/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.5",
             "date": "2015-05-22"
         },
         {
-            "id": "16",
             "version": "1.8.6",
             "server": "https://launcher.mojang.com/v1/objects/2bd44b53198f143fb278f8bec3a505dad0beacd2/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.6",
             "date": "2015-05-25"
         },
         {
-            "id": "17",
             "version": "1.8.7",
             "server": "https://launcher.mojang.com/v1/objects/35c59e16d1f3b751cd20b76b9b8a19045de363a9/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.7",
             "date": "2015-06-05"
         },
         {
-            "id": "18",
             "version": "1.8.8",
             "server": "https://launcher.mojang.com/v1/objects/5fafba3f58c40dc51b5c3ca72a98f62dfdae1db7/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.8",
             "date": "2015-07-27"
         },
         {
-            "id": "19",
             "version": "1.8.9",
             "server": "https://launcher.mojang.com/v1/objects/b58b2ceb36e01bcd8dbf49c8fb66c55a9f0676cd/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.9",
             "date": "2015-12-09"
         },
         {
-            "id": "20",
             "version": "1.9",
             "server": "https://launcher.mojang.com/v1/objects/b4d449cf2918e0f3bd8aa18954b916a4d1880f0d/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.9",
             "date": "2016-02-29"
         },
         {
-            "id": "21",
             "version": "1.9.1",
             "server": "https://launcher.mojang.com/v1/objects/bf95d9118d9b4b827f524c878efd275125b56181/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.9.1",
             "date": "2016-03-30"
         },
         {
-            "id": "22",
             "version": "1.9.2",
             "server": "https://launcher.mojang.com/v1/objects/2b95cc7b136017e064c46d04a5825fe4cfa1be30/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.9.2",
             "date": "2016-03-30"
         },
         {
-            "id": "23",
             "version": "1.9.3",
             "server": "https://launcher.mojang.com/v1/objects/8e897b6b6d784f745332644f4d104f7a6e737ccf/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.9.3",
             "date": "2016-05-10"
         },
         {
-            "id": "24",
             "version": "1.9.4",
             "server": "https://launcher.mojang.com/v1/objects/edbb7b1758af33d365bf835eb9d13de005b1e274/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.9.4",
             "date": "2016-05-10"
         },
         {
-            "id": "25",
             "version": "1.10",
             "server": "https://launcher.mojang.com/v1/objects/a96617ffdf5dabbb718ab11a9a68e50545fc5bee/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.10",
             "date": "2016-06-08"
         },
         {
-            "id": "26",
             "version": "1.10.1",
             "server": "https://launcher.mojang.com/v1/objects/cb4c6f9f51a845b09a8861cdbe0eea3ff6996dee/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.10.1",
             "date": "2016-06-22"
         },
         {
-            "id": "27",
             "version": "1.10.2",
             "server": "https://launcher.mojang.com/v1/objects/3d501b23df53c548254f5e3f66492d178a48db63/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.10.2",
             "date": "2016-06-23"
         },
         {
-            "id": "28",
             "version": "1.11",
             "server": "https://launcher.mojang.com/v1/objects/48820c84cb1ed502cb5b2fe23b8153d5e4fa61c0/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.11",
             "date": "2016-11-14"
         },
         {
-            "id": "29",
             "version": "1.11.1",
             "server": "https://launcher.mojang.com/v1/objects/1f97bd101e508d7b52b3d6a7879223b000b5eba0/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.11.1",
             "date": "2016-12-20"
         },
         {
-            "id": "30",
             "version": "1.11.2",
             "server": "https://launcher.mojang.com/v1/objects/f00c294a1576e03fddcac777c3cf4c7d404c4ba4/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.11.2",
             "date": "2016-12-21"
         },
         {
-            "id": "31",
             "version": "1.12",
             "server": "https://launcher.mojang.com/v1/objects/8494e844e911ea0d63878f64da9dcc21f53a3463/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.12",
             "date": "2017-06-07"
         },
         {
-            "id": "32",
             "version": "1.12.1",
             "server": "https://launcher.mojang.com/v1/objects/561c7b2d54bae80cc06b05d950633a9ac95da816/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.12.1",
             "date": "2017-08-03"
         },
         {
-            "id": "33",
             "version": "1.12.2",
             "server": "https://launcher.mojang.com/v1/objects/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.12.2",
             "date": "2017-09-18"
         },
         {
-            "id": "34",
             "version": "1.13",
             "server": "https://launcher.mojang.com/v1/objects/d0caafb8438ebd206f99930cfaecfa6c9a13dca0/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.13",
             "date": "2018-07-18"
         },
         {
-            "id": "35",
             "version": "1.13.1",
             "server": "https://launcher.mojang.com/v1/objects/fe123682e9cb30031eae351764f653500b7396c9/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.13.1",
             "date": "2018-08-22"
         },
         {
-            "id": "36",
             "version": "1.13.2",
             "server": "https://launcher.mojang.com/v1/objects/3737db93722a9e39eeada7c27e7aca28b144ffa7/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.13.2",
             "date": "2018-10-22"
         },
         {
-            "id": "37",
             "version": "1.14",
             "server": "https://launcher.mojang.com/v1/objects/f1a0073671057f01aa843443fef34330281333ce/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.14",
             "date": "2019-04-23"
         },
         {
-            "id": "38",
             "version": "1.14.1",
             "server": "https://launcher.mojang.com/v1/objects/ed76d597a44c5266be2a7fcd77a8270f1f0bc118/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.14.1",
             "date": "2019-05-13"
         },
         {
-            "id": "39",
             "version": "1.14.2",
             "server": "https://launcher.mojang.com/v1/objects/808be3869e2ca6b62378f9f4b33c946621620019/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.14.2",
             "date": "2019-05-27"
         },
         {
-            "id": "40",
             "version": "1.14.3",
             "server": "https://launcher.mojang.com/v1/objects/d0d0fe2b1dc6ab4c65554cb734270872b72dadd6/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.14.3",
             "date": "2019-06-24"
         },
         {
-            "id": "41",
             "version": "1.14.4",
             "server": "https://launcher.mojang.com/v1/objects/3dc3d84a581f14691199cf6831b71ed1296a9fdf/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.14.4",
             "date": "2019-07-19"
         },
         {
-            "id": "42",
             "version": "1.15",
             "server": "https://launcher.mojang.com/v1/objects/e9f105b3c5c7e85c7b445249a93362a22f62442d/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.15",
             "date": "2019-11-10"
         },
         {
-            "id": "43",
             "version": "1.15.1",
             "server": "https://launcher.mojang.com/v1/objects/4d1826eebac84847c71a77f9349cc22afd0cf0a1/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.15.1",
             "date": "2019-11-17"
         },
         {
-            "id": "44",
             "version": "1.15.2",
             "server": "https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.15.2",
             "date": "2020-01-21"
         },
         {
-            "id": "45",
             "version": "1.16",
             "server": "https://launcher.mojang.com/v1/objects/a0d03225615ba897619220e256a266cb33a44b6b/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.16",
             "date": "2020-06-23"
         },
         {
-            "id": "46",
             "version": "1.16.1",
             "server": "https://launcher.mojang.com/v1/objects/a412fd69db1f81db3f511c1463fd304675244077/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.1",
             "date": "2020-01-21"
         },
         {
-            "id": "47",
             "version": "1.16.2",
             "server": "https://launcher.mojang.com/v1/objects/c5f6fb23c3876461d46ec380421e42b289789530/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.2",
+            "date": "2020-08-11"
+        },
+        {
+            "version": "1.16.3",
+            "server": "https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.3",
             "date": "2020-08-11"
         }
       ],
       "CraftBukkit": [
         {
-            "id": "48",
+            "version": "1.6.4",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.6.4-R2.0.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.6.4",
+            "date": "2013-09-19"
+        },
+        {
+            "version": "1.7.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.7.2-R0.4-20140216.012104-3.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.2",
+            "date": "2013-10-25"
+        },
+        {
+            "version": "1.7.5",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.7.5-R0.1-20140402.020013-12.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.5",
+            "date": "2014-02-26"
+        },
+        {
+            "version": "1.7.8",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.7.8-R0.1-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.8",
+            "date": "2014-04-11"
+        },
+        {
+            "version": "1.7.9",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.7.9-R0.2-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.9",
+            "date": "2014-04-14"
+        },
+        {
+            "version": "1.7.10",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.7.10-R0.1-20140808.005431-8.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.7.10",
+            "date": "2014-06-26"
+        },
+        {
+            "version": "1.8",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.8-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.8",
+            "date": "2014-09-02"
+        },
+        {
+            "version": "1.8.3",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.8.3-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.3",
+            "date": "2015-02-20"
+        },
+        {
+            "version": "1.8.4",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.8.4-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.4",
+            "date": "2015-04-17"
+        },
+        {
+            "version": "1.8.5",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.8.5-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.5",
+            "date": "2015-05-22"
+        },
+        {
+            "version": "1.8.6",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.8.6-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.6",
+            "date": "2015-05-25"
+        },
+        {
+            "version": "1.8.7",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.8.7-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.7",
+            "date": "2015-06-05"
+        },
+        {
+            "version": "1.8.8",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.8.8-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.8.8",
+            "date": "2015-07-27"
+        },
+        {
+            "version": "1.9",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.9-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.9",
+            "date": "2016-02-29"
+        },
+        {
+            "version": "1.9.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.9.2-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.9.2",
+            "date": "2016-03-30"
+        },
+        {
+            "version": "1.9.4",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.9.4-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.9.4",
+            "date": "2016-05-10"
+        },
+        {
+            "version": "1.10",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.10-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.10",
+            "date": "2016-06-08"
+        },
+        {
+            "version": "1.10.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.10.2-R0.1-SNAPSHOT-latest.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.10.2",
+            "date": "2016-06-23"
+        },
+        {
+            "version": "1.11",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.11.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.11",
+            "date": "2016-11-14"
+        },
+        {
+            "version": "1.11.1",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.11.1.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.11.1",
+            "date": "2016-12-20"
+        },
+        {
+            "version": "1.11.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.11.2.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.11.2",
+            "date": "2016-12-21"
+        },
+        {
+            "version": "1.12",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.12.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.12",
+            "date": "2017-06-07"
+        },
+        {
+            "version": "1.12.1",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.12.1",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.12.1",
+            "date": "2017-08-03"
+        },
+        {
+            "version": "1.12.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.12.2.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.12.2",
+            "date": "2017-09-18"
+        },
+        {
+            "version": "1.13",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.13.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.13",
+            "date": "2018-07-18"
+        },
+        {
+            "version": "1.13.1",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.13.1.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.13.1",
+            "date": "2018-08-22"
+        },
+        {
+            "version": "1.13.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.13.2.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.13.2",
+            "date": "2018-10-22"
+        },
+        {
+            "version": "1.14",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.14-R0.1-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.14",
+            "date": "2019-04-23"
+        },
+        {
+            "version": "1.14.1",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.14.1-R0.1-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.14.1",
+            "date": "2019-05-13"
+        },
+        {
+            "version": "1.14.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.14.2-R0.1-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.14.2",
+            "date": "2019-05-27"
+        },
+        {
+            "version": "1.14.3",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.14.3-R0.1-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.14.3",
+            "date": "2019-06-24"
+        },
+        {
+            "version": "1.14.4",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.14.4-R0.1-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.14.4",
+            "date": "2019-07-19"
+        },
+        {
+            "version": "1.15",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.15-R0.1-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.15",
+            "date": "2019-11-10"
+        },
+        {
+            "version": "1.15.1",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.15.1-R0.1-SNAPSHOT.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.15.1",
+            "date": "2019-11-17"
+        },
+        {
+            "version": "1.15.2",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.15.2.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.15.2",
+            "date": "2020-01-21"
+        },
+        {
+            "version": "1.16.1",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.1.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.1",
+            "date": "2020-01-21"
+        },
+        {
             "version": "1.16.2",
             "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.2.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.2",
-            "date": "2020-08-12"
+            "date": "2020-08-11"
+        },
+        {
+            "version": "1.16.3",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.3.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.3",
+            "date": "2020-08-11"
         }
       ],
       "SpigotMC": []
