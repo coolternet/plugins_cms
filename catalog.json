@@ -1,32 +1,88 @@
 {
-  "Modules": {
-    "EShop Ecommerce Management": {
-      "1.0.0": {
-        "release_date": "19-08-2020",
-        "plugin_version": "1.0.0",
-        "cms_version": "1.0",
-        "level": "low",
-        "change_log": "text, text, text, text, text, text, text, text, text"
-      }
-    },
-    "Ticket System Management": {
-      "1.1.0": {
-        "release_date": "19-08-2020",
-        "plugin_version": "1.1.0",
-        "cms_version": "1.0",
-        "level": "low",
-        "change_log": "text, text, text, text, text, text, text, text, text"
-      }
-    }
-  },
-  "Themes": {
-    "Subex HTML5 Template": {
-      "1.0.0": {
-        "author": "BootExperts (http://bootexperts.com)",
-        "cms_adapted": "Evo-CMS (http://blog.evolution-network.ca)",
-        "release_date": "19-08-2020",
-        "cms_version": "1.3.0"
-      }
-    }
-  }
+    "Modules":
+        [
+            {
+                "name": "Ticket System Management",
+                "author": "Evo-CMS",
+                "description": "Technical Support system using tickets",
+                "cms_version": "1.3.4",
+                "plugin_version": "1.1.0",
+                "website": "https://blog.evolution-network.ca/forums/4?topic=26",
+                "download": "",
+                "preview": ""
+            },
+            {
+                "name": "EShop Ecommerce Management",
+                "author": "Evo-CMS",
+                "description": "Electronic Shopping addon for Evo-CMS",
+                "cms_version": "1.3.4",
+                "plugin_version": "1.0.0",
+                "website": "https://blog.evolution-network.ca/forums?topic=27",
+                "download": "",
+                "preview": ""
+            },
+            {
+                "name": "Evo-MCGP",
+                "author": "Evo-CMS",
+                "description": "Minecraft GamePanel Management for Linux",
+                "cms_version": "1.3.4",
+                "plugin_version": "1.0.0",
+                "website": "",
+                "download": "",
+                "preview": ""
+            }
+        ],
+    "Themes": 
+        [
+            {
+                "name": "EvoCMS Blue thing",
+                "author": "Evo-CMS",
+                "description": "Default template based on BootStrap 4",
+                "cms_version": "1.3.0",
+                "plugin_version": "1.0.0",
+                "website": "https://blog.evolution-network.ca/project",
+                "download": "",
+                "preview": "https://fkcd.ca/msl.jpg"
+            },
+            {
+                "name": "Subex HTML5 Template",
+                "author": "BootExperts",
+                "description": "Default EvoCMS template on HTML5",
+                "cms_version": "1.3.0",
+                "plugin_version": "1.0.0",
+                "website": "https://blog.evolution-network.ca/forums/6?topic=23",
+                "download": "https://fkcd.ca/Moq.zip",
+                "preview": "https://fkcd.ca/qgx.png"
+            }
+        ],
+    "Langues": 
+        [
+            {
+                "flag": "ca",
+                "name": "Français (Canada)",
+                "author": "Evo-CMS",
+                "cms_version": "1.3.0",
+                "progress":"100",
+                "download": "",
+                "website": "https://blog.evolution-network.ca/project"
+            },
+            {
+                "flag": "ca",
+                "name": "English (Canada)",
+                "author": "Evo-CMS",
+                "cms_version": "1.3.0",
+                "progress":"70",
+                "download": "",
+                "website": ""
+            },
+            {
+                "flag": "es",
+                "name": "Espagnol (Espagne)",
+                "author": "Evo-CMS",
+                "cms_version": "1.3.0",
+                "progress":"0",
+                "download": "",
+                "website": ""
+            }
+        ]
 }
