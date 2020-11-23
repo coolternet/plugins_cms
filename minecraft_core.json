@@ -703,7 +703,7 @@
         },
         {
             "version": "1.16.4",
-            "server": "https://cdn.getbukkit.org/spigot/spigot-1.16.4.jar",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.4.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.4",
             "date": "2020-10-29"
         }
