@@ -1,6 +1,6 @@
 {
     "_comment": " Evolution-Network © 2020 :: Minecraft Core DB for EvoCMS",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "minecraft": {
       "Vanilla": [
         {
@@ -368,6 +368,12 @@
             "server": "https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.4",
             "date": "2020-10-29"
+        },
+        {
+            "version": "1.16.5",
+            "server": "https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.5",
+            "date": "2021-01-17"
         }
       ],
       "CraftBukkit": [
@@ -706,6 +712,12 @@
             "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.4.jar",
             "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.4",
             "date": "2020-10-29"
+        },
+        {
+            "version": "1.16.5",
+            "server": "https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.16.5.jar",
+            "url": "https://minecraft.gamepedia.com/Java_Edition_1.16.5",
+            "date": "2021-01-17"
         }
       ],
       "SpigotMC": []
