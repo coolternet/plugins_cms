@@ -1,0 +1,410 @@
+@import url("../css/Chart.css");
+@import url("../css/semantic/label.css");
+@import url("../css/semantic/list.css");
+@import url("../css/semantic/rating.css");
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+
+/* Menu Admin LEFT */
+
+ul#admin-menu > li.dropdown > a.dropdown-toggle::after {
+    display:none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* CSS Plugin */
+
+#admin-page {
+    padding: 0px;
+}
+
+div#admin-page > div.container {
+    margin-top: -70px;
+}
+
+.plugin_header {
+    min-height: 250px;
+}
+
+.plugin_header .header {
+    position: relative;
+    top: 60px;
+}
+
+.plugin_header .header .title{
+    float: left
+}
+
+div#ticket.card {
+    border-radius: 0px;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+#tickets_stats_bloc div.card {
+    margin-bottom: 25px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 2px;
+    border: #ddd 1px solid;
+}
+
+#tickets_list_bloc div.card {
+    margin-bottom: 25px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 2;
+    border: #ddd 1px solid;
+}
+
+#tickets_list_bloc .table {
+    margin: 0;
+}
+
+#ticket-ans, #ticket-ans > .form-group {
+    padding: 0;
+    margin: 0;
+}
+
+#ticket-ans > .form-group > textarea {
+    border: none;
+    font-family: monospace;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th {
+    border: none;
+    vertical-align: middle;
+}
+
+.table > tbody > tr > td > button {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+}
+
+#tickets_stats_bloc div.card .ui.four.statistics .statistic {
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+#tickets_stats_bloc div.card .ui.statistics .statistic > .label{
+    font-weight: 300;
+}
+
+#tickets_stats_bloc div.card .ui.statistics .statistic > .value{
+    font-weight: 300;
+}
+
+button {
+    border-radius: 0px !important;
+}
+
+a.card-footer:hover {
+    background: darkgray;
+    color: white !important;
+    text-decoration: none;
+}
+
+div.card > .card-body > .ui.list > div.item {
+    padding: 0.6em 0.5em;
+}
+
+div.card > .card-body > .ui.list > .item > .ui.sub.header > i {
+    margin-right: 5px;
+}
+
+div.card > .card-body > .ui.list > .item > .content {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+form > div.contact_btn {
+    border-top: 1px dashed #6c757d;
+    padding-top: 15px;
+}
+
+.icon-background {
+    color: #d1d6e8;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    line-height: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.25;
+    text-align: center;
+    font-size: 70px;
+}
+
+/* Gradient Color BG */
+
+.bg-grad-green {
+    background: #FDFC47;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-grad-lawrencium {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f0c29, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.bg-grad-royal {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#141E30 #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#141E30 #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.bg-grad-frost {
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left,#000428 #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,#000428 #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-grad-evo {
+    background: #263238;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #37474f, #263238);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #37474f, #263238); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+#tickets_stats_bloc a:hover div.completed {
+    background-color: #e2ffe9 !important;
+    border-color: #28a745 !important;
+}
+
+#tickets_stats_bloc a:hover div.completed div.card-footer span{
+    color:black !important;
+}
+
+#tickets_stats_bloc a:hover div.completed div.card-footer {
+    background-color: #28a7456b;
+    border-top: 1px solid #28a745;
+}
+
+#tickets_stats_bloc a:hover div.critical {
+    background-color: #FFE0E6 !important;
+    border-color: #DB2828 !important;
+}
+
+#tickets_stats_bloc a:hover div.critical div.card-footer span{
+    color:black !important;
+}
+
+#tickets_stats_bloc a:hover div.critical div.card-footer {
+    background-color:#DB28286b !important;
+    border-top: 1px solid #db2828;
+}
+
+#tickets_stats_bloc a:hover div.unassigned{
+    background-color: #ebe0ff !important;
+    border-color: #9966ff !important;
+}
+
+#tickets_stats_bloc a:hover div.unassigned div.card-footer {
+    background-color: #9966ff6b;
+    border-top: 1px solid #9966ff;
+}
+
+#tickets_stats_bloc a:hover div.unassigned div.card-footer span{
+    color:black !important;
+}
+
+#tickets_stats_bloc a:hover div.inprogress{
+    background-color: #d7ecfb !important;
+    border-color: #37a2eb !important;
+}
+
+#tickets_stats_bloc a:hover div.inprogress div.card-footer {
+    background-color: #37a2eb6b;
+    border-top: 1px solid #37a2eb;
+}
+
+#tickets_stats_bloc a:hover div.inprogress div.card-footer span{
+    color:black !important;
+}
+
+#tickets_stats_bloc a:hover, #tickets_stats_bloc a:focus {
+    text-decoration: none;
+}
+
+.container > div#ticket > table {
+    background-color: #eeeeee;
+}
+
+.ticket-view div.card {
+        margin-bottom: 25px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border-radius: 0;
+}
+
+
+table#tickets_list th{
+    font-weight: 500;
+}
+
+table#tickets_list td,
+table#tickets_list td a,
+table#tickets_list td a:hover {
+    text-transform:uppercase;
+    color: #333
+}
+
+figure img, .figure img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+.media figure {
+    margin: 0 auto;
+    margin-bottom: 10px !important;
+}
+
+figure.avatar150 {
+    min-width: 150px;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    background-color: white;
+    line-height: 146px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 70px;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+    font-weight: 100;
+    border-left: 5px solid rgba(34, 36, 38, 0.15);
+    padding: 10px;
+}
+
+.card-text > .media {
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-family: monospace;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+/* FIX CSS */
+
+.ui.list .list > .item > i.icon, .ui.list > .item > i.icon {
+    padding-top: 2px;
+}
+
+ul.ui.list li, ol.ui.list li, .ui.list > .item, .ui.list .list > .item {
+    display: list-item;
+    table-layout: fixed;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0.3em 0.5em;
+    line-height: 1.14285714em;
+}
+
+.ui.blue.labels .label, .ui.blue.label {
+    background-color: #D6ECFB !important;
+    border-color: #2185D0 !important;
+    color: #FFFFFF !important;
+}
+
+.ui.red.labels .label, .ui.red.label {
+    background-color: #FFE0E6 !important;
+    border-color: #DB2828 !important;
+    color: #FFFFFF !important;
+}
+
+.ui.green.labels .label, .ui.green.label {
+    background-color: #DBF3F3 !important;
+    border-color: #21BA45 !important;
+    color: #FFFFFF !important;
+}
+
+.ui.purple.labels .label, .ui.purple.label {
+    background-color: #EBE0FF !important;
+    border-color: #A333C8 !important;
+    color: #FFFFFF !important;
+}
+
+.ui.massive.label {
+    line-height: 20px;
+    border: 1px solid;
+}
+
+.card > .ui.red.ribbon.label {
+    background-color: #dc3545 !important;
+}
+
+.card > .ui.ribbon.label {
+    border-radius: 0;
+    left: -19px;
+    margin-right: -1.3em;
+    padding: 10px;
+    font-weight: 400;
+    font-family: Ubuntu;
+    font-size: revert;
+}

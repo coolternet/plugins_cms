@@ -1,0 +1,26 @@
+{
+    "name": "Ticket System",
+    "description": "Technical Support system using tickets",
+    "version": "1.0.0",
+    "authors": [
+        "Evo-CMS (http://blog.evolution-network.ca)"
+    ],
+    "exports": ["plugin"],
+
+    "homepage": "http://blog.evolution-network.ca/",
+    "manifest": "https://github.com/ducalex/evo-cms/tree/master/plugins/demo/evo.json",
+    "download": "",
+
+    "changelog": [
+        { "version": "1.0.0", "date": "2019-11-25", "changes": "" }
+    ],
+
+    "settings": {},
+    
+    "permissions": {
+        "setAssignation": "Apply an assignation",
+        "setAsUnsolved": "Mark ticket as Unsolved",
+        "setAsSolved": "Mark ticket as Solved",
+        "delTicket": "Delete tickets"
+    }
+}
