@@ -41,7 +41,7 @@ $(document).ready(function(){
                 tc_comment: {
                   required: true,
                   minlength: 5,
-                  maxlength: 1024
+                  maxlength: 1000
                 }
               },
             messages : {
@@ -53,7 +53,7 @@ $(document).ready(function(){
                 tc_comment: {
                     required: "Veuillez entrer une description du problème",
                     minlength: "Minimum de caractères est de 5",
-                    maxlength: "Maximum de caractères autorisé est de 1024",
+                    maxlength: "Maximum de caractères autorisé est de 1000",
                 },
             },
             submitHandler: function (form) { // for demo
@@ -84,14 +84,14 @@ $(document).ready(function(){
                 comment: {
                   required: true,
                   minlength: 1,
-                  maxlength: 1024
+                  maxlength: 2056
                 }
             },
             messages : {
                 comment: {
                     required: "Veuillez composer votre message.",
                     minlength: "Minimum de caractères est de 1",
-                    maxlength: "Maximum de caractères autorisé est de 1024",
+                    maxlength: "Maximum de caractères autorisé est de 2056",
                 },
             },
             submitHandler: function (form) {

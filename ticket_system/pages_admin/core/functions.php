@@ -157,7 +157,9 @@
             \DB::Insert('tss_rates', [
                 'tid' => $tid,
                 'sid' => App::getCurrentUser()->id,
-                'send_date' => $EndDate
+                'send_date' => $EndDate,
+                'score' => '0',
+                'comment' => 'Closed by a moderator'
             ]);
 
             \DB::Update('tss_ticket', ['close_date' => $EndDate], ['id' => $tid]);

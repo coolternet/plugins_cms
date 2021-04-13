@@ -32,7 +32,7 @@ return new class extends Evo\Module
 			'id'			=> 'increment', 
 			'sid'			=> 'integer',
 			'subject'		=> 'string',
-			'short_desc'	=> 'string',
+			'short_desc'	=> 'text',
 			'assignation'	=> array('integer', 0),
 			'level'			=> array('integer', 0),
 			'create_date'	=> 'dateTime',
@@ -54,7 +54,7 @@ return new class extends Evo\Module
 			'id'			=> 'increment', 
 			'tid'			=> 'integer',
 			'sid'			=> 'integer',
-			'score'			=> 'integer',
+			'score'			=> array('integer', NULL),
 			'comment'		=> 'text',
 			'send_date'		=> 'dateTime'
 		], false, true);
@@ -67,32 +67,6 @@ return new class extends Evo\Module
 			'assignation'	=> 'integer',
 			'send_date'		=> 'dateTime'
 		], false, true);
-
-		\DB::Insert('tss_ticket', [
-			'id'			=> '0',
-			'sid'			=> App::getCurrentUser()->id,
-			'subject'		=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac.',
-			'short_desc'	=> 'Short description for casual',
-			'assignation'	=> '1',
-			'create_date'	=> date("Y-m-d H:i:s")
-		]);
-
-		\DB::Insert('tss_admin_notes', [
-			'tid'			=> '0',
-			'cid'			=> App::getCurrentUser()->id,
-			'note'			=> 'Utilisateur complètement grossier et disgracieux.',
-			'assignation'	=> '1',
-			'send_date'		=> date("Y-m-d H:i:s")
-		]);
-
-		\DB::Insert('tss_content', [
-			'tid'			=> '0',
-			'sid'			=> App::getCurrentUser()->id,
-			'mid'			=> '1',
-			'msg'			=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet justo id pulvinar rutrum. Curabitur vel quam magna. Aliquam erat volutpat. Maecenas laoreet finibus congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam vitae posuere sapien. Aenean eros justo, venenatis et fermentum nec, vestibulum.',
-			'send_date'		=> date("Y-m-d H:i:s"),
-			'ip'			=> $_SERVER['REMOTE_ADDR']
-		]);
 
 		App::setNotice("Ticket system is enable");
 	}

@@ -15,8 +15,6 @@
                 <div class="input-group-append">
                     <button type="submit" class="btn btn-dark" disabled title="Search"><i class="fa fa-search"></i></button>
                     <a href="?p=ticket_system/home" title="<?= __('ticket_system/tss_header.home'); ?>" class="btn btn-dark"><i class="fas fa-home"></i></a>
-                    <a href="?p=ticket_system/bug" title="<?= __('ticket_system/tss_header.bug'); ?>" class="btn btn-dark"><i class="fas fa-bug"></i></a>
-                    <a href="?p=ticket_system/contact" title="<?= __('ticket_system/tss_header.contact'); ?>" class="btn btn-dark"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
         </div>

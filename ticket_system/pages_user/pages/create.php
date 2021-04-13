@@ -15,7 +15,7 @@
             <label class="col-3 col-form-label text-right"><?= __('ticket_system/tss_create.description'); ?></label>
             <div class="col-8">
                 <div id="commentaire">
-                    <textarea class="form-control" name="tc_comment" placeholder="Message" maxlength="1024" rows="3" style="resize: none;"></textarea>
+                    <textarea class="form-control" name="tc_comment" placeholder="Message" maxlength="1000" rows="3" style="resize: none;"></textarea>
                 </div>
             </div>
         </div>

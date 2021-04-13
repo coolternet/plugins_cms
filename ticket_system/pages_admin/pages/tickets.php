@@ -19,32 +19,16 @@
                             <td><a href="/admin/?page=user_view&id=<?= $value['sid']; ?>" target="_blank"><?= $value["account"] ?></a></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["close_date"] ?></td>
-                            <td><?= $value["assignation"] ?></td>
-                            <td><?= $value["score"] ?></td>
+                            <td><?php var_dump($value["assignation"]) ?></td>
+                            <td><?php var_dump($value["score"]) ?></td>
                         </tr>
                     <?php endforeach; ?>
-                        <td colspan="1" class="bg-light">
-                            <button class="btn btn-danger btn-sm" style="float:left"><i class="far fa-trash-alt"></i></button>
-                        </td>
-                        <td colspan="6" class="bg-light">
-                            <ul class="pagination right" style="margin:0">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item" aria-current="page">
-                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </td>
                 <?php else : ?>
-                    <td colspan="7">
-                        <div class="alert alert-primary text-center"><?= __('ticket_system/tss_alert.solved'); ?></div>
-                    </td>
+                    <tr class="bg-light">
+                        <td colspan="7">
+                            <div class="alert alert-primary text-center"><?= __('ticket_system/tss_alert.solved'); ?></div>
+                        </td>
+                    </tr>
                 <?php endif; ?>
             </tbody>
         <?php elseif($type === "critical") : ?>
@@ -73,28 +57,12 @@
                             </td>
                         </tr>
                     <?php endforeach; ?>
-                        <td colspan="1" class="bg-light">
-                            <button class="btn btn-danger btn-sm" style="float:left"><i class="far fa-trash-alt"></i></button>
-                        </td>
-                        <td colspan="6" class="bg-light">
-                            <ul class="pagination right" style="margin:0">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item" aria-current="page">
-                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </td>
                 <?php else : ?>
-                    <td colspan="7">
-                        <div class="alert alert-primary text-center"><?= __('ticket_system/tss_alert.nocritical'); ?></div>
-                    </td>
+                    <tr class="bg-light">
+                        <td colspan="7">
+                            <div class="alert alert-primary text-center"><?= __('ticket_system/tss_alert.nocritical'); ?></div>
+                        </td>
+                    </tr>
                 <?php endif; ?>
             </tbody>
         <?php elseif($type === "open") : ?>
@@ -123,28 +91,12 @@
                             </td>
                         </tr>
                     <?php endforeach; ?>
-                        <td colspan="1" class="bg-light">
-                            <button class="btn btn-danger btn-sm" style="float:left"><i class="far fa-trash-alt"></i></button>
-                        </td>
-                        <td colspan="6" class="bg-light">
-                            <ul class="pagination right" style="margin:0">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item" aria-current="page">
-                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </td>
                 <?php else : ?>
-                    <td colspan="7">
-                        <div class="alert alert-primary text-center"><?= __('ticket_system/tss_alert.unsolved'); ?></div>
-                    </td>
+                    <tr class="bg-light">
+                        <td colspan="7">
+                            <div class="alert alert-primary text-center"><?= __('ticket_system/tss_alert.unsolved'); ?></div>
+                        </td>
+                    </tr>
                 <?php endif; ?>
             </tbody>
         <?php elseif($type === "unassigned") : ?>
@@ -161,7 +113,7 @@
             <tbody>
                 <?php if($get) : ?>
                     <?php foreach($get as $key => $value) : ?>
-                        <tr>
+                        <tr class="bg-light">
                             <th><input type="checkbox" id="autoSizingCheck"></th>
                             <td><?= $value["account"] ?></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
@@ -173,28 +125,12 @@
                             </td>
                         </tr>
                     <?php endforeach; ?>
-                        <td colspan="1" class="bg-light">
-                            <button class="btn btn-danger btn-sm" style="float:left"><i class="far fa-trash-alt"></i></button>
-                        </td>
-                        <td colspan="6" class="bg-light">
-                            <ul class="pagination right" style="margin:0">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item" aria-current="page">
-                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </td>
                 <?php else : ?>
-                    <td colspan="7">
-                        <div class="alert alert-primary text-center"><?= __('ticket_system/tss_alert.unassigned'); ?></div>
-                    </td>
+                    <tr class="bg-light">
+                        <td colspan="7">
+                            <div class="alert alert-primary text-center"><?= __('ticket_system/tss_alert.unassigned'); ?></div>
+                        </td>
+                    </tr>
                 <?php endif; ?>
             </tbody>
         <?php endif; ?>

@@ -14,7 +14,7 @@
                 <button class="bt-btn" onclick="window.print()"><i class="fas fa-lg fa-print"></i></button>
             </div>
         </div>
-        <blockquote class="m-4">
+        <blockquote class="m-4" style="overflow-wrap: break-word">
             <?= $info["short_desc"]; ?>
         </blockquote>
         <div data-id="<?= $tid ?>" id="conversation" class="row">
@@ -47,7 +47,7 @@
 
             <?php if($info['close_date'] === NULL) : ?>
                 <form id="ticket_msg" action="" method="post">
-                    <textarea id="editor" class="form-control" name="comment" placeholder="Message" maxlength="1024" rows="3" style="resize: none;margin-top:30px;"></textarea>
+                    <textarea id="editor" class="form-control" name="comment" placeholder="Message" maxlength="2000" rows="3" style="resize: none;margin-top:30px;"></textarea>
                     <div style="margin-top: 10px;">
                         <button class="btn blue darken-4 waves-effect waves-light btn-block" name="ticket_comment" type="submit" ><?= __('ticket_system/tss_table.action_send'); ?></button>
                         <button class="btn blue darken-4 waves-effect waves-light btn-block" name="ticket_close" type="submit" ><?= __('ticket_system/tss_table.action_close'); ?></button>

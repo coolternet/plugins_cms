@@ -57,7 +57,7 @@
                     <span class="ui red ribbon label"><?= __('ticket_system/tss_view.ticket_close'); ?></span>
                 <?php endif; ?>
                 <div class="card-body">
-                    <blockquote>
+                    <blockquote style="overflow-wrap: break-word;">
                         <?= $info["short_desc"]; ?>
                     </blockquote>
                     <div id="converbloc" class="card-text">

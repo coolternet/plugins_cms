@@ -30,7 +30,7 @@
                             FROM {tss_ticket}
                             LEFT JOIN {users} as account ON {tss_ticket}.sid = account.id
                             LEFT JOIN {users} AS assignation ON {tss_ticket}.assignation = assignation.id
-                            WHERE $where AND tss_ticket.sid = :userid AND tss_ticket.availability = :available ORDER BY id ASC LIMIT $start, $count",[':userid' => $uid, ':available' => '1']
+                            WHERE $where AND {tss_ticket}.sid = :userid AND {tss_ticket}.availability = :available ORDER BY id ASC LIMIT $start, $count",[':userid' => $uid, ':available' => '1']
         );
     }
 

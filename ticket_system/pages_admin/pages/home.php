@@ -137,7 +137,7 @@
                         <tbody>
                             <?php if($count_open) : ?>
                                 <?php foreach($get_open AS $key => $val) : ?>
-                                    <tr>
+                                    <tr class="bg-light">
                                         <th><?= $val["id"] ?></th>
                                         <td><a href="/admin/?page=user_view&id=<?= $val['sid']; ?>" target="_blank"><?= $val["account"] ?></a></td>
                                         <td><?= $val["create_date"] ?></td>
@@ -151,7 +151,7 @@
                                     </tr>
                                 <?php endforeach; ?>
                             <?php else : ?>
-                            <tr>
+                            <tr class="bg-light">
                                 <td colspan="6">
                                     <div class="alert alert-primary center" role="alert"><?= __('ticket_system/tss_home.no_topen'); ?></div>
                                 </td>

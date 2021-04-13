@@ -10,12 +10,6 @@
             <span class="text-muted small"><?= __('ticket_system/tss_header.author'); ?> : <?=  App::getModule('ticket_system')->authors[0] ?></span>
         </div>
         <div class="opt right text-right text-white d-none d-md-block">
-            <div class="input-group">
-                <div class="input-group-append">
-                    <a href="?p=ticket_system/bug" title="<?= __('ticket_system/tss_header.bug'); ?>" class="btn btn-dark"><i class="fas fa-bug"></i></a>
-                    <a href="?p=ticket_system/contact" title="<?= __('ticket_system/tss_header.contact'); ?>" class="btn btn-dark"><i class="far fa-envelope"></i></a>
-                </div>
-            </div>
         </div>
     </div>
 </div>
