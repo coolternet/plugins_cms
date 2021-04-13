@@ -65,10 +65,7 @@
     }
 
     function ticket_get_content($id){
-        $get = \DB::QueryAll("SELECT
-                                {tss_content}.*
-                            FROM {tss_content}
-                            WHERE tid = :tid ORDER BY send_date ASC",[':tid' => $id]);
+        $get = \DB::QueryAll("SELECT * FROM {tss_content} WHERE tid = :tid ORDER BY id ASC",[':tid' => $id]);
         return $get;
     }
 
