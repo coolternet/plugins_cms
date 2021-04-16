@@ -141,7 +141,7 @@
                                         <th><?= $val["id"] ?></th>
                                         <td><a href="/admin/?page=user_view&id=<?= $val['sid']; ?>" target="_blank"><?= $val["account"] ?></a></td>
                                         <td><?= $val["create_date"] ?></td>
-                                        <td><?= $val["assignation"] ?></td>
+                                        <td><?= $val["moderator"] ?></td>
                                         <td>Answered</td>
                                         <td class="center">
                                             <button class="btn btn-sm" name="delete_ticket" data-id="<?= $val["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>

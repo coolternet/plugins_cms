@@ -35,7 +35,7 @@
         return \DB::QueryAll("SELECT
                                 {tss_ticket}.*,
                                 account.username AS account,
-                                assignation.username AS assignation,
+                                assignation.username AS moderator,
                                 {tss_rates}.score
                             FROM {tss_ticket}
                             LEFT JOIN {users} AS account ON {tss_ticket}.sid = account.id
@@ -56,7 +56,7 @@
                                 account.email,
                                 account.country,
                                 account.registered,
-                                assignation.username AS assignation
+                                assignation.username AS moderator
                         FROM {tss_ticket}
                             LEFT JOIN {users} AS account ON {tss_ticket}.sid = account.id
                             LEFT JOIN {users} AS assignation ON {tss_ticket}.assignation = assignation.id

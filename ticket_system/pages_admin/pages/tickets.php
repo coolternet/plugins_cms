@@ -3,7 +3,7 @@
         <?php if($type === "close") : ?>
             <thead>
                 <tr>
-                    <th><input type="checkbox" id="autoSizingCheck"></th>
+                    <th></th>
                     <th scope="col"><?= __('ticket_system/tss_table.account'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.subject'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.end_date'); ?></th>
@@ -14,12 +14,12 @@
             <tbody>
                 <?php if($get) : ?>
                     <?php foreach($get as $key => $value) : ?>
-                        <tr class="bg-light">
-                            <th><input type="checkbox" id="autoSizingCheck"></th>
+                        <tr class="bg-light" id="<?= $value["id"] ?>">
+                            <th><button class="btn btn-sm" name="delete_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button></th>
                             <td><a href="/admin/?page=user_view&id=<?= $value['sid']; ?>" target="_blank"><?= $value["account"] ?></a></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["close_date"] ?></td>
-                            <td><?= $value["assignation"] ?></td>
+                            <td><?= $value["moderator"] ?></td>
                             <td><?= $value["score"] ?></td>
                         </tr>
                     <?php endforeach; ?>
@@ -34,7 +34,7 @@
         <?php elseif($type === "critical") : ?>
             <thead>
                 <tr>
-                    <th><input type="checkbox" id="autoSizingCheck"></th>
+                    <th></th>
                     <th scope="col"><?= __('ticket_system/tss_table.account'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.subject'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.end_date'); ?></th>
@@ -46,11 +46,11 @@
                 <?php if($get) : ?>
                     <?php foreach($get as $key => $value) : ?>
                         <tr class="bg-light" id="<?= $value["id"] ?>">
-                            <th><input type="checkbox" id="autoSizingCheck"></th>
+                            <th></th>
                             <td><a href="/admin/?page=user_view&id=<?= $value['sid']; ?>" target="_blank"><?= $value["account"] ?></a></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["close_date"] ?></td>
-                            <td><a href="/admin/?page=user_view&id=<?= $value['assignation']; ?>" target="_blank"><?= $value["assignation"] ?></a></td>
+                            <td><a href="/admin/?page=user_view&id=<?= $value['assignation']; ?>" target="_blank"><?= $value["moderator"] ?></a></td>
                             <td>
                                 <button class="btn btn-sm" name="delete_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
                                 <button class="btn btn-sm" name="solved_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
@@ -68,7 +68,7 @@
         <?php elseif($type === "open") : ?>
             <thead>
                 <tr>
-                    <th><input type="checkbox" id="autoSizingCheck"></th>
+                    <th></th>
                     <th scope="col"><?= __('ticket_system/tss_table.account'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.subject'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.start_date'); ?></th>
@@ -80,11 +80,11 @@
                 <?php if($get) : ?>
                     <?php foreach($get as $key => $value) : ?>
                         <tr class="bg-light" id="<?= $value["id"] ?>">
-                            <th><input type="checkbox" id="autoSizingCheck"></th>
+                            <th></th>
                             <td><a href="/admin/?page=user_view&id=<?= $value['sid']; ?>" target="_blank"><?= $value["account"] ?></a></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["create_date"] ?></td>
-                            <td><a href="/admin/?page=user_view&id=<?= $value['assignation']; ?>" target="_blank"><?= $value["assignation"] ?></a></td>
+                            <td><a href="/admin/?page=user_view&id=<?= $value['assignation']; ?>" target="_blank"><?= $value["moderator"] ?></a></td>
                             <td>
                                 <button class="btn btn-sm" name="delete_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
                                 <button class="btn btn-sm" name="solved_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
