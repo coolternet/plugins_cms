@@ -19,8 +19,8 @@
                             <td><a href="/admin/?page=user_view&id=<?= $value['sid']; ?>" target="_blank"><?= $value["account"] ?></a></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["close_date"] ?></td>
-                            <td><?php var_dump($value["assignation"]) ?></td>
-                            <td><?php var_dump($value["score"]) ?></td>
+                            <td><?= $value["assignation"] ?></td>
+                            <td><?= $value["score"] ?></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else : ?>
