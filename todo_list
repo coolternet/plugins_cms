@@ -1,6 +1,9 @@
 TODO LIST
 
-[ PLUGIN ] Tickets Management
-  - Add Permission support
-  - Fix some action buttons
-  - Add a Rate system
+[ PLUGIN ] Tickets System Management
+  - Ajouter des permission au plugin
+  - Ajouter l'option pour changer l'assignation d'un ticket
+  - Ajouter une alerte sonor lorsqu'une personne reçoit une réponse à son ticket (sauf aux admin)
+  - Ajouter une alerte aux admins lorsqu'un ticket est créé
+  - Prise en charge d'Envoi d'email lorsqu'un ticket est ouvert et fermé
+  - Corriger le système de notation
