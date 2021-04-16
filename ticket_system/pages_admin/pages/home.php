@@ -86,7 +86,7 @@
                     var myChart = new Chart(ctx, {
                         type: 'doughnut',
                         data: {
-                            labels: ['Open', 'Close', 'Unassigned'],
+                        labels: ['Open', 'Close', /*'Unassigned'*/ ],
                             datasets: [{
                                 data: [<?= ticket_count_open(); ?>,<?= ticket_count_close(); ?>,<?= ticket_count_unassigned(); ?>],
                                 backgroundColor: [
@@ -94,7 +94,7 @@
                                     'rgba(54, 162, 235, 0.2)', // Blue
                                     //'rgba(255, 206, 86, 0.2)', // Yellow
                                     'rgba(75, 192, 192, 0.2)', // Green
-                                    'rgba(153, 102, 255, 0.2)', // Purple
+                                    //'rgba(153, 102, 255, 0.2)', // Purple
                                     //'rgba(255, 159, 64, 0.2)' // Orange
                                 ],
                                 borderColor: [
@@ -102,7 +102,7 @@
                                     'rgba(54, 162, 235, 1)',
                                     //'rgba(255, 206, 86, 1)',
                                     'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
+                                    //'rgba(153, 102, 255, 1)',
                                     //'rgba(255, 159, 64, 1)'
                                 ],
                                 borderWidth: 1
@@ -137,15 +137,15 @@
                         <tbody>
                             <?php if($count_open) : ?>
                                 <?php foreach($get_open AS $key => $val) : ?>
-                                    <tr class="bg-light">
+                                    <tr class="bg-light" id="<?= $value["id"] ?>">
                                         <th><?= $val["id"] ?></th>
                                         <td><a href="/admin/?page=user_view&id=<?= $val['sid']; ?>" target="_blank"><?= $val["account"] ?></a></td>
                                         <td><?= $val["create_date"] ?></td>
                                         <td><?= $val["assignation"] ?></td>
                                         <td>Answered</td>
                                         <td class="center">
-                                            <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
-                                            <button class="btn btn-sm" title="<?= __('ticket_system/tss_view.masolved'); ?>"><i class="fa fa-lock fa-sm"></i></button>
+                                            <button class="btn btn-sm" name="delete_ticket" data-id="<?= $val["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
+                                            <button class="btn btn-sm" name="solved_ticket" data-id="<?= $val["id"] ?>" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
                                             <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.view'); ?>"><a href="/admin/?p=ticket_system/view&id=<?= $val["id"] ?>"><i class="fa fa-eye"></i></a></button>
                                         </td>
                                     </tr>

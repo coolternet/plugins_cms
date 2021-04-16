@@ -36,11 +36,11 @@
                                 {tss_ticket}.*,
                                 account.username AS account,
                                 assignation.username AS assignation,
-                                tss_rates.score
+                                {tss_rates}.score
                             FROM {tss_ticket}
-                            LEFT JOIN {users} as account ON {tss_ticket}.sid = account.id
+                            LEFT JOIN {users} AS account ON {tss_ticket}.sid = account.id
                             LEFT JOIN {users} AS assignation ON {tss_ticket}.assignation = assignation.id
-                            LEFT JOIN tss_rates ON tss_ticket.id = tss_rates.score
+                            LEFT JOIN {tss_rates} ON {tss_ticket}.id = {tss_rates}.score
                             WHERE $where ORDER BY id ASC LIMIT $start, $count"
         );
     }
@@ -111,7 +111,7 @@
                             FROM {tss_ticket}
                             LEFT JOIN {users} AS assignation ON {tss_ticket}.assignation = assignation.id
                             LEFT JOIN {groups} AS groups ON assignation.group_id = groups.id
-                            LEFT JOIN {tss_rates} AS rates ON tss_ticket.id = rates.tid
+                            LEFT JOIN {tss_rates} AS rates ON {tss_ticket}.id = rates.tid
                             WHERE `close_date` IS NOT NULL");
         return $get;
     }
@@ -233,3 +233,27 @@
 
             return 'success';
         }
+
+    function delete_ticket($tid){
+
+        $check = \DB::Query("SELECT id FROM {tss_ticket} WHERE id = :tid",[':tid' => $tid]);
+
+        if($check){
+
+            // Delete Ticket
+            \DB::Delete('tss_ticket', ['id' => $tid]);
+
+            // Delete Rate
+            \DB::Delete('tss_rates', ['tid' => $tid]);
+
+            // Delete Comments
+            \DB::Delete('tss_content', ['tid' => $tid]);
+
+            // Delete Admin Notes
+            \DB::Delete('tss_admin_notes', ['tid' => $tid]);
+
+            return 'success';
+
+        }
+
+    }

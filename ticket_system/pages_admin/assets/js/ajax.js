@@ -78,4 +78,36 @@ $(document).ready(function(){
 
     });
 
+    $("button[name=delete_ticket]").on('click', function(){
+        var tid = $('button[name=delete_ticket]').attr("data-id");
+        ajax_post({
+                action  : 'delete_ticket',
+                tid     : tid
+            },function(data){
+                if(data.success){
+                    $('table#tickets_list tr#'+tid).remove();
+                    location.reload();
+                }else{
+                    console.log(data.error);
+                }
+        });
+
+    });
+
+    $("button[name=solved_ticket]").on('click', function(){
+        var tid = $('button[name=solved_ticket]').attr("data-id");
+        ajax_post({
+                action  : 'solved_ticket',
+                tid     : tid
+            },function(data){
+                if(data.success){
+                    $('table#tickets_list tr#'+tid).remove();
+                    location.reload();
+                }else{
+                    console.log(data.error);
+                }
+        });
+
+    });
+
 });

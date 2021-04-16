@@ -36,4 +36,22 @@ if (App::POST('action') === 'mark_unsolved') {
 	}
 }
 
+if (App::POST('action') === 'delete_ticket') {
+	$action = delete_ticket($_POST['tid']);
+	if ($action) {
+		eshop_ajax_return_success($action);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+if (App::POST('action') === 'solved_ticket') {
+	$action = mark_solved($_POST['tid']);
+	if ($action) {
+		eshop_ajax_return_success($action);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
 exit;

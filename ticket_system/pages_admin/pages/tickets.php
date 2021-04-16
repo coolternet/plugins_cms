@@ -19,8 +19,8 @@
                             <td><a href="/admin/?page=user_view&id=<?= $value['sid']; ?>" target="_blank"><?= $value["account"] ?></a></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["close_date"] ?></td>
-                            <td><?php var_dump($value["assignation"]) ?></td>
-                            <td><?php var_dump($value["score"]) ?></td>
+                            <td><?= $value["assignation"] ?></td>
+                            <td><?= $value["score"] ?></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else : ?>
@@ -45,15 +45,15 @@
             <tbody>
                 <?php if($get) : ?>
                     <?php foreach($get as $key => $value) : ?>
-                        <tr class="bg-light">
+                        <tr class="bg-light" id="<?= $value["id"] ?>">
                             <th><input type="checkbox" id="autoSizingCheck"></th>
                             <td><a href="/admin/?page=user_view&id=<?= $value['sid']; ?>" target="_blank"><?= $value["account"] ?></a></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["close_date"] ?></td>
                             <td><a href="/admin/?page=user_view&id=<?= $value['assignation']; ?>" target="_blank"><?= $value["assignation"] ?></a></td>
                             <td>
-                                <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
-                                <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
+                                <button class="btn btn-sm" name="delete_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
+                                <button class="btn btn-sm" name="solved_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -79,15 +79,15 @@
             <tbody>
                 <?php if($get) : ?>
                     <?php foreach($get as $key => $value) : ?>
-                        <tr class="bg-light">
+                        <tr class="bg-light" id="<?= $value["id"] ?>">
                             <th><input type="checkbox" id="autoSizingCheck"></th>
                             <td><a href="/admin/?page=user_view&id=<?= $value['sid']; ?>" target="_blank"><?= $value["account"] ?></a></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["create_date"] ?></td>
                             <td><a href="/admin/?page=user_view&id=<?= $value['assignation']; ?>" target="_blank"><?= $value["assignation"] ?></a></td>
                             <td>
-                                <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
-                                <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
+                                <button class="btn btn-sm" name="delete_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
+                                <button class="btn btn-sm" name="solved_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -113,15 +113,15 @@
             <tbody>
                 <?php if($get) : ?>
                     <?php foreach($get as $key => $value) : ?>
-                        <tr class="bg-light">
+                        <tr class="bg-light" id="<?= $value["id"] ?>">
                             <th><input type="checkbox" id="autoSizingCheck"></th>
                             <td><?= $value["account"] ?></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["create_date"] ?></td>
                             <td><?= $value["assignation"] ?></td>
                             <td>
-                                <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
-                                <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
+                                <button class="btn btn-sm" name="delete_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
+                                <button class="btn btn-sm" name="solved_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
                             </td>
                         </tr>
                     <?php endforeach; ?>
