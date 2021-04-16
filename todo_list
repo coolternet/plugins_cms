@@ -1,7 +1,7 @@
 TODO LIST
 
 [ PLUGIN ] Tickets System Management
-  - Ajouter des permission au plugin
+  - Prise en charge des permissions sur les actions
   - Ajouter l'option pour changer l'assignation d'un ticket
   - Ajouter une alerte sonor lorsqu'une personne reçoit une réponse à son ticket (sauf aux admin)
   - Ajouter une alerte aux admins lorsqu'un ticket est créé
