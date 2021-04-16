@@ -36,11 +36,11 @@
                                 {tss_ticket}.*,
                                 account.username AS account,
                                 assignation.username AS assignation,
-                                tss_rates.score
+                                {tss_rates}.score
                             FROM {tss_ticket}
-                            LEFT JOIN {users} as account ON {tss_ticket}.sid = account.id
+                            LEFT JOIN {users} AS account ON {tss_ticket}.sid = account.id
                             LEFT JOIN {users} AS assignation ON {tss_ticket}.assignation = assignation.id
-                            LEFT JOIN tss_rates ON tss_ticket.id = tss_rates.score
+                            LEFT JOIN {tss_rates} ON {tss_ticket}.id = {tss_rates}.score
                             WHERE $where ORDER BY id ASC LIMIT $start, $count"
         );
     }
@@ -111,7 +111,7 @@
                             FROM {tss_ticket}
                             LEFT JOIN {users} AS assignation ON {tss_ticket}.assignation = assignation.id
                             LEFT JOIN {groups} AS groups ON assignation.group_id = groups.id
-                            LEFT JOIN {tss_rates} AS rates ON tss_ticket.id = rates.tid
+                            LEFT JOIN {tss_rates} AS rates ON {tss_ticket}.id = rates.tid
                             WHERE `close_date` IS NOT NULL");
         return $get;
     }
