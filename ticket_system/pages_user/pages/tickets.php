@@ -24,7 +24,7 @@
                 <tr data-id="<?= $key['id'] ?>">
                     <th scope="row"><?= $key['id'] ?></th>
                     <td><i class="far fa-calendar-alt"></i> <?= $key['create_date'] ?></td>
-                    <td><a href="<?= APP::getURL('/support'); ?>/view&id=<?= $key['id'] ?>"><?= $key['subject'] ?></a></td>
+                    <td><a href="<?= APP::getURL('support'); ?>/view&id=<?= $key['id'] ?>"><?= $key['subject'] ?></a></td>
                     <td><?= (empty($key['close_date'])) ? '<span class="new badge green" data-badge-caption="" style="font-size: inherit;font-weight: 500;">'. __('ticket_system/tss_table.state_open') .'</span>' : '<span class="new badge red" data-badge-caption="" style="font-size: inherit;font-weight: 500;">'. __('ticket_system/tss_table.state_close') .'</span>'; ?></td>
                     <td class="text-right">
                         <ul class="nav justify-content-end">

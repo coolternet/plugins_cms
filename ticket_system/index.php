@@ -82,7 +82,7 @@ return new class extends Evo\Module
 
 	public function hook_user_menu(array &$items)
 	{
-		$items[] = [__('ticket_system/plugin.menu_1'), 'fa-question-circle', APP::getURL('/support')];
+		$items[] = [__('ticket_system/plugin.menu_1'), 'fa-question-circle', APP::getURL('support')];
 	}
 	
 	public function hook_admin_menu(array &$items)

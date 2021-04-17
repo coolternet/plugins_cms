@@ -75,7 +75,7 @@
             'sid' => APP::getCurrentUser()->id,
             'subject' => $sujet,
             'short_desc' => $content,
-            'assignation' => "0",
+            'assignation' => "1",
             'create_date' => date("Y-m-d H:i:s")
         ]);
 

@@ -21,7 +21,7 @@
         </div>
         <div style="margin-top: 10px;" class="col-md">
             <button class="btn blue darken-4 waves-effect waves-light btn-block" name="tcreate" type="submit" ><?= __('ticket_system/tss_table.action_create'); ?></button>
-            <a href="<?= APP::getURL('/support'); ?>" class="btn blue darken-4 waves-effect waves-light btn-block" ><?= __('ticket_system/tss_table.action_cancel'); ?></a>
+            <a href="<?= APP::getURL('support'); ?>" class="btn blue darken-4 waves-effect waves-light btn-block" ><?= __('ticket_system/tss_table.action_cancel'); ?></a>
         </div>
     </form>
 </div>
