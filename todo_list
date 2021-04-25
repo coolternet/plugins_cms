@@ -1,10 +1,15 @@
 TODO LIST
 
 [ PLUGIN ] Tickets System Management
-  - 50% - Prise en charge des permissions sur les actions
-  - 50% - Ajout d'une page pour effectuer des déclaration de bug
-  - 25% - Ajouter l'option pour changer l'assignation d'un ticket
-  - 10% - Prise en charge d'Envoi d'email lorsqu'un ticket est ouvert et fermé
-  -  0% - Ajouter une alerte sonor lorsqu'une personne reçoit une réponse à son ticket (sauf aux admin)
-  -  0% - Ajouter une alerte aux admins lorsqu'un ticket est créé
-  -  0% - Corriger le système de notation
+  - 100% - Ajout d'une page pour effectuer des déclaration de bug
+  - 100% - Ajout d'une page pour créer un ticket pour un utilisateur
+  -  90% - Corriger le système d'évaluation
+  -  75% - Ajouter l'option pour changer l'assignation d'un ticket
+  -   0% - Prise en charge des permissions sur les actions
+  -   0% - Prise en charge d'Envoi d'email lorsqu'un ticket est ouvert et fermé
+  -   0% - Envoi d'email aux développeur par l'entremise du plugin
+  -   0% - Ajouter une alerte sonor lorsqu'une personne reçoit une réponse à son ticket (sauf aux admin)
+  -   0% - Ajouter une alerte aux admins lorsqu'un ticket est créé
+  -   0% - Ajouter la vérification des formulaires Admin/User à travers le plugin
+  -   0% - Page avec la liste des commentaires suite aux évaluations des tickets
+  -   0% - Ajouter les traductions manquante EN/FR
