@@ -2,6 +2,7 @@ TODO LIST
 
 [ PLUGIN ] Tickets System Management
   - 50% - Prise en charge des permissions sur les actions
+  - 50% - Ajout d'une page pour effectuer des déclaration de bug
   - 25% - Ajouter l'option pour changer l'assignation d'un ticket
   - 10% - Prise en charge d'Envoi d'email lorsqu'un ticket est ouvert et fermé
   -  0% - Ajouter une alerte sonor lorsqu'une personne reçoit une réponse à son ticket (sauf aux admin)
