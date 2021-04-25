@@ -54,4 +54,22 @@ if (App::POST('action') === 'solved_ticket') {
 	}
 }
 
+if (App::POST('action') === 'admin_create_ticket') {
+	$action = admin_create_ticket($_POST['uid'], $_POST['mid'], $_POST['lid'], $_POST['sujet'], $_POST['desc']);
+	if ($action) {
+		eshop_ajax_return_success($action);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
+if (App::POST('action') === 'admin_change_assignation') {
+	$action = admin_change_assignation($_POST['tid'], $_POST['mid']);
+	if ($action) {
+		eshop_ajax_return_success($action);
+	} else {
+		eshop_ajax_return_error("Not found");
+	}
+}
+
 exit;

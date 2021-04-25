@@ -3,6 +3,7 @@
     if ($view = App::GET('id')) {
         $info = ticket_get_information($view);
         $content = ticket_get_content($view);
+        $get_rank = \DB::Query("SELECT `id`,`name` FROM {groups} where {groups}.id <= 2");
     }
 
     if (!empty($info)) {

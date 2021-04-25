@@ -87,7 +87,7 @@ return new class extends Evo\Module
 	
 	public function hook_admin_menu(array &$items)
 	{
-		$items[] = ['Panel Ticket Support', 'fa-question-circle', '/admin/?p=ticket_system/home', null];
+		$items[] = ['Panel Ticket Support', 'fa-question-circle', APP::getURL('admin/?p=ticket_system/home'), null];
 	}
 
 };

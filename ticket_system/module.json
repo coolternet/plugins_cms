@@ -1,10 +1,11 @@
 {
-    "name": "Ticket System",
+    "name": "Ticket System Management",
     "description": "Technical Support system using tickets",
     "version": "1.0.0",
     "authors": [
         "Evo-CMS (http://blog.evolution-network.ca)"
     ],
+    "contact": "coolternet@live.ca",
     "exports": ["plugin"],
 
     "homepage": "http://blog.evolution-network.ca/",

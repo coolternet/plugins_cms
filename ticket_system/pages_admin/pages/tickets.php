@@ -106,7 +106,6 @@
                     <th scope="col"><?= __('ticket_system/tss_table.account'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.subject'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.start_date'); ?></th>
-                    <th scope="col"><?= __('ticket_system/tss_table.assigned'); ?></th>
                     <th scope="col"><?= __('ticket_system/tss_table.action'); ?></th>
                 </tr>
             </thead>
@@ -118,7 +117,6 @@
                             <td><?= $value["account"] ?></td>
                             <td><a href="?p=ticket_system/view&id=<?= $value["id"] ?>"><?= $value["subject"] ?></a></td>
                             <td><?= $value["create_date"] ?></td>
-                            <td><?= $value["assignation"] ?></td>
                             <td>
                                 <button class="btn btn-sm" name="delete_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
                                 <button class="btn btn-sm" name="solved_ticket" data-id="<?= $value["id"] ?>" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>

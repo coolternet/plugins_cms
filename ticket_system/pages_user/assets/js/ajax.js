@@ -48,7 +48,7 @@ $(document).ready(function(){
                 tc_subject: {
                     required: "Veuillez entrer un sujet",
                     minlength: "Minimum de caractères est de 5",
-                    maxlength: "Maximum de caractères autorisé est de 50",
+                    maxlength: "Maximum de caractères autorisé est de 64",
                 },
                 tc_comment: {
                     required: "Veuillez entrer une description du problème",
@@ -141,7 +141,7 @@ $(document).ready(function(){
                 ticket_id : $tid
             },function(data){
                 if(data.success){
-                    $("tr[data-id=" + $tid + "]").remove();
+                    $("tr[data-id=` ${tid} `]").remove();
                 }else{
                     console.log(data);
                 }

@@ -1,5 +1,8 @@
-<link rel="stylesheet" href="../modules/ticket_system/pages_admin/assets/css/styles.css"/>
-<script type="text/javascript" src="../modules/ticket_system/pages_admin/assets/js/ajax.js"></script>
+<link rel="stylesheet" href="<?= APP::getURL('/modules/ticket_system/pages_admin/assets/css/styles.css') ?>"/>
+<script type="text/javascript" src="<?= APP::getURL('/modules/ticket_system/pages_admin/assets/js/Chart.js') ?>"></script>
+<script type="text/javascript" src="<?= APP::getURL('/modules/ticket_system/pages_admin/assets/js/rating.js') ?>"></script>
+<script type="text/javascript" src="<?= APP::getURL('/modules/ticket_system/pages_admin/assets/js/ajax.js') ?>"></script>
+<script type="text/javascript" src="<?= APP::getURL('/modules/ticket_system/pages_admin/assets/js/jquery.validate.min.js') ?>"></script>
 
 <div class="plugin_header bg-grad-evo">
     <div class="container header">

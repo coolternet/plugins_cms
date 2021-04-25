@@ -113,6 +113,14 @@
 
         \DB::Update('tss_ticket', ['close_date' => date("Y-m-d H:i:s")], ['id' => $tid]);
 
+        \DB::Insert('tss_rates', [
+            'tid' => $tid,
+            'sid' => APP::getCurrentUser()->id,
+            'score' => '0',
+            'comment' => 'Closed by the User',
+            'send_date' => date("Y-m-d H:i:s")
+        ]);
+
         return 'success';
     }
 

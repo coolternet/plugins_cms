@@ -79,7 +79,7 @@
     }
 
     function ticket_count_unassigned(){
-        $count = \DB::Get("SELECT COUNT(*) AS nbr FROM {tss_ticket} WHERE `assignation` IS NULL");
+        $count = \DB::Get("SELECT COUNT(*) AS nbr FROM {tss_ticket} WHERE `assignation` = 0");
         return $count;
     }
 
@@ -105,46 +105,54 @@
 
     function ticket_get_scored(){
         $get = \DB::QueryAll("SELECT DISTINCT
-                                assignation.id AS id,
+                                assignation.id AS mid,
                                 assignation.username AS modo,
                                 groups.name AS rank
                             FROM {tss_ticket}
                             LEFT JOIN {users} AS assignation ON {tss_ticket}.assignation = assignation.id
                             LEFT JOIN {groups} AS groups ON assignation.group_id = groups.id
                             LEFT JOIN {tss_rates} AS rates ON {tss_ticket}.id = rates.tid
-                            WHERE `close_date` IS NOT NULL");
+                            WHERE {tss_ticket}.close_date IS NOT NULL");
         return $get;
     }
 
     function count_ticket_mod($id){
-        $count = \DB::Get("SELECT count(*) FROM {tss_ticket} WHERE {tss_ticket}.assignation = :id",[':id' => $id]);
+        $count = \DB::Get("SELECT count(*) FROM {tss_ticket} WHERE {tss_ticket}.assignation = :id AND {tss_ticket}.close_date IS NOT NULL",[':id' => $id]);
         return $count;
     }
 
-    function global_score($id){
-        $count = \DB::Get("SELECT count(*) FROM {tss_ticket} WHERE {tss_ticket}.assignation = :id",[':id' => $id]);
-        $score = \DB::QueryAll("SELECT SUM(score) FROM {tss_rates} WHERE {tss_rates}.sid = :id",[':id' => $id]);
+    function global_score($mid){
 
-        $value = $score[0]['score'] / $count;
-        
-        $final = round($value, 0);
+        $tid = \DB::QueryAll("SELECT DISTINCT id FROM {tss_ticket} WHERE {tss_ticket}.assignation = :mid AND {tss_ticket}.close_date IS NOT NULL", [':mid' => $mid]);
 
-        return $final;
+        foreach($tid AS $value){
+
+            $count = \DB::Get("SELECT COUNT(*) AS nbr_ticket FROM {tss_ticket} LEFT JOIN {tss_rates} AS rates ON {tss_ticket}.id = rates.tid WHERE {tss_ticket}.assignation = :mid AND {tss_ticket}.close_date IS NOT NULL AND rates.score > 0",[':mid' => $mid]);
+
+            $score = \DB::QueryAll("SELECT SUM(score) AS score FROM {tss_rates} WHERE {tss_rates}.tid = :tid",[':tid' => $value['id']]);
+
+            $value = $score[0]['score'] / $count;
+
+            $final = round($value, 0);
+
+            return $final;
+
+        }
+
     }
 
-    function send_answer_assigned_btn($tid, $msg)
-        {
-            \DB::Insert('tss_content', [
-                'tid' => $tid,
-                'sid' => '0',
-                'mid' => App::getCurrentUser()->id,
-                'msg' => $msg,
-                'send_date' => date("Y-m-d H:i:s"),
-                'ip' => $_SERVER['REMOTE_ADDR']
-            ]);
+    function send_answer_assigned_btn($tid, $msg){
+        \DB::Insert('tss_content', [
+            'tid' => $tid,
+            'sid' => '0',
+            'mid' => App::getCurrentUser()->id,
+            'msg' => $msg,
+            'send_date' => date("Y-m-d H:i:s"),
+            'ip' => $_SERVER['REMOTE_ADDR']
+        ]);
 
-            return 'success';
-        }
+        return 'success';
+    }
 
     function mark_solved($tid)
         {
@@ -255,5 +263,27 @@
             return 'success';
 
         }
+
+    }
+
+    function admin_create_ticket($uid, $mid, $lid, $sujet, $desc){
+
+        \DB::Insert('tss_ticket', [
+            'sid' => $uid,
+            'subject' => $sujet,
+            'short_desc' => $desc,
+            'assignation' => $mid,
+            'level' => $lid,
+            'create_date' => date("Y-m-d H:i:s")
+        ]);
+
+        return 'success';
+    }
+
+    function admin_change_assignation($tid, $mid){
+
+        \DB::Update('tss_ticket', ['assignation' => $mid], ['id' => $tid]);
+
+        return 'success';
 
     }

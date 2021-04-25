@@ -9,29 +9,47 @@
                         </figure>
                     </div>
                     <hr/>
-                    <p class="card-text">
+                    <div class="card-text">
                         <div class="ui list">
-                            <div class="item">
+                            <div class="item mb-3">
                                 <h6 class="ui sub header"><i class="fas fa-user"></i></i> <?= __('ticket_system/tss_view.account'); ?></h6>
-                                <div class="content small" style="text-transform: capitalize;"><a href="?page=user_view&id=<?= $info["sid"] ?>" target="_blank"><?= $info["account"] ?></a></div>
+                                <div class="pl-3 pt-1 small" style="text-transform: capitalize;"><a href="?page=user_view&id=<?= $info["sid"] ?>" target="_blank"><?= $info["account"] ?></a></div>
                             </div>
-                            <div class="item">
+                            <div class="item mb-3">
                                 <h6 class="ui sub header"><i class="fas fa-globe-americas"></i></i> <?= __('ticket_system/tss_view.country'); ?></h6>
-                                <div class="content small" style="text-transform: capitalize;">
+                                <div class="pl-3 pt-1  small" style="text-transform: capitalize;">
                                     <img src="<?= App::getAsset('/img/flags/'.strtolower($info['country']).'.png') ?>" style="margin-bottom: 4px;"/>
                                     <?= @COUNTRIES[$info['country']] ?>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item mb-3">
                                 <h6 class="ui sub header"><i class="fas fa-envelope"></i></i> <?= __('ticket_system/tss_view.email'); ?></h6>
-                                <div class="content small"><a href="mailto:<?= $info["email"] ?>"><?= $info["email"] ?></a></div>
+                                <div class="pl-3 pt-1 small"><a href="mailto:<?= $info["email"] ?>"><?= $info["email"] ?></a></div>
                             </div>
-                            <div class="item">
+                            <div class="item mb-3">
                                 <h6 class="ui sub header"><i class="fas fa-calendar-alt"></i></i> <?= __('ticket_system/tss_view.register'); ?></h6>
-                                <div class="content small"><?= date('Y-m-d', $info["registered"]) ?></div>
+                                <div class="pl-3 pt-1 small"><?= date('Y-m-d', $info["registered"]) ?></div>
+                            </div>
+                            <div class="item mb-3">
+                                <div class="form-group">
+                                    <label for="create_ticket_assignation" class="ui sub header"><i class="fas fa-user-tie"></i> Assignation</label>
+                                    <select class="form-control form-control-sm mt-2 small" id="admin_change_assignation" data-id="<?= $_GET['id'] ?>">
+                                        <option value="0">Orphelin</option>
+                                        <?php foreach($get_rank AS $modo_group) : ?>
+                                            <optgroup label="<?= $modo_group['name'] ?>">
+                                                <?php
+                                                    $get_assignation = \DB::Query("SELECT `id`,`username`,`group_id` FROM {users} WHERE {users}.group_id = :gid", [':gid' => $modo_group['id']]);
+                                                    foreach($get_assignation AS $members_group) {
+                                                        echo "<option value='". $members_group['id'] ."'>". $members_group['username'] ."</option>";
+                                                    }
+                                                ?>
+                                            </optgroup>
+                                        <?php endforeach; ?>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </p>    
+                    </div>    
                 </div>
             </div>
             <div class="card">

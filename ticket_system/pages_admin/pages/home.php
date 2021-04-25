@@ -1,6 +1,6 @@
 <div class="container">
     <div id="tickets_stats_bloc" class="row">
-        <a href="?p=ticket_system/tickets&state=completed" class="col-sm-12 col-md-3 col-lg-3">
+        <a href="<?= APP::getUrl('admin/?p=ticket_system/tickets&state=completed') ?>" class="col-sm-12 col-md-3 col-lg-3">
             <div class="card completed">
                 <div class="card-body">
                     <span class="icon-background fa fa-lock"></span>
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </a>
-        <a href="?p=ticket_system/tickets&state=critical" class="col-sm-12 col-md-3 col-lg-3">
+        <a href="<?= APP::getUrl('admin/?p=ticket_system/tickets&state=critical') ?>" class="col-sm-12 col-md-3 col-lg-3">
             <div class="card critical">
                 <div class="card-body">
                     <span class="icon-background fa fa-exclamation-circle"></span>
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </a>
-        <a href="?p=ticket_system/tickets&state=opened" class="col-sm-12 col-md-3 col-lg-3">
+        <a href="<?= APP::getUrl('admin/?p=ticket_system/tickets&state=opened') ?>" class="col-sm-12 col-md-3 col-lg-3">
             <div class="card inprogress">
                 <div class="card-body">
                     <span class="icon-background fa fa-lock-open"></span>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </a>
-        <a href="?p=ticket_system/tickets&state=unassigned" class="col-sm-12 col-md-3 col-lg-3">
+        <a href="<?= APP::getUrl('admin/?p=ticket_system/tickets&state=unassigned') ?>" class="col-sm-12 col-md-3 col-lg-3">
             <div class="card unassigned">
                 <div class="card-body">
                     <span class="icon-background fa fa-user-times"></span>
@@ -116,7 +116,39 @@
         <div class="col-sm-12 col-md-9 col-lg-9">
             <div class="card">
                 <div class="card-body">
-                    <div class="alert alert-danger" role="alert" style="margin: 0;"><?= __('ticket_system/tss_admin.underconstruction'); ?></div>
+                    <?php if($score) : ?>
+                        <table class="ui table table-borderless" style="border:none">
+                            <tbody>
+                                <?php foreach($score AS $key => $value) : ?>
+                                    <tr>
+                                        <td class="collapsing">
+                                            <a class="ui blue circular massive label">Y</a>
+                                        </td>
+                                        <td>
+                                            <div class="content">
+                                                <span style="text-transform: capitalize;"><?= $value['modo'] ?></span>
+                                                <div class="text-muted small"><?= $value['rank'] ?></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="content">
+                                                <span><strong><?= count_ticket_mod($value['mid']); ?></strong></span>
+                                                <div class="text-muted small">Tickets</div>
+                                            </div>
+                                        </td>
+                                        <td class="collapsing">
+                                            <div class="ui large star rating" data-rating="<?= global_score($value['mid']); ?>" data-max-rating="5"></div>
+                                            <script>
+                                                $('.ui.rating').rating('disable', {initialRating: 0, maxRating: 5});
+                                            </script>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    <?php else : ?>
+                        <div class="alert alert-danger" role="alert" style="margin: 0;">Aucune données disponible.</div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -137,16 +169,16 @@
                         <tbody>
                             <?php if($count_open) : ?>
                                 <?php foreach($get_open AS $key => $val) : ?>
-                                    <tr class="bg-light" id="<?= $value["id"] ?>">
+                                    <tr class="bg-light" id="<?= $val["id"] ?>">
                                         <th><?= $val["id"] ?></th>
-                                        <td><a href="/admin/?page=user_view&id=<?= $val['sid']; ?>" target="_blank"><?= $val["account"] ?></a></td>
+                                        <td><a href="<?= APP::getUrl('admin/?page=user_view&id='. $val['sid']) ?>" target="_blank"><?= $val["account"] ?></a></td>
                                         <td><?= $val["create_date"] ?></td>
                                         <td><?= $val["moderator"] ?></td>
                                         <td>Answered</td>
                                         <td class="center">
                                             <button class="btn btn-sm" name="delete_ticket" data-id="<?= $val["id"] ?>" title="<?= __('ticket_system/tss_table_btn.delete'); ?>"><i class="fa fa-trash fa-sm"></i></button>
                                             <button class="btn btn-sm" name="solved_ticket" data-id="<?= $val["id"] ?>" title="<?= __('ticket_system/tss_table_btn.close'); ?>"><i class="fa fa-lock fa-sm"></i></button>
-                                            <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.view'); ?>"><a href="/admin/?p=ticket_system/view&id=<?= $val["id"] ?>"><i class="fa fa-eye"></i></a></button>
+                                            <button class="btn btn-sm" title="<?= __('ticket_system/tss_table_btn.view'); ?>"><a href="<?= APP::getUrl('admin/?p=ticket_system/view&id='. $val["id"]) ?>"><i class="fa fa-eye"></i></a></button>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
